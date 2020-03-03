@@ -1,16 +1,15 @@
 # SDGs
 A suite of application to manage the [SDGs - Sustainable Development Goals](http://sustainabledevelopment.un.org).
-The repository contains a ASP.NET web application to manage the SDGs indicator into a SQL Server database, and a c# application to move the SDGs indicator's data, from a SDGs database into a PxWeb database. 
+The repository contains a ASP.NET web application to manage the SDGs indicators into a SQL Server database, and a c# application to move the SDGs indicators, from a SDGs database into a PxWeb database. 
 
 ## SDGs WA 
 
 The SDGs Web Application `SDGs WA` is a ASP.NET web application and provides the following functionalities:
 
 
-1.	Management of SDGs indicator and subindicator data and metadata;
-2.	Import/export of SDGs indicator and subindicator data and metadata;
-3.	User management;
-4.	User's access management to indicators and subindicators by departement.
+1.	Management of SDGs indicators and subindicators (data and metadata);
+2.	Import/export of SDGs indicators and subindicators (data and metadata);
+3.	User management and profiling;
 
 ## What you’ll need
 In order to build the `SDGs WA` application, your environment should fulfill the following requirements:
@@ -21,13 +20,13 @@ In order to build the `SDGs WA` application, your environment should fulfill the
 
 ## How to build
 Download and unzip the source code in your workspace or import the project in Visual Studio.
-Before building the application you must create and populate a SDGs database. You can use the sql scripts:
+Before building the application, you must create and populate a SDGs database. You can use the following sql scripts:
 ```
 cd SDGs\SDGs_WA\SQL_script;
->Sqlcmd -S .\{instanceSQLSERVER} -i create_SDGs_WA.sql
->Sqlcmd -S .\{instanceSQLSERVER} -i populate_SDGs_WA.sql
+> Sqlcmd -S .\{instanceSQLSERVER} -i create_SDGs_WA.sql
+> Sqlcmd -S .\{instanceSQLSERVER} -i populate_SDGs_WA.sql
 ```
-The scripts creates and polpulates  the SDGs_WA database with arabic metadata SDGs examples.
+The scripts create and polpulate the SDGs_WA database with arabic metadata SDGs examples.
 
 The script will populate the `USERS/ROLES` tables with the `SDGs WA` users:
 ```
@@ -35,7 +34,7 @@ Administrator user:
 Username: user1
 Password: user1
 
-Guest user:
+Generic user:
 Username: user2
 Password: user2
 ``` 
@@ -52,8 +51,8 @@ Now you can build and run the application under Visual Studio.
 
 ## MDT2PxWeb
 
-`MDT2PxWeb` is a c# application to migrate the SDGS subindicator data from a multidimensional table to [The Nordic Data Model (CNMM) 2.3](https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/px-web-med-sql-databas/) database, 
-used by the [PxWeb](https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/), an API structure developed by Statistics Sweden together with other national statistical institutions (NSI) to disseminate public statistics in a structured way.
+`MDT2PxWeb` is a c# application to migrate the SDGS indicators from a multidimensional table to [The Nordic Data Model (CNMM) 2.3](https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/px-web-med-sql-databas/) database, 
+used by the [PxWeb](https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/), a web application developed by Statistics Sweden together with other National Statistical Institutions (NSI) to disseminate public statistics in a structured way.
 
 
 ## What you’ll need
@@ -66,14 +65,14 @@ In order to build the `MDT2PxWeb` application, your environment should fulfill t
  
 ## How to build
 Download and unzip the source code in your workspace or import the project in Visual Studio.
-Before building the application you must edit the configuration file `config.json`
+Before building the application, you must edit the configuration file `config.json`
 
 ## Usage
-After build, you can also use the application by commad line, to create or update the database:
+After building, you can also use the application by commad line, to create or update the database:
 ```
- > MDT2PxWeb config.json [print [populate_PxWeb_subindicatorData.sql]] - create SDGs structure into the PxWeb database
+> MDT2PxWeb config.json [print [populate_PxWeb_subindicatorData.sql]] - insert SDGs data into the PxWeb database
  
- > MDT2PxWeb config.json update [populate_PxWeb_subindicatorData.sql]  - update SDGs data into the PxWeb database
+> MDT2PxWeb config.json update [populate_PxWeb_subindicatorData.sql]  - update SDGs data into the PxWeb database
 ```
 The tool creates the sql file `populate_PxWeb_subindicatorData.sql` to populate a PxWeb database.
 
