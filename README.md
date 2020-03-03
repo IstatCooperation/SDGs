@@ -1,7 +1,6 @@
 # SDGs
-A suite of application to manage the [SDGs - Sustainable Development Goals] (http://sustainabledevelopment.un.org)
-The repository contains a ASP.NET web application to manage the SDGs indicator into a SQL Server database, and a c# application to move the SDGs indicator data
-from a SDGs database into a PxWeb database. 
+A suite of application to manage the [SDGs - Sustainable Development Goals](http://sustainabledevelopment.un.org).
+The repository contains a ASP.NET web application to manage the SDGs indicator into a SQL Server database, and a c# application to move the SDGs indicator's data, from a SDGs database into a PxWeb database. 
 
 ## SDGs WA 
 
@@ -30,7 +29,7 @@ cd SDGs\SDGs_WA\SQL_script;
 ```
 The scripts creates and polpulates  the SDGs_WA database with arabic metadata SDGs examples.
 
-The script will populate the `USERS/ROLES` tables with the `SDGs` WA users:
+The script will populate the `USERS/ROLES` tables with the `SDGs WA` users:
 ```
 Administrator user:
 Username: user1
@@ -53,14 +52,14 @@ Now you can build and run the application under Visual Studio.
 
 ## MDT2PxWeb
 
-`MDT2PxWeb` is a c# application to migrate the SDGS subindicator data from a multidimensional table to [The Nordic Data Model (CNMM) 2.3] (https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/px-web-med-sql-databas/) database, 
+`MDT2PxWeb` is a c# application to migrate the SDGS subindicator data from a multidimensional table to [The Nordic Data Model (CNMM) 2.3](https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/px-web-med-sql-databas/) database, 
 used by the [PxWeb](https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/), an API structure developed by Statistics Sweden together with other national statistical institutions (NSI) to disseminate public statistics in a structured way.
 
 
 ## What you’ll need
 In order to build the `MDT2PxWeb` application, your environment should fulfill the following requirements:
 
-* Visual Studio
+* Visual Studio 2017 or later
 * .NET Framework 4.0 or later
 * SQL Server 2014 or later
 * SDGs Database
@@ -70,12 +69,13 @@ Download and unzip the source code in your workspace or import the project in Vi
 Before building the application you must edit the configuration file `config.json`
 
 ## Usage
-After build, you can also use the application by commad line
+After build, you can also use the application by commad line, to create or update the database:
 ```
- MDT2PxWeb config.json [print [populate_PxWeb_subindicatorData.sql]] - create SDGs structure into the PxWeb database
- MDT2PxWeb config.json update [populate_PxWeb_subindicatorData.sql]  - update SDGs data into the PxWeb database
+ > MDT2PxWeb config.json [print [populate_PxWeb_subindicatorData.sql]] - create SDGs structure into the PxWeb database
+ 
+ > MDT2PxWeb config.json update [populate_PxWeb_subindicatorData.sql]  - update SDGs data into the PxWeb database
 ```
-The tool creates the sql file `populate_PxWeb_subindicatorData.sql` to populate a PxWeb database. according to the Nordic Data Model 2.3.
+The tool creates the sql file `populate_PxWeb_subindicatorData.sql` to populate a PxWeb database.
 
 To create and populate the PxWeb database, according to the Nordic Data Model (CNMM) 2.3, you can use the following sql script file, located "SDGs\MDT2PxWeb\SQL script - PxWeb" folder:  
 
@@ -86,8 +86,7 @@ populate_PxWeb_generics.sql
 populate_PxWeb_subindicatorData.sql
  
 ``` 
- 
+The files above manage also a secondary language in PxWeb. You can found the arabic as primary language and the english as secondary.  
 
 ## License
-`SDGs WA` and   are EUPL-licensed
-
+`SDGs WA` and `MDT2PxWeb` are EUPL-licensed
