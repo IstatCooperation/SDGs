@@ -1,0 +1,83 @@
+﻿{
+  "name":  "PCBS",
+  "userId": "SDGS",
+  "obsValue": "OBS_VALUE",
+   "mainLanguage": {
+	"code": "ar",
+	"suffixDB":"",
+	"labelValue": "ar: Sub Indicator",
+    "labelContent": "ar: Sustainable Development Goals - SDGs"	
+  },
+  "secondaryLanguage": {
+	"code": "en",
+	"suffixDB":"ENG",
+	"labelValue": "Sub Indicator",
+    "labelContent": "Sustainable Development Goals - SDGs"	
+  },
+  "mdtDb": {
+    "type": "ORACLE",
+    "connectionString": "(DESCRIPTION =(LOAD_BALANCE = on)(FAILOVER = on)(ADDRESS = (PROTOCOL = TCP)(HOST = dm05-scan.istat.it)(PORT =   1521))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = LIB1B)(FAILOVER_MODE =(TYPE = SELECT)(METHOD = BASIC)(RETRIES = 5)(DELAY = 5))))",
+    "username": "SV_DIXIT",
+    "password": "svdixit",
+    "dataTable": {
+      "name": "INDICATORDATA",
+      "subIndicatorKey": "SUBINDICATOR_CODE"
+    },
+    "goalTable": {
+      "name": "GOAL",
+      "code": "Goal_ID",
+      "desc": "Goal_DescEn",
+      "order": "Goal_ID"
+    },
+    "targetTable": {
+      "name": "TARGET",
+      "code": "Target_ID",
+      "desc": "Target_DescEn",
+      "reference": "Goal_ID"
+    },
+    "indicatorTable": {
+      "name": "V_INDICATOR",
+      "code": "Indicator_Code",
+      "desc": "Indicator_descEn",
+      "reference": "Target_ID"
+    },
+    "subIndicatorTable": {
+      "name": "SUBINDICATOR",
+      "code": "Subindicator_Code",
+      "desc": "Subindicator_DescEn",
+      "dimensions": "Dimensions",
+      "reference": "Indicator_Code",
+      "condition": "Is_Valid = 1"
+    }
+  },
+  "pxwebDb": {
+    "connectionString": "Server=localhost\\SQLEXPRESS;Database=pxweb_sdgs;Trusted_Connection=True;",
+    "username": null,
+    "password": null,
+    "dataTable": {
+      "name": "INDICATORDATA",
+      "code": "SUBINDICATOR_CODE"
+    }
+  },
+  "dimensions": [
+    {
+      "name": "TIME_PERIOD",
+      "label": "TIME PERIOD",
+      "table": {
+        "name": "TIME_PERIOD",
+        "code": "TIME_PERIOD",
+        "desc": "TIME_PERIOD"
+      },
+      "isTime": true
+    },
+    {
+      "name": "AGE",
+      "label": "AGE",
+      "table": {
+        "name": "CL_AGE",
+        "code": "AGE",
+        "desc": "AGE_DESC_EN"
+      }
+    }
+  ]
+}

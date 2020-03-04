@@ -1,0 +1,242 @@
+.sop {
+    color: #fff !important;
+    padding-left: 10px !important;
+    font-size: 1.5rem !important;
+}
+
+.sop2 {
+    color: #fff !important;
+    display: inline-block;
+    padding-left: 0px !important;
+    font-size:  1.145rem !important;
+}
+.logo{padding: 0.4rem 0 !important; }
+
+.header .donate {padding: 5px 20px;    transition:padding 0.3s cubic-bezier(0.33, 0.63, 0.49, 0.77);}
+.header .donate:hover {padding: 5px 20px 20px 20px;}
+
+.header-bottom nav.navigation>.menu-primary-menu-container>ul>li>a {
+    padding: 7px 19px;
+}
+.header.shrink-bottom-line .header-bottom .navigation>div>ul>li>a {
+	 padding: 7px 19px;
+}
+.header-bottom nav.navigation>.menu-primary-menu-container>ul>li>a:before {
+	top:15px;
+}
+.block-with-icons li a {
+    padding: 4rem 1.25rem 1rem;
+}
+.block-with-icons li a i {
+    top: -13px;
+}
+.block-with-icons {
+    margin: 0px 0px 3rem;
+}
+.titleAdham {
+    margin-bottom: 1px !important;
+    background-color: rgb(35, 80, 107) !important;
+    background-color: rgb(20, 71, 101) !important;
+}
+#sidebar .widget.widget_categories ul:not(.children) {
+
+    padding: 0.9375rem 1.25rem;
+}
+
+ul.menusX {
+    font-size: 0.7rem !important;
+    padding-top: 3px !important;
+}
+#sidebar .widget .widget-title {
+    padding: 0.45rem 1.25rem;
+	font-size: 0.9rem;
+}
+.section-title {
+    color: rgb(150, 150, 150);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-top: 0.625rem;
+    padding-bottom: 0;
+    border-bottom: 2px solid rgb(119, 109, 109);
+    border-top: 1px dashed rgb(171, 171, 171);
+}
+.post.post-alternate-2 {
+    min-height: 6rem;
+    padding-bottom: 2px;
+    margin-bottom: 1.5625rem;
+}
+.header-bottom nav.navigation>.menu>ul>li .mega-menu, .header-bottom nav.navigation>.menu-primary-menu-container>ul>li .mega-menu {
+	top: 45px;
+}
+ .header-bottom nav.navigation>.menu-primary-menu-container>ul>li>.sub-menu, .header-bottom nav.navigation>.menu-primary-menu-container>ul>li>ul {
+    top: 45px;
+}
+
+table.fc-border-separate td {
+    width: 14.28571428571429% !important;
+    min-width: 14.28571428571429% !important;
+}
+
+.evt{
+	background-color:#14b3e4;
+	display:block;
+	padding:0 3px;
+	border-radius:4px;
+	color:#fff;
+	margin:5px;
+	
+}
+a.evt:hover{
+	    color: rgb(81, 91, 95);
+}
+.evt2{
+	background-color:#00c99f;
+}
+.evt3{
+	background-color:#f36d6a;
+}
+
+
+.treadmill{
+	
+	    cursor: -webkit-grabbing;
+}
+div.fc-day-content {
+    float: right !important;
+    clear: none !important;
+	font-size: 0.53rem;
+}
+div.fc-day-number {
+    float: right !important;
+    clear: none !important;
+	
+}
+
+.didYouKnow {
+    position: relative;
+    background-color: transparent;
+    padding-bottom: 1.25rem;
+    margin-bottom: 3.125rem;
+    padding: 10px;
+    border: 1px solid rgb(96, 182, 210);
+}
+ul li.eservices{
+	    display: list-item;
+		    -webkit-box-flex: initial;
+    -moz-box-flex: initial;
+    -webkit-flex: initial;
+    -ms-flex:initial;
+    /* flex: 1 1 160px; */
+}
+.widget.widget_metro_style .metro_container li {
+display:block;
+width:100%;
+float:none;
+margin:0 !important;
+	padding:0 !important;
+	margin-bottom:2px !important;
+	margin-top:2px !important;
+}
+.widget.widget_metro_style .metro_container {
+	display:block;
+	margin:0 !important;
+	padding:0 !important;
+}
+ul li.eservices .style-3{
+	margin:0 !important;
+	padding:0 !important;
+}
+.widget.widget_metro_style .metro_container li a
+{
+	height:auto !important;
+	padding: 0.45rem;
+	font-size: 0.8rem;
+}
+#wrapper:after {
+height:13px;
+}
+.icon-sitemap:before, .icon-sitemap ,.icon-email:before ,.icon-email{
+color:rgb(213, 213, 214) !important;
+}
+
+@media (max-width: 48em)
+{
+
+.header[class*="type-"] .header-middle .header-middle-entry .account{
+    display: block !important;
+}
+}
+
+@media (max-width: 48em)
+{
+.widget.widget_recent_posts .tabs-nav li h3.tabsAd{
+    height: 100%;
+    font-size: 0.9rem;
+}
+}
+@media only screen and (max-width: 48em){
+.mobile-advanced .sub-menu a>img {
+	   max-width: 100%;
+    width: initial;
+}
+.articleAd{
+	padding-left:0px;
+	padding-right:0px;
+}
+.post.post-alternate-4 .entry-header .entry-title {
+	text-align:left;
+}
+.sub-menu.three_fourth{
+	max-width:100% !important;
+}
+}
+
+div.latNewAd .item-overlay img {
+	max-width:105px;
+	max-height:80px;
+}
+div.latNewAd {
+	max-height:128px !important;
+	min-height:128px !important;
+}
+div.lprAd .item-overlay img{
+	max-height:80px !important;
+	
+}
+.fc-day.fc-other-month {
+
+	background-color: #f6f6f6 !important;
+}
+.header-bottom nav.navigation .search-form-nav fieldset input[type=text]:hover, .header-bottom nav.navigation .search-form-nav fieldset input[type=text]:focus 
+{
+    padding: 6px 1.125rem !important;
+    height: 44px !important;
+}
+.header-bottom nav.navigation .search-form-nav fieldset input[type=text] {
+    height: 44px;
+}
+@media (max-width:480px){
+	
+	#calenderTable{
+		max-width:100%;
+		
+	}
+	#calenderTable tr td:nth-child(6),#calenderTable tr td:nth-child(7),tr th:nth-child(6),#calenderTable tr th:nth-child(7)
+	{
+		display:none;
+	}
+	.evt {
+		margin:5px 0 5px 0;
+	}
+}
+
+div.page-title {
+    margin-bottom: 0.9rem;
+	padding-bottom: 0.3rem;
+}
+ul.accordion .accordion-navigation .acc-trigger {
+
+    line-height: 145%;
+}

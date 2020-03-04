@@ -1,0 +1,8247 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?13441709");
+  src: url("../fonts/fontello.eot?13441709#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?13441709") format("woff"), url("../fonts/fontello.ttf?13441709") format("truetype"), url("../fonts/fontello.svg?13441709#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?13441709#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-emo-happy:before {
+  content: '\e800'; }
+
+/* 'юаА' */
+.icon-odnoklassniki-rect-1:before {
+  content: '\f002'; }
+
+/* 'яАВ' */
+.icon-emo-wink2:before {
+  content: '\e802'; }
+
+/* 'юаВ' */
+.icon-emo-unhappy:before {
+  content: '\e803'; }
+
+/* 'юаГ' */
+.icon-emo-sleep:before {
+  content: '\e804'; }
+
+/* 'юаД' */
+.icon-emo-thumbsup:before {
+  content: '\e805'; }
+
+/* 'юаЕ' */
+.icon-emo-devil:before {
+  content: '\e806'; }
+
+/* 'юаЖ' */
+.icon-emo-surprised:before {
+  content: '\e807'; }
+
+/* 'юаЗ' */
+.icon-emo-tongue:before {
+  content: '\e808'; }
+
+/* 'юаИ' */
+.icon-emo-coffee:before {
+  content: '\e809'; }
+
+/* 'юаЙ' */
+.icon-emo-sunglasses:before {
+  content: '\e80a'; }
+
+/* 'юаК' */
+.icon-emo-displeased:before {
+  content: '\e80b'; }
+
+/* 'юаЛ' */
+.icon-emo-beer:before {
+  content: '\e80c'; }
+
+/* 'юаМ' */
+.icon-emo-grin:before {
+  content: '\e80d'; }
+
+/* 'юаН' */
+.icon-emo-angry:before {
+  content: '\e80e'; }
+
+/* 'юаО' */
+.icon-emo-saint:before {
+  content: '\e80f'; }
+
+/* 'юаП' */
+.icon-emo-cry:before {
+  content: '\e810'; }
+
+/* 'юаР' */
+.icon-emo-shoot:before {
+  content: '\e811'; }
+
+/* 'юаС' */
+.icon-emo-squint:before {
+  content: '\e812'; }
+
+/* 'юаТ' */
+.icon-emo-laugh:before {
+  content: '\e813'; }
+
+/* 'юаУ' */
+.icon-spin1:before {
+  content: '\e814'; }
+
+/* 'юаФ' */
+.icon-spin2:before {
+  content: '\e815'; }
+
+/* 'юаХ' */
+.icon-spin3:before {
+  content: '\e816'; }
+
+/* 'юаЦ' */
+.icon-spin4:before {
+  content: '\e817'; }
+
+/* 'юаЧ' */
+.icon-spin5:before {
+  content: '\e818'; }
+
+/* 'юаШ' */
+.icon-spin6:before {
+  content: '\e819'; }
+
+/* 'юаЩ' */
+.icon-firefox:before {
+  content: '\e81a'; }
+
+/* 'юаЪ' */
+.icon-chrome:before {
+  content: '\e81b'; }
+
+/* 'юаЫ' */
+.icon-opera:before {
+  content: '\e81c'; }
+
+/* 'юаЬ' */
+.icon-ie:before {
+  content: '\e81d'; }
+
+/* 'юаЭ' */
+.icon-crown:before {
+  content: '\e81e'; }
+
+/* 'юаЮ' */
+.icon-crown-plus:before {
+  content: '\e81f'; }
+
+/* 'юаЯ' */
+.icon-crown-minus:before {
+  content: '\e820'; }
+
+/* 'юаа' */
+.icon-marquee:before {
+  content: '\e821'; }
+
+/* 'юаб' */
+.icon-glass:before {
+  content: '\e822'; }
+
+/* 'юав' */
+.icon-music:before {
+  content: '\e823'; }
+
+/* 'юаг' */
+.icon-search:before {
+  content: '\e824'; }
+
+/* 'юад' */
+.icon-mail:before {
+  content: '\e825'; }
+
+/* 'юае' */
+.icon-mail-alt:before {
+  content: '\e826'; }
+
+/* 'юаж' */
+.icon-heart:before {
+  content: '\e827'; }
+
+/* 'юаз' */
+.icon-heart-empty:before {
+  content: '\e828'; }
+
+/* 'юаи' */
+.icon-star:before {
+  content: '\e829'; }
+
+/* 'юай' */
+.icon-star-empty:before {
+  content: '\e82a'; }
+
+/* 'юак' */
+.icon-star-half:before {
+  content: '\e82b'; }
+
+/* 'юал' */
+.icon-star-half-alt:before {
+  content: '\e82c'; }
+
+/* 'юам' */
+.icon-user:before {
+  content: '\e82d'; }
+
+/* 'юан' */
+.icon-users:before {
+  content: '\e82e'; }
+
+/* 'юао' */
+.icon-male:before {
+  content: '\e82f'; }
+
+/* 'юап' */
+.icon-female:before {
+  content: '\e830'; }
+
+/* 'юа░' */
+.icon-video:before {
+  content: '\e831'; }
+
+/* 'юа▒' */
+.icon-videocam:before {
+  content: '\e832'; }
+
+/* 'юа▓' */
+.icon-picture:before {
+  content: '\e833'; }
+
+/* 'юа│' */
+.icon-camera:before {
+  content: '\e834'; }
+
+/* 'юа┤' */
+.icon-camera-alt:before {
+  content: '\e835'; }
+
+/* 'юа╡' */
+.icon-th-large:before {
+  content: '\e836'; }
+
+/* 'юа╢' */
+.icon-th:before {
+  content: '\e837'; }
+
+/* 'юа╖' */
+.icon-th-list:before {
+  content: '\e838'; }
+
+/* 'юа╕' */
+.icon-ok:before {
+  content: '\e839'; }
+
+/* 'юа╣' */
+.icon-ok-circled:before {
+  content: '\e83a'; }
+
+/* 'юа║' */
+.icon-ok-circled2:before {
+  content: '\e83b'; }
+
+/* 'юа╗' */
+.icon-ok-squared:before {
+  content: '\e83c'; }
+
+/* 'юа╝' */
+.icon-cancel:before {
+  content: '\e83d'; }
+
+/* 'юа╜' */
+.icon-cancel-circled:before {
+  content: '\e83e'; }
+
+/* 'юа╛' */
+.icon-cancel-circled2:before {
+  content: '\e83f'; }
+
+/* 'юа┐' */
+.icon-plus:before {
+  content: '\e840'; }
+
+/* 'юбА' */
+.icon-plus-circled:before {
+  content: '\e841'; }
+
+/* 'юбБ' */
+.icon-plus-squared:before {
+  content: '\e842'; }
+
+/* 'юбВ' */
+.icon-plus-squared-alt:before {
+  content: '\e843'; }
+
+/* 'юбГ' */
+.icon-minus:before {
+  content: '\e844'; }
+
+/* 'юбД' */
+.icon-minus-circled:before {
+  content: '\e845'; }
+
+/* 'юбЕ' */
+.icon-minus-squared:before {
+  content: '\e846'; }
+
+/* 'юбЖ' */
+.icon-minus-squared-alt:before {
+  content: '\e847'; }
+
+/* 'юбЗ' */
+.icon-help:before {
+  content: '\e848'; }
+
+/* 'юбИ' */
+.icon-help-circled:before {
+  content: '\e849'; }
+
+/* 'юбЙ' */
+.icon-info-circled:before {
+  content: '\e84a'; }
+
+/* 'юбК' */
+.icon-info:before {
+  content: '\e84b'; }
+
+/* 'юбЛ' */
+.icon-home:before {
+  content: '\e84c'; }
+
+/* 'юбМ' */
+.icon-link:before {
+  content: '\e84d'; }
+
+/* 'юбН' */
+.icon-unlink:before {
+  content: '\e84e'; }
+
+/* 'юбО' */
+.icon-link-ext:before {
+  content: '\e84f'; }
+
+/* 'юбП' */
+.icon-link-ext-alt:before {
+  content: '\e850'; }
+
+/* 'юбР' */
+.icon-attach:before {
+  content: '\e851'; }
+
+/* 'юбС' */
+.icon-lock:before {
+  content: '\e852'; }
+
+/* 'юбТ' */
+.icon-lock-open:before {
+  content: '\e853'; }
+
+/* 'юбУ' */
+.icon-lock-open-alt:before {
+  content: '\e854'; }
+
+/* 'юбФ' */
+.icon-pin:before {
+  content: '\e855'; }
+
+/* 'юбХ' */
+.icon-eye:before {
+  content: '\e856'; }
+
+/* 'юбЦ' */
+.icon-eye-off:before {
+  content: '\e857'; }
+
+/* 'юбЧ' */
+.icon-tag:before {
+  content: '\e858'; }
+
+/* 'юбШ' */
+.icon-tags:before {
+  content: '\e859'; }
+
+/* 'юбЩ' */
+.icon-bookmark:before {
+  content: '\e85a'; }
+
+/* 'юбЪ' */
+.icon-bookmark-empty:before {
+  content: '\e85b'; }
+
+/* 'юбЫ' */
+.icon-flag:before {
+  content: '\e85c'; }
+
+/* 'юбЬ' */
+.icon-flag-empty:before {
+  content: '\e85d'; }
+
+/* 'юбЭ' */
+.icon-flag-checkered:before {
+  content: '\e85e'; }
+
+/* 'юбЮ' */
+.icon-thumbs-up:before {
+  content: '\e85f'; }
+
+/* 'юбЯ' */
+.icon-thumbs-down:before {
+  content: '\e860'; }
+
+/* 'юба' */
+.icon-thumbs-up-alt:before {
+  content: '\e861'; }
+
+/* 'юбб' */
+.icon-thumbs-down-alt:before {
+  content: '\e862'; }
+
+/* 'юбв' */
+.icon-download:before {
+  content: '\e863'; }
+
+/* 'юбг' */
+.icon-upload:before {
+  content: '\e864'; }
+
+/* 'юбд' */
+.icon-download-cloud:before {
+  content: '\e865'; }
+
+/* 'юбе' */
+.icon-upload-cloud:before {
+  content: '\e866'; }
+
+/* 'юбж' */
+.icon-reply:before {
+  content: '\e867'; }
+
+/* 'юбз' */
+.icon-reply-all:before {
+  content: '\e868'; }
+
+/* 'юби' */
+.icon-forward:before {
+  content: '\e869'; }
+
+/* 'юбй' */
+.icon-quote-left:before {
+  content: '\e86a'; }
+
+/* 'юбк' */
+.icon-quote-right:before {
+  content: '\e86b'; }
+
+/* 'юбл' */
+.icon-code:before {
+  content: '\e86c'; }
+
+/* 'юбм' */
+.icon-export:before {
+  content: '\e86d'; }
+
+/* 'юбн' */
+.icon-export-alt:before {
+  content: '\e86e'; }
+
+/* 'юбо' */
+.icon-pencil:before {
+  content: '\e86f'; }
+
+/* 'юбп' */
+.icon-pencil-squared:before {
+  content: '\e870'; }
+
+/* 'юб░' */
+.icon-edit:before {
+  content: '\e871'; }
+
+/* 'юб▒' */
+.icon-print:before {
+  content: '\e872'; }
+
+/* 'юб▓' */
+.icon-retweet:before {
+  content: '\e873'; }
+
+/* 'юб│' */
+.icon-keyboard:before {
+  content: '\e874'; }
+
+/* 'юб┤' */
+.icon-gamepad:before {
+  content: '\e875'; }
+
+/* 'юб╡' */
+.icon-comment:before {
+  content: '\e876'; }
+
+/* 'юб╢' */
+.icon-chat:before {
+  content: '\e877'; }
+
+/* 'юб╖' */
+.icon-comment-empty:before {
+  content: '\e878'; }
+
+/* 'юб╕' */
+.icon-chat-empty:before {
+  content: '\e879'; }
+
+/* 'юб╣' */
+.icon-bell:before {
+  content: '\e87a'; }
+
+/* 'юб║' */
+.icon-bell-alt:before {
+  content: '\e87b'; }
+
+/* 'юб╗' */
+.icon-attention-alt:before {
+  content: '\e87c'; }
+
+/* 'юб╝' */
+.icon-attention:before {
+  content: '\e87d'; }
+
+/* 'юб╜' */
+.icon-attention-circled:before {
+  content: '\e87e'; }
+
+/* 'юб╛' */
+.icon-location:before {
+  content: '\e87f'; }
+
+/* 'юб┐' */
+.icon-direction:before {
+  content: '\e880'; }
+
+/* 'ювА' */
+.icon-compass:before {
+  content: '\e881'; }
+
+/* 'ювБ' */
+.icon-trash:before {
+  content: '\e882'; }
+
+/* 'ювВ' */
+.icon-doc:before {
+  content: '\e883'; }
+
+/* 'ювГ' */
+.icon-docs:before {
+  content: '\e884'; }
+
+/* 'ювД' */
+.icon-doc-text:before {
+  content: '\e885'; }
+
+/* 'ювЕ' */
+.icon-doc-inv:before {
+  content: '\e886'; }
+
+/* 'ювЖ' */
+.icon-doc-text-inv:before {
+  content: '\e887'; }
+
+/* 'ювЗ' */
+.icon-folder:before {
+  content: '\e888'; }
+
+/* 'ювИ' */
+.icon-folder-open:before {
+  content: '\e889'; }
+
+/* 'ювЙ' */
+.icon-folder-empty:before {
+  content: '\e88a'; }
+
+/* 'ювК' */
+.icon-folder-open-empty:before {
+  content: '\e88b'; }
+
+/* 'ювЛ' */
+.icon-box:before {
+  content: '\e88c'; }
+
+/* 'ювМ' */
+.icon-rss:before {
+  content: '\e88d'; }
+
+/* 'ювН' */
+.icon-rss-squared:before {
+  content: '\e88e'; }
+
+/* 'ювО' */
+.icon-phone:before {
+  content: '\e88f'; }
+
+/* 'ювП' */
+.icon-phone-squared:before {
+  content: '\e890'; }
+
+/* 'ювР' */
+.icon-menu:before {
+  content: '\e891'; }
+
+/* 'ювС' */
+.icon-cog:before {
+  content: '\e892'; }
+
+/* 'ювТ' */
+.icon-cog-alt:before {
+  content: '\e893'; }
+
+/* 'ювУ' */
+.icon-wrench:before {
+  content: '\e894'; }
+
+/* 'ювФ' */
+.icon-basket:before {
+  content: '\e895'; }
+
+/* 'ювХ' */
+.icon-calendar:before {
+  content: '\e896'; }
+
+/* 'ювЦ' */
+.icon-calendar-empty:before {
+  content: '\e897'; }
+
+/* 'ювЧ' */
+.icon-login:before {
+  content: '\e898'; }
+
+/* 'ювШ' */
+.icon-logout:before {
+  content: '\e899'; }
+
+/* 'ювЩ' */
+.icon-mic:before {
+  content: '\e89a'; }
+
+/* 'ювЪ' */
+.icon-mute:before {
+  content: '\e89b'; }
+
+/* 'ювЫ' */
+.icon-volume-off:before {
+  content: '\e89c'; }
+
+/* 'ювЬ' */
+.icon-volume-down:before {
+  content: '\e89d'; }
+
+/* 'ювЭ' */
+.icon-volume-up:before {
+  content: '\e89e'; }
+
+/* 'ювЮ' */
+.icon-headphones:before {
+  content: '\e89f'; }
+
+/* 'ювЯ' */
+.icon-clock:before {
+  content: '\e8a0'; }
+
+/* 'юва' */
+.icon-lightbulb:before {
+  content: '\e8a1'; }
+
+/* 'ювб' */
+.icon-block:before {
+  content: '\e8a2'; }
+
+/* 'ювв' */
+.icon-resize-full:before {
+  content: '\e8a3'; }
+
+/* 'ювг' */
+.icon-resize-full-alt:before {
+  content: '\e8a4'; }
+
+/* 'ювд' */
+.icon-resize-small:before {
+  content: '\e8a5'; }
+
+/* 'юве' */
+.icon-resize-vertical:before {
+  content: '\e8a6'; }
+
+/* 'ювж' */
+.icon-resize-horizontal:before {
+  content: '\e8a7'; }
+
+/* 'ювз' */
+.icon-move:before {
+  content: '\e8a8'; }
+
+/* 'юви' */
+.icon-zoom-in:before {
+  content: '\e8a9'; }
+
+/* 'ювй' */
+.icon-zoom-out:before {
+  content: '\e8aa'; }
+
+/* 'ювк' */
+.icon-down-circled2:before {
+  content: '\e8ab'; }
+
+/* 'ювл' */
+.icon-up-circled2:before {
+  content: '\e8ac'; }
+
+/* 'ювм' */
+.icon-left-circled2:before {
+  content: '\e8ad'; }
+
+/* 'ювн' */
+.icon-right-circled2:before {
+  content: '\e8ae'; }
+
+/* 'юво' */
+.icon-down-dir:before {
+  content: '\e8af'; }
+
+/* 'ювп' */
+.icon-up-dir:before {
+  content: '\e8b0'; }
+
+/* 'юв░' */
+.icon-left-dir:before {
+  content: '\e8b1'; }
+
+/* 'юв▒' */
+.icon-right-dir:before {
+  content: '\e8b2'; }
+
+/* 'юв▓' */
+.icon-down-open:before {
+  content: '\e8b3'; }
+
+/* 'юв│' */
+.icon-left-open:before {
+  content: '\e8b4'; }
+
+/* 'юв┤' */
+.icon-right-open:before {
+  content: '\e8b5'; }
+
+/* 'юв╡' */
+.icon-up-open:before {
+  content: '\e8b6'; }
+
+/* 'юв╢' */
+.icon-angle-left:before {
+  content: '\e8b7'; }
+
+/* 'юв╖' */
+.icon-angle-right:before {
+  content: '\e8b8'; }
+
+/* 'юв╕' */
+.icon-angle-up:before {
+  content: '\e8b9'; }
+
+/* 'юв╣' */
+.icon-angle-down:before {
+  content: '\e8ba'; }
+
+/* 'юв║' */
+.icon-angle-circled-left:before {
+  content: '\e8bb'; }
+
+/* 'юв╗' */
+.icon-angle-circled-right:before {
+  content: '\e8bc'; }
+
+/* 'юв╝' */
+.icon-angle-circled-up:before {
+  content: '\e8bd'; }
+
+/* 'юв╜' */
+.icon-angle-circled-down:before {
+  content: '\e8be'; }
+
+/* 'юв╛' */
+.icon-angle-double-left:before {
+  content: '\e8bf'; }
+
+/* 'юв┐' */
+.icon-angle-double-right:before {
+  content: '\e8c0'; }
+
+/* 'югА' */
+.icon-angle-double-up:before {
+  content: '\e8c1'; }
+
+/* 'югБ' */
+.icon-angle-double-down:before {
+  content: '\e8c2'; }
+
+/* 'югВ' */
+.icon-down:before {
+  content: '\e8c3'; }
+
+/* 'югГ' */
+.icon-left:before {
+  content: '\e8c4'; }
+
+/* 'югД' */
+.icon-right:before {
+  content: '\e8c5'; }
+
+/* 'югЕ' */
+.icon-up:before {
+  content: '\e8c6'; }
+
+/* 'югЖ' */
+.icon-down-big:before {
+  content: '\e8c7'; }
+
+/* 'югЗ' */
+.icon-left-big:before {
+  content: '\e8c8'; }
+
+/* 'югИ' */
+.icon-right-big:before {
+  content: '\e8c9'; }
+
+/* 'югЙ' */
+.icon-up-big:before {
+  content: '\e8ca'; }
+
+/* 'югК' */
+.icon-right-hand:before {
+  content: '\e8cb'; }
+
+/* 'югЛ' */
+.icon-emo-wink:before {
+  content: '\e801'; }
+
+/* 'юаБ' */
+.icon-up-hand:before {
+  content: '\e8cd'; }
+
+/* 'югН' */
+.icon-down-hand:before {
+  content: '\e8ce'; }
+
+/* 'югО' */
+.icon-left-circled:before {
+  content: '\e8cf'; }
+
+/* 'югП' */
+.icon-right-circled:before {
+  content: '\e8d0'; }
+
+/* 'югР' */
+.icon-up-circled:before {
+  content: '\e8d1'; }
+
+/* 'югС' */
+.icon-down-circled:before {
+  content: '\e8d2'; }
+
+/* 'югТ' */
+.icon-cw:before {
+  content: '\e8d3'; }
+
+/* 'югУ' */
+.icon-ccw:before {
+  content: '\e8d4'; }
+
+/* 'югФ' */
+.icon-arrows-cw:before {
+  content: '\e8d5'; }
+
+/* 'югХ' */
+.icon-level-up:before {
+  content: '\e8d6'; }
+
+/* 'югЦ' */
+.icon-level-down:before {
+  content: '\e8d7'; }
+
+/* 'югЧ' */
+.icon-shuffle:before {
+  content: '\e8d8'; }
+
+/* 'югШ' */
+.icon-exchange:before {
+  content: '\e8d9'; }
+
+/* 'югЩ' */
+.icon-expand:before {
+  content: '\e8da'; }
+
+/* 'югЪ' */
+.icon-collapse:before {
+  content: '\e8db'; }
+
+/* 'югЫ' */
+.icon-expand-right:before {
+  content: '\e8dc'; }
+
+/* 'югЬ' */
+.icon-collapse-left:before {
+  content: '\e8dd'; }
+
+/* 'югЭ' */
+.icon-play:before {
+  content: '\e8de'; }
+
+/* 'югЮ' */
+.icon-play-circled:before {
+  content: '\e8df'; }
+
+/* 'югЯ' */
+.icon-play-circled2:before {
+  content: '\e8e0'; }
+
+/* 'юга' */
+.icon-stop:before {
+  content: '\e8e1'; }
+
+/* 'югб' */
+.icon-pause:before {
+  content: '\e8e2'; }
+
+/* 'югв' */
+.icon-to-end:before {
+  content: '\e8e3'; }
+
+/* 'югг' */
+.icon-to-end-alt:before {
+  content: '\e8e4'; }
+
+/* 'югд' */
+.icon-to-start:before {
+  content: '\e8e5'; }
+
+/* 'юге' */
+.icon-to-start-alt:before {
+  content: '\e8e6'; }
+
+/* 'югж' */
+.icon-fast-fw:before {
+  content: '\e8e7'; }
+
+/* 'югз' */
+.icon-fast-bw:before {
+  content: '\e8e8'; }
+
+/* 'юги' */
+.icon-eject:before {
+  content: '\e8e9'; }
+
+/* 'югй' */
+.icon-target:before {
+  content: '\e8ea'; }
+
+/* 'югк' */
+.icon-signal:before {
+  content: '\e8eb'; }
+
+/* 'югл' */
+.icon-award:before {
+  content: '\e8ec'; }
+
+/* 'югм' */
+.icon-desktop:before {
+  content: '\e8ed'; }
+
+/* 'югн' */
+.icon-laptop:before {
+  content: '\e8ee'; }
+
+/* 'юго' */
+.icon-tablet:before {
+  content: '\e8ef'; }
+
+/* 'югп' */
+.icon-mobile:before {
+  content: '\e8f0'; }
+
+/* 'юг░' */
+.icon-inbox:before {
+  content: '\e8f1'; }
+
+/* 'юг▒' */
+.icon-globe:before {
+  content: '\e8f2'; }
+
+/* 'юг▓' */
+.icon-sun:before {
+  content: '\e8f3'; }
+
+/* 'юг│' */
+.icon-cloud:before {
+  content: '\e8f4'; }
+
+/* 'юг┤' */
+.icon-flash:before {
+  content: '\e8f5'; }
+
+/* 'юг╡' */
+.icon-moon:before {
+  content: '\e8f6'; }
+
+/* 'юг╢' */
+.icon-umbrella:before {
+  content: '\e8f7'; }
+
+/* 'юг╖' */
+.icon-flight:before {
+  content: '\e8f8'; }
+
+/* 'юг╕' */
+.icon-fighter-jet:before {
+  content: '\e8f9'; }
+
+/* 'юг╣' */
+.icon-leaf:before {
+  content: '\e8fa'; }
+
+/* 'юг║' */
+.icon-font:before {
+  content: '\e8fb'; }
+
+/* 'юг╗' */
+.icon-bold:before {
+  content: '\e8fc'; }
+
+/* 'юг╝' */
+.icon-italic:before {
+  content: '\e8fd'; }
+
+/* 'юг╜' */
+.icon-text-height:before {
+  content: '\e8fe'; }
+
+/* 'юг╛' */
+.icon-text-width:before {
+  content: '\e8ff'; }
+
+/* 'юг┐' */
+.icon-align-left:before {
+  content: '\e900'; }
+
+/* 'юдА' */
+.icon-align-center:before {
+  content: '\e901'; }
+
+/* 'юдБ' */
+.icon-align-right:before {
+  content: '\e902'; }
+
+/* 'юдВ' */
+.icon-align-justify:before {
+  content: '\e903'; }
+
+/* 'юдГ' */
+.icon-list:before {
+  content: '\e904'; }
+
+/* 'юдД' */
+.icon-indent-left:before {
+  content: '\e905'; }
+
+/* 'юдЕ' */
+.icon-indent-right:before {
+  content: '\e906'; }
+
+/* 'юдЖ' */
+.icon-list-bullet:before {
+  content: '\e907'; }
+
+/* 'юдЗ' */
+.icon-list-numbered:before {
+  content: '\e908'; }
+
+/* 'юдИ' */
+.icon-strike:before {
+  content: '\e909'; }
+
+/* 'юдЙ' */
+.icon-underline:before {
+  content: '\e90a'; }
+
+/* 'юдК' */
+.icon-superscript:before {
+  content: '\e90b'; }
+
+/* 'юдЛ' */
+.icon-subscript:before {
+  content: '\e90c'; }
+
+/* 'юдМ' */
+.icon-table:before {
+  content: '\e90d'; }
+
+/* 'юдН' */
+.icon-columns:before {
+  content: '\e90e'; }
+
+/* 'юдО' */
+.icon-crop:before {
+  content: '\e90f'; }
+
+/* 'юдП' */
+.icon-scissors:before {
+  content: '\e910'; }
+
+/* 'юдР' */
+.icon-paste:before {
+  content: '\e911'; }
+
+/* 'юдС' */
+.icon-briefcase:before {
+  content: '\e912'; }
+
+/* 'юдТ' */
+.icon-suitcase:before {
+  content: '\e913'; }
+
+/* 'юдУ' */
+.icon-ellipsis:before {
+  content: '\e914'; }
+
+/* 'юдФ' */
+.icon-ellipsis-vert:before {
+  content: '\e915'; }
+
+/* 'юдХ' */
+.icon-off:before {
+  content: '\e916'; }
+
+/* 'юдЦ' */
+.icon-road:before {
+  content: '\e917'; }
+
+/* 'юдЧ' */
+.icon-list-alt:before {
+  content: '\e918'; }
+
+/* 'юдШ' */
+.icon-qrcode:before {
+  content: '\e919'; }
+
+/* 'юдЩ' */
+.icon-barcode:before {
+  content: '\e91a'; }
+
+/* 'юдЪ' */
+.icon-book:before {
+  content: '\e91b'; }
+
+/* 'юдЫ' */
+.icon-ajust:before {
+  content: '\e91c'; }
+
+/* 'юдЬ' */
+.icon-tint:before {
+  content: '\e91d'; }
+
+/* 'юдЭ' */
+.icon-check:before {
+  content: '\e91e'; }
+
+/* 'юдЮ' */
+.icon-check-empty:before {
+  content: '\e91f'; }
+
+/* 'юдЯ' */
+.icon-circle:before {
+  content: '\e920'; }
+
+/* 'юда' */
+.icon-circle-empty:before {
+  content: '\e921'; }
+
+/* 'юдб' */
+.icon-dot-circled:before {
+  content: '\e922'; }
+
+/* 'юдв' */
+.icon-asterisk:before {
+  content: '\e923'; }
+
+/* 'юдг' */
+.icon-gift:before {
+  content: '\e924'; }
+
+/* 'юдд' */
+.icon-fire:before {
+  content: '\e925'; }
+
+/* 'юде' */
+.icon-magnet:before {
+  content: '\e926'; }
+
+/* 'юдж' */
+.icon-chart-bar:before {
+  content: '\e927'; }
+
+/* 'юдз' */
+.icon-ticket:before {
+  content: '\e928'; }
+
+/* 'юди' */
+.icon-credit-card:before {
+  content: '\e929'; }
+
+/* 'юдй' */
+.icon-floppy:before {
+  content: '\e92a'; }
+
+/* 'юдк' */
+.icon-megaphone:before {
+  content: '\e92b'; }
+
+/* 'юдл' */
+.icon-hdd:before {
+  content: '\e92c'; }
+
+/* 'юдм' */
+.icon-key:before {
+  content: '\e92d'; }
+
+/* 'юдн' */
+.icon-fork:before {
+  content: '\e92e'; }
+
+/* 'юдо' */
+.icon-rocket:before {
+  content: '\e92f'; }
+
+/* 'юдп' */
+.icon-bug:before {
+  content: '\e930'; }
+
+/* 'юд░' */
+.icon-certificate:before {
+  content: '\e931'; }
+
+/* 'юд▒' */
+.icon-tasks:before {
+  content: '\e932'; }
+
+/* 'юд▓' */
+.icon-filter:before {
+  content: '\e933'; }
+
+/* 'юд│' */
+.icon-beaker:before {
+  content: '\e934'; }
+
+/* 'юд┤' */
+.icon-magic:before {
+  content: '\e935'; }
+
+/* 'юд╡' */
+.icon-truck:before {
+  content: '\e936'; }
+
+/* 'юд╢' */
+.icon-money:before {
+  content: '\e937'; }
+
+/* 'юд╖' */
+.icon-euro:before {
+  content: '\e938'; }
+
+/* 'юд╕' */
+.icon-pound:before {
+  content: '\e939'; }
+
+/* 'юд╣' */
+.icon-dollar:before {
+  content: '\e93a'; }
+
+/* 'юд║' */
+.icon-rupee:before {
+  content: '\e93b'; }
+
+/* 'юд╗' */
+.icon-yen:before {
+  content: '\e93c'; }
+
+/* 'юд╝' */
+.icon-rouble:before {
+  content: '\e93d'; }
+
+/* 'юд╜' */
+.icon-try:before {
+  content: '\e93e'; }
+
+/* 'юд╛' */
+.icon-won:before {
+  content: '\e93f'; }
+
+/* 'юд┐' */
+.icon-bitcoin:before {
+  content: '\e940'; }
+
+/* 'юеА' */
+.icon-sort:before {
+  content: '\e941'; }
+
+/* 'юеБ' */
+.icon-sort-down:before {
+  content: '\e942'; }
+
+/* 'юеВ' */
+.icon-sort-up:before {
+  content: '\e943'; }
+
+/* 'юеГ' */
+.icon-sort-alt-up:before {
+  content: '\e944'; }
+
+/* 'юеД' */
+.icon-sort-alt-down:before {
+  content: '\e945'; }
+
+/* 'юеЕ' */
+.icon-sort-name-up:before {
+  content: '\e946'; }
+
+/* 'юеЖ' */
+.icon-sort-name-down:before {
+  content: '\e947'; }
+
+/* 'юеЗ' */
+.icon-sort-number-up:before {
+  content: '\e948'; }
+
+/* 'юеИ' */
+.icon-sort-number-down:before {
+  content: '\e949'; }
+
+/* 'юеЙ' */
+.icon-hammer:before {
+  content: '\e94a'; }
+
+/* 'юеК' */
+.icon-gauge:before {
+  content: '\e94b'; }
+
+/* 'юеЛ' */
+.icon-sitemap:before {
+  content: '\e94c'; }
+
+/* 'юеМ' */
+.icon-spinner:before {
+  content: '\e94d'; }
+
+/* 'юеН' */
+.icon-coffee:before {
+  content: '\e94e'; }
+
+/* 'юеО' */
+.icon-food:before {
+  content: '\e94f'; }
+
+/* 'юеП' */
+.icon-beer:before {
+  content: '\e950'; }
+
+/* 'юеР' */
+.icon-user-md:before {
+  content: '\e951'; }
+
+/* 'юеС' */
+.icon-stethoscope:before {
+  content: '\e952'; }
+
+/* 'юеТ' */
+.icon-ambulance:before {
+  content: '\e953'; }
+
+/* 'юеУ' */
+.icon-medkit:before {
+  content: '\e954'; }
+
+/* 'юеФ' */
+.icon-h-sigh:before {
+  content: '\e955'; }
+
+/* 'юеХ' */
+.icon-hospital:before {
+  content: '\e956'; }
+
+/* 'юеЦ' */
+.icon-building:before {
+  content: '\e957'; }
+
+/* 'юеЧ' */
+.icon-smile:before {
+  content: '\e958'; }
+
+/* 'юеШ' */
+.icon-frown:before {
+  content: '\e959'; }
+
+/* 'юеЩ' */
+.icon-meh:before {
+  content: '\e95a'; }
+
+/* 'юеЪ' */
+.icon-anchor:before {
+  content: '\e95b'; }
+
+/* 'юеЫ' */
+.icon-terminal:before {
+  content: '\e95c'; }
+
+/* 'юеЬ' */
+.icon-eraser:before {
+  content: '\e95d'; }
+
+/* 'юеЭ' */
+.icon-puzzle:before {
+  content: '\e95e'; }
+
+/* 'юеЮ' */
+.icon-shield:before {
+  content: '\e95f'; }
+
+/* 'юеЯ' */
+.icon-extinguisher:before {
+  content: '\e960'; }
+
+/* 'юеа' */
+.icon-bullseye:before {
+  content: '\e961'; }
+
+/* 'юеб' */
+.icon-wheelchair:before {
+  content: '\e962'; }
+
+/* 'юев' */
+.icon-adn:before {
+  content: '\e963'; }
+
+/* 'юег' */
+.icon-android:before {
+  content: '\e964'; }
+
+/* 'юед' */
+.icon-apple:before {
+  content: '\e965'; }
+
+/* 'юее' */
+.icon-bitbucket:before {
+  content: '\e966'; }
+
+/* 'юеж' */
+.icon-bitbucket-squared:before {
+  content: '\e967'; }
+
+/* 'юез' */
+.icon-css3:before {
+  content: '\e968'; }
+
+/* 'юеи' */
+.icon-dribbble:before {
+  content: '\e969'; }
+
+/* 'юей' */
+.icon-dropbox:before {
+  content: '\e96a'; }
+
+/* 'юек' */
+.icon-facebook:before {
+  content: '\e96b'; }
+
+/* 'юел' */
+.icon-facebook-squared:before {
+  content: '\e96c'; }
+
+/* 'юем' */
+.icon-flickr:before {
+  content: '\e96d'; }
+
+/* 'юен' */
+.icon-foursquare:before {
+  content: '\e96e'; }
+
+/* 'юео' */
+.icon-github:before {
+  content: '\e96f'; }
+
+/* 'юеп' */
+.icon-github-squared:before {
+  content: '\e970'; }
+
+/* 'юе░' */
+.icon-github-circled:before {
+  content: '\e971'; }
+
+/* 'юе▒' */
+.icon-gittip:before {
+  content: '\e972'; }
+
+/* 'юе▓' */
+.icon-gplus-squared:before {
+  content: '\e973'; }
+
+/* 'юе│' */
+.icon-gplus:before {
+  content: '\e974'; }
+
+/* 'юе┤' */
+.icon-html5:before {
+  content: '\e975'; }
+
+/* 'юе╡' */
+.icon-instagramm:before {
+  content: '\e976'; }
+
+/* 'юе╢' */
+.icon-linkedin-squared:before {
+  content: '\e977'; }
+
+/* 'юе╖' */
+.icon-linux:before {
+  content: '\e978'; }
+
+/* 'юе╕' */
+.icon-linkedin:before {
+  content: '\e979'; }
+
+/* 'юе╣' */
+.icon-maxcdn:before {
+  content: '\e97a'; }
+
+/* 'юе║' */
+.icon-pagelines:before {
+  content: '\e97b'; }
+
+/* 'юе╗' */
+.icon-pinterest-circled:before {
+  content: '\e97c'; }
+
+/* 'юе╝' */
+.icon-pinterest-squared:before {
+  content: '\e97d'; }
+
+/* 'юе╜' */
+.icon-renren:before {
+  content: '\e97e'; }
+
+/* 'юе╛' */
+.icon-skype:before {
+  content: '\e97f'; }
+
+/* 'юе┐' */
+.icon-stackexchange:before {
+  content: '\e980'; }
+
+/* 'южА' */
+.icon-stackoverflow:before {
+  content: '\e981'; }
+
+/* 'южБ' */
+.icon-trello:before {
+  content: '\e982'; }
+
+/* 'южВ' */
+.icon-tumblr:before {
+  content: '\e983'; }
+
+/* 'южГ' */
+.icon-tumblr-squared:before {
+  content: '\e984'; }
+
+/* 'южД' */
+.icon-twitter-squared:before {
+  content: '\e985'; }
+
+/* 'южЕ' */
+.icon-twitter:before {
+  content: '\e986'; }
+
+/* 'южЖ' */
+.icon-vimeo-squared:before {
+  content: '\e987'; }
+
+/* 'южЗ' */
+.icon-vkontakte:before {
+  content: '\e988'; }
+
+/* 'южИ' */
+.icon-weibo:before {
+  content: '\e989'; }
+
+/* 'южЙ' */
+.icon-windows:before {
+  content: '\e98a'; }
+
+/* 'южК' */
+.icon-xing:before {
+  content: '\e98b'; }
+
+/* 'южЛ' */
+.icon-xing-squared:before {
+  content: '\e98c'; }
+
+/* 'южМ' */
+.icon-youtube:before {
+  content: '\e98d'; }
+
+/* 'южН' */
+.icon-youtube-squared:before {
+  content: '\e98e'; }
+
+/* 'южО' */
+.icon-youtube-play:before {
+  content: '\e98f'; }
+
+/* 'южП' */
+.icon-blank:before {
+  content: '\e990'; }
+
+/* 'южР' */
+.icon-lemon:before {
+  content: '\e991'; }
+
+/* 'южС' */
+.icon-note:before {
+  content: '\e992'; }
+
+/* 'южТ' */
+.icon-note-beamed:before {
+  content: '\e993'; }
+
+/* 'южУ' */
+.icon-music-1:before {
+  content: '\e994'; }
+
+/* 'южФ' */
+.icon-search-1:before {
+  content: '\e995'; }
+
+/* 'южХ' */
+.icon-flashlight:before {
+  content: '\e996'; }
+
+/* 'южЦ' */
+.icon-mail-1:before {
+  content: '\e997'; }
+
+/* 'южЧ' */
+.icon-heart-1:before {
+  content: '\e998'; }
+
+/* 'южШ' */
+.icon-heart-empty-1:before {
+  content: '\e999'; }
+
+/* 'южЩ' */
+.icon-star-1:before {
+  content: '\e99a'; }
+
+/* 'южЪ' */
+.icon-star-empty-1:before {
+  content: '\e99b'; }
+
+/* 'южЫ' */
+.icon-user-1:before {
+  content: '\e99c'; }
+
+/* 'южЬ' */
+.icon-users-1:before {
+  content: '\e99d'; }
+
+/* 'южЭ' */
+.icon-user-add:before {
+  content: '\e99e'; }
+
+/* 'южЮ' */
+.icon-video-1:before {
+  content: '\e99f'; }
+
+/* 'южЯ' */
+.icon-picture-1:before {
+  content: '\e9a0'; }
+
+/* 'южа' */
+.icon-camera-1:before {
+  content: '\e9a1'; }
+
+/* 'южб' */
+.icon-layout:before {
+  content: '\e9a2'; }
+
+/* 'южв' */
+.icon-menu-1:before {
+  content: '\e9a3'; }
+
+/* 'южг' */
+.icon-check-1:before {
+  content: '\e9a4'; }
+
+/* 'южд' */
+.icon-cancel-1:before {
+  content: '\e9a5'; }
+
+/* 'юже' */
+.icon-cancel-circled-1:before {
+  content: '\e9a6'; }
+
+/* 'южж' */
+.icon-cancel-squared:before {
+  content: '\e9a7'; }
+
+/* 'южз' */
+.icon-plus-1:before {
+  content: '\e9a8'; }
+
+/* 'южи' */
+.icon-plus-circled-1:before {
+  content: '\e9a9'; }
+
+/* 'южй' */
+.icon-plus-squared-1:before {
+  content: '\e9aa'; }
+
+/* 'южк' */
+.icon-minus-1:before {
+  content: '\e9ab'; }
+
+/* 'южл' */
+.icon-minus-circled-1:before {
+  content: '\e9ac'; }
+
+/* 'южм' */
+.icon-minus-squared-1:before {
+  content: '\e9ad'; }
+
+/* 'южн' */
+.icon-help-1:before {
+  content: '\e9ae'; }
+
+/* 'южо' */
+.icon-help-circled-1:before {
+  content: '\e9af'; }
+
+/* 'южп' */
+.icon-info-1:before {
+  content: '\e9b0'; }
+
+/* 'юж░' */
+.icon-info-circled-1:before {
+  content: '\e9b1'; }
+
+/* 'юж▒' */
+.icon-back:before {
+  content: '\e9b2'; }
+
+/* 'юж▓' */
+.icon-home-1:before {
+  content: '\e9b3'; }
+
+/* 'юж│' */
+.icon-link-1:before {
+  content: '\e9b4'; }
+
+/* 'юж┤' */
+.icon-attach-1:before {
+  content: '\e9b5'; }
+
+/* 'юж╡' */
+.icon-lock-1:before {
+  content: '\e9b6'; }
+
+/* 'юж╢' */
+.icon-lock-open-1:before {
+  content: '\e9b7'; }
+
+/* 'юж╖' */
+.icon-eye-1:before {
+  content: '\e9b8'; }
+
+/* 'юж╕' */
+.icon-tag-1:before {
+  content: '\e9b9'; }
+
+/* 'юж╣' */
+.icon-bookmark-1:before {
+  content: '\e9ba'; }
+
+/* 'юж║' */
+.icon-bookmarks:before {
+  content: '\e9bb'; }
+
+/* 'юж╗' */
+.icon-flag-1:before {
+  content: '\e9bc'; }
+
+/* 'юж╝' */
+.icon-thumbs-up-1:before {
+  content: '\e9bd'; }
+
+/* 'юж╜' */
+.icon-thumbs-down-1:before {
+  content: '\e9be'; }
+
+/* 'юж╛' */
+.icon-download-1:before {
+  content: '\e9bf'; }
+
+/* 'юж┐' */
+.icon-upload-1:before {
+  content: '\e9c0'; }
+
+/* 'юзА' */
+.icon-upload-cloud-1:before {
+  content: '\e9c1'; }
+
+/* 'юзБ' */
+.icon-reply-1:before {
+  content: '\e9c2'; }
+
+/* 'юзВ' */
+.icon-reply-all-1:before {
+  content: '\e9c3'; }
+
+/* 'юзГ' */
+.icon-forward-1:before {
+  content: '\e9c4'; }
+
+/* 'юзД' */
+.icon-quote:before {
+  content: '\e9c5'; }
+
+/* 'юзЕ' */
+.icon-code-1:before {
+  content: '\e9c6'; }
+
+/* 'юзЖ' */
+.icon-export-1:before {
+  content: '\e9c7'; }
+
+/* 'юзЗ' */
+.icon-pencil-1:before {
+  content: '\e9c8'; }
+
+/* 'юзИ' */
+.icon-feather:before {
+  content: '\e9c9'; }
+
+/* 'юзЙ' */
+.icon-print-1:before {
+  content: '\e9ca'; }
+
+/* 'юзК' */
+.icon-retweet-1:before {
+  content: '\e9cb'; }
+
+/* 'юзЛ' */
+.icon-keyboard-1:before {
+  content: '\e9cc'; }
+
+/* 'юзМ' */
+.icon-comment-1:before {
+  content: '\e9cd'; }
+
+/* 'юзН' */
+.icon-chat-1:before {
+  content: '\e9ce'; }
+
+/* 'юзО' */
+.icon-bell-1:before {
+  content: '\e9cf'; }
+
+/* 'юзП' */
+.icon-attention-1:before {
+  content: '\e9d0'; }
+
+/* 'юзР' */
+.icon-alert:before {
+  content: '\e9d1'; }
+
+/* 'юзС' */
+.icon-vcard:before {
+  content: '\e9d2'; }
+
+/* 'юзТ' */
+.icon-address:before {
+  content: '\e9d3'; }
+
+/* 'юзУ' */
+.icon-location-1:before {
+  content: '\e9d4'; }
+
+/* 'юзФ' */
+.icon-map:before {
+  content: '\e9d5'; }
+
+/* 'юзХ' */
+.icon-direction-1:before {
+  content: '\e9d6'; }
+
+/* 'юзЦ' */
+.icon-compass-1:before {
+  content: '\e9d7'; }
+
+/* 'юзЧ' */
+.icon-cup:before {
+  content: '\e9d8'; }
+
+/* 'юзШ' */
+.icon-trash-1:before {
+  content: '\e9d9'; }
+
+/* 'юзЩ' */
+.icon-doc-1:before {
+  content: '\e9da'; }
+
+/* 'юзЪ' */
+.icon-docs-1:before {
+  content: '\e9db'; }
+
+/* 'юзЫ' */
+.icon-doc-landscape:before {
+  content: '\e9dc'; }
+
+/* 'юзЬ' */
+.icon-doc-text-1:before {
+  content: '\e9dd'; }
+
+/* 'юзЭ' */
+.icon-doc-text-inv-1:before {
+  content: '\e9de'; }
+
+/* 'юзЮ' */
+.icon-newspaper:before {
+  content: '\e9df'; }
+
+/* 'юзЯ' */
+.icon-book-open:before {
+  content: '\e9e0'; }
+
+/* 'юза' */
+.icon-book-1:before {
+  content: '\e9e1'; }
+
+/* 'юзб' */
+.icon-folder-1:before {
+  content: '\e9e2'; }
+
+/* 'юзв' */
+.icon-archive:before {
+  content: '\e9e3'; }
+
+/* 'юзг' */
+.icon-box-1:before {
+  content: '\e9e4'; }
+
+/* 'юзд' */
+.icon-rss-1:before {
+  content: '\e9e5'; }
+
+/* 'юзе' */
+.icon-phone-1:before {
+  content: '\e9e6'; }
+
+/* 'юзж' */
+.icon-cog-1:before {
+  content: '\e9e7'; }
+
+/* 'юзз' */
+.icon-tools:before {
+  content: '\e9e8'; }
+
+/* 'юзи' */
+.icon-share:before {
+  content: '\e9e9'; }
+
+/* 'юзй' */
+.icon-shareable:before {
+  content: '\e9ea'; }
+
+/* 'юзк' */
+.icon-basket-1:before {
+  content: '\e9eb'; }
+
+/* 'юзл' */
+.icon-bag:before {
+  content: '\e9ec'; }
+
+/* 'юзм' */
+.icon-calendar-1:before {
+  content: '\e9ed'; }
+
+/* 'юзн' */
+.icon-login-1:before {
+  content: '\e9ee'; }
+
+/* 'юзо' */
+.icon-logout-1:before {
+  content: '\e9ef'; }
+
+/* 'юзп' */
+.icon-mic-1:before {
+  content: '\e9f0'; }
+
+/* 'юз░' */
+.icon-mute-1:before {
+  content: '\e9f1'; }
+
+/* 'юз▒' */
+.icon-sound:before {
+  content: '\e9f2'; }
+
+/* 'юз▓' */
+.icon-volume:before {
+  content: '\e9f3'; }
+
+/* 'юз│' */
+.icon-clock-1:before {
+  content: '\e9f4'; }
+
+/* 'юз┤' */
+.icon-hourglass:before {
+  content: '\e9f5'; }
+
+/* 'юз╡' */
+.icon-lamp:before {
+  content: '\e9f6'; }
+
+/* 'юз╢' */
+.icon-light-down:before {
+  content: '\e9f7'; }
+
+/* 'юз╖' */
+.icon-light-up:before {
+  content: '\e9f8'; }
+
+/* 'юз╕' */
+.icon-adjust:before {
+  content: '\e9f9'; }
+
+/* 'юз╣' */
+.icon-block-1:before {
+  content: '\e9fa'; }
+
+/* 'юз║' */
+.icon-resize-full-1:before {
+  content: '\e9fb'; }
+
+/* 'юз╗' */
+.icon-resize-small-1:before {
+  content: '\e9fc'; }
+
+/* 'юз╝' */
+.icon-popup:before {
+  content: '\e9fd'; }
+
+/* 'юз╜' */
+.icon-publish:before {
+  content: '\e9fe'; }
+
+/* 'юз╛' */
+.icon-window:before {
+  content: '\e9ff'; }
+
+/* 'юз┐' */
+.icon-arrow-combo:before {
+  content: '\ea00'; }
+
+/* 'юиА' */
+.icon-down-circled-1:before {
+  content: '\ea01'; }
+
+/* 'юиБ' */
+.icon-left-circled-1:before {
+  content: '\ea02'; }
+
+/* 'юиВ' */
+.icon-right-circled-1:before {
+  content: '\ea03'; }
+
+/* 'юиГ' */
+.icon-up-circled-1:before {
+  content: '\ea04'; }
+
+/* 'юиД' */
+.icon-down-open-1:before {
+  content: '\ea05'; }
+
+/* 'юиЕ' */
+.icon-left-open-1:before {
+  content: '\ea06'; }
+
+/* 'юиЖ' */
+.icon-right-open-1:before {
+  content: '\ea07'; }
+
+/* 'юиЗ' */
+.icon-up-open-1:before {
+  content: '\ea08'; }
+
+/* 'юиИ' */
+.icon-down-open-mini:before {
+  content: '\ea09'; }
+
+/* 'юиЙ' */
+.icon-left-open-mini:before {
+  content: '\ea0a'; }
+
+/* 'юиК' */
+.icon-right-open-mini:before {
+  content: '\ea0b'; }
+
+/* 'юиЛ' */
+.icon-up-open-mini:before {
+  content: '\ea0c'; }
+
+/* 'юиМ' */
+.icon-down-open-big:before {
+  content: '\ea0d'; }
+
+/* 'юиН' */
+.icon-left-open-big:before {
+  content: '\ea0e'; }
+
+/* 'юиО' */
+.icon-right-open-big:before {
+  content: '\ea0f'; }
+
+/* 'юиП' */
+.icon-up-open-big:before {
+  content: '\ea10'; }
+
+/* 'юиР' */
+.icon-down-1:before {
+  content: '\ea11'; }
+
+/* 'юиС' */
+.icon-left-1:before {
+  content: '\ea12'; }
+
+/* 'юиТ' */
+.icon-right-1:before {
+  content: '\ea13'; }
+
+/* 'юиУ' */
+.icon-up-1:before {
+  content: '\ea14'; }
+
+/* 'юиФ' */
+.icon-down-dir-1:before {
+  content: '\ea15'; }
+
+/* 'юиХ' */
+.icon-left-dir-1:before {
+  content: '\ea16'; }
+
+/* 'юиЦ' */
+.icon-right-dir-1:before {
+  content: '\ea17'; }
+
+/* 'юиЧ' */
+.icon-up-dir-1:before {
+  content: '\ea18'; }
+
+/* 'юиШ' */
+.icon-down-bold:before {
+  content: '\ea19'; }
+
+/* 'юиЩ' */
+.icon-left-bold:before {
+  content: '\ea1a'; }
+
+/* 'юиЪ' */
+.icon-right-bold:before {
+  content: '\ea1b'; }
+
+/* 'юиЫ' */
+.icon-up-bold:before {
+  content: '\ea1c'; }
+
+/* 'юиЬ' */
+.icon-down-thin:before {
+  content: '\ea1d'; }
+
+/* 'юиЭ' */
+.icon-left-thin:before {
+  content: '\ea1e'; }
+
+/* 'юиЮ' */
+.icon-right-thin:before {
+  content: '\ea1f'; }
+
+/* 'юиЯ' */
+.icon-up-thin:before {
+  content: '\ea20'; }
+
+/* 'юиа' */
+.icon-ccw-1:before {
+  content: '\ea21'; }
+
+/* 'юиб' */
+.icon-cw-1:before {
+  content: '\ea22'; }
+
+/* 'юив' */
+.icon-arrows-ccw:before {
+  content: '\ea23'; }
+
+/* 'юиг' */
+.icon-level-down-1:before {
+  content: '\ea24'; }
+
+/* 'юид' */
+.icon-level-up-1:before {
+  content: '\ea25'; }
+
+/* 'юие' */
+.icon-shuffle-1:before {
+  content: '\ea26'; }
+
+/* 'юиж' */
+.icon-loop:before {
+  content: '\ea27'; }
+
+/* 'юиз' */
+.icon-switch:before {
+  content: '\ea28'; }
+
+/* 'юии' */
+.icon-play-1:before {
+  content: '\ea29'; }
+
+/* 'юий' */
+.icon-stop-1:before {
+  content: '\ea2a'; }
+
+/* 'юик' */
+.icon-pause-1:before {
+  content: '\ea2b'; }
+
+/* 'юил' */
+.icon-record:before {
+  content: '\ea2c'; }
+
+/* 'юим' */
+.icon-to-end-1:before {
+  content: '\ea2d'; }
+
+/* 'юин' */
+.icon-to-start-1:before {
+  content: '\ea2e'; }
+
+/* 'юио' */
+.icon-fast-forward:before {
+  content: '\ea2f'; }
+
+/* 'юип' */
+.icon-fast-backward:before {
+  content: '\ea30'; }
+
+/* 'юи░' */
+.icon-progress-0:before {
+  content: '\ea31'; }
+
+/* 'юи▒' */
+.icon-progress-1:before {
+  content: '\ea32'; }
+
+/* 'юи▓' */
+.icon-progress-2:before {
+  content: '\ea33'; }
+
+/* 'юи│' */
+.icon-progress-3:before {
+  content: '\ea34'; }
+
+/* 'юи┤' */
+.icon-target-1:before {
+  content: '\ea35'; }
+
+/* 'юи╡' */
+.icon-palette:before {
+  content: '\ea36'; }
+
+/* 'юи╢' */
+.icon-list-1:before {
+  content: '\ea37'; }
+
+/* 'юи╖' */
+.icon-list-add:before {
+  content: '\ea38'; }
+
+/* 'юи╕' */
+.icon-signal-1:before {
+  content: '\ea39'; }
+
+/* 'юи╣' */
+.icon-trophy:before {
+  content: '\ea3a'; }
+
+/* 'юи║' */
+.icon-battery:before {
+  content: '\ea3b'; }
+
+/* 'юи╗' */
+.icon-back-in-time:before {
+  content: '\ea3c'; }
+
+/* 'юи╝' */
+.icon-monitor:before {
+  content: '\ea3d'; }
+
+/* 'юи╜' */
+.icon-mobile-1:before {
+  content: '\ea3e'; }
+
+/* 'юи╛' */
+.icon-network:before {
+  content: '\ea3f'; }
+
+/* 'юи┐' */
+.icon-cd:before {
+  content: '\ea40'; }
+
+/* 'юйА' */
+.icon-inbox-1:before {
+  content: '\ea41'; }
+
+/* 'юйБ' */
+.icon-install:before {
+  content: '\ea42'; }
+
+/* 'юйВ' */
+.icon-globe-1:before {
+  content: '\ea43'; }
+
+/* 'юйГ' */
+.icon-cloud-1:before {
+  content: '\ea44'; }
+
+/* 'юйД' */
+.icon-cloud-thunder:before {
+  content: '\ea45'; }
+
+/* 'юйЕ' */
+.icon-flash-1:before {
+  content: '\ea46'; }
+
+/* 'юйЖ' */
+.icon-moon-1:before {
+  content: '\ea47'; }
+
+/* 'юйЗ' */
+.icon-flight-1:before {
+  content: '\ea48'; }
+
+/* 'юйИ' */
+.icon-paper-plane:before {
+  content: '\ea49'; }
+
+/* 'юйЙ' */
+.icon-leaf-1:before {
+  content: '\ea4a'; }
+
+/* 'юйК' */
+.icon-lifebuoy:before {
+  content: '\ea4b'; }
+
+/* 'юйЛ' */
+.icon-mouse:before {
+  content: '\ea4c'; }
+
+/* 'юйМ' */
+.icon-briefcase-1:before {
+  content: '\ea4d'; }
+
+/* 'юйН' */
+.icon-suitcase-1:before {
+  content: '\ea4e'; }
+
+/* 'юйО' */
+.icon-dot:before {
+  content: '\ea4f'; }
+
+/* 'юйП' */
+.icon-dot-2:before {
+  content: '\ea50'; }
+
+/* 'юйР' */
+.icon-dot-3:before {
+  content: '\ea51'; }
+
+/* 'юйС' */
+.icon-brush:before {
+  content: '\ea52'; }
+
+/* 'юйТ' */
+.icon-magnet-1:before {
+  content: '\ea53'; }
+
+/* 'юйУ' */
+.icon-infinity:before {
+  content: '\ea54'; }
+
+/* 'юйФ' */
+.icon-erase:before {
+  content: '\ea55'; }
+
+/* 'юйХ' */
+.icon-chart-pie:before {
+  content: '\ea56'; }
+
+/* 'юйЦ' */
+.icon-chart-line:before {
+  content: '\ea57'; }
+
+/* 'юйЧ' */
+.icon-chart-bar-1:before {
+  content: '\ea58'; }
+
+/* 'юйШ' */
+.icon-chart-area:before {
+  content: '\ea59'; }
+
+/* 'юйЩ' */
+.icon-tape:before {
+  content: '\ea5a'; }
+
+/* 'юйЪ' */
+.icon-graduation-cap:before {
+  content: '\ea5b'; }
+
+/* 'юйЫ' */
+.icon-language:before {
+  content: '\ea5c'; }
+
+/* 'юйЬ' */
+.icon-ticket-1:before {
+  content: '\ea5d'; }
+
+/* 'юйЭ' */
+.icon-water:before {
+  content: '\ea5e'; }
+
+/* 'юйЮ' */
+.icon-droplet:before {
+  content: '\ea5f'; }
+
+/* 'юйЯ' */
+.icon-air:before {
+  content: '\ea60'; }
+
+/* 'юйа' */
+.icon-credit-card-1:before {
+  content: '\ea61'; }
+
+/* 'юйб' */
+.icon-floppy-1:before {
+  content: '\ea62'; }
+
+/* 'юйв' */
+.icon-clipboard:before {
+  content: '\ea63'; }
+
+/* 'юйг' */
+.icon-megaphone-1:before {
+  content: '\ea64'; }
+
+/* 'юйд' */
+.icon-database:before {
+  content: '\ea65'; }
+
+/* 'юйе' */
+.icon-drive:before {
+  content: '\ea66'; }
+
+/* 'юйж' */
+.icon-bucket:before {
+  content: '\ea67'; }
+
+/* 'юйз' */
+.icon-thermometer:before {
+  content: '\ea68'; }
+
+/* 'юйи' */
+.icon-key-1:before {
+  content: '\ea69'; }
+
+/* 'юйй' */
+.icon-flow-cascade:before {
+  content: '\ea6a'; }
+
+/* 'юйк' */
+.icon-flow-branch:before {
+  content: '\ea6b'; }
+
+/* 'юйл' */
+.icon-flow-tree:before {
+  content: '\ea6c'; }
+
+/* 'юйм' */
+.icon-flow-line:before {
+  content: '\ea6d'; }
+
+/* 'юйн' */
+.icon-flow-parallel:before {
+  content: '\ea6e'; }
+
+/* 'юйо' */
+.icon-rocket-1:before {
+  content: '\ea6f'; }
+
+/* 'юйп' */
+.icon-gauge-1:before {
+  content: '\ea70'; }
+
+/* 'юй░' */
+.icon-traffic-cone:before {
+  content: '\ea71'; }
+
+/* 'юй▒' */
+.icon-cc:before {
+  content: '\ea72'; }
+
+/* 'юй▓' */
+.icon-cc-by:before {
+  content: '\ea73'; }
+
+/* 'юй│' */
+.icon-cc-nc:before {
+  content: '\ea74'; }
+
+/* 'юй┤' */
+.icon-cc-nc-eu:before {
+  content: '\ea75'; }
+
+/* 'юй╡' */
+.icon-cc-nc-jp:before {
+  content: '\ea76'; }
+
+/* 'юй╢' */
+.icon-cc-sa:before {
+  content: '\ea77'; }
+
+/* 'юй╖' */
+.icon-cc-nd:before {
+  content: '\ea78'; }
+
+/* 'юй╕' */
+.icon-cc-pd:before {
+  content: '\ea79'; }
+
+/* 'юй╣' */
+.icon-cc-zero:before {
+  content: '\ea7a'; }
+
+/* 'юй║' */
+.icon-cc-share:before {
+  content: '\ea7b'; }
+
+/* 'юй╗' */
+.icon-cc-remix:before {
+  content: '\ea7c'; }
+
+/* 'юй╝' */
+.icon-github-1:before {
+  content: '\ea7d'; }
+
+/* 'юй╜' */
+.icon-github-circled-1:before {
+  content: '\ea7e'; }
+
+/* 'юй╛' */
+.icon-flickr-1:before {
+  content: '\ea7f'; }
+
+/* 'юй┐' */
+.icon-flickr-circled:before {
+  content: '\ea80'; }
+
+/* 'юкА' */
+.icon-vimeo:before {
+  content: '\ea81'; }
+
+/* 'юкБ' */
+.icon-vimeo-circled:before {
+  content: '\ea82'; }
+
+/* 'юкВ' */
+.icon-twitter-1:before {
+  content: '\ea83'; }
+
+/* 'юкГ' */
+.icon-twitter-circled:before {
+  content: '\ea84'; }
+
+/* 'юкД' */
+.icon-facebook-1:before {
+  content: '\ea85'; }
+
+/* 'юкЕ' */
+.icon-facebook-circled:before {
+  content: '\ea86'; }
+
+/* 'юкЖ' */
+.icon-facebook-squared-1:before {
+  content: '\ea87'; }
+
+/* 'юкЗ' */
+.icon-gplus-1:before {
+  content: '\ea88'; }
+
+/* 'юкИ' */
+.icon-gplus-circled:before {
+  content: '\ea89'; }
+
+/* 'юкЙ' */
+.icon-pinterest:before {
+  content: '\ea8a'; }
+
+/* 'юкК' */
+.icon-pinterest-circled-1:before {
+  content: '\ea8b'; }
+
+/* 'юкЛ' */
+.icon-tumblr-1:before {
+  content: '\ea8c'; }
+
+/* 'юкМ' */
+.icon-tumblr-circled:before {
+  content: '\ea8d'; }
+
+/* 'юкН' */
+.icon-linkedin-1:before {
+  content: '\ea8e'; }
+
+/* 'юкО' */
+.icon-linkedin-circled:before {
+  content: '\ea8f'; }
+
+/* 'юкП' */
+.icon-dribbble-1:before {
+  content: '\ea90'; }
+
+/* 'юкР' */
+.icon-dribbble-circled:before {
+  content: '\ea91'; }
+
+/* 'юкС' */
+.icon-stumbleupon:before {
+  content: '\ea92'; }
+
+/* 'юкТ' */
+.icon-stumbleupon-circled:before {
+  content: '\ea93'; }
+
+/* 'юкУ' */
+.icon-lastfm:before {
+  content: '\ea94'; }
+
+/* 'юкФ' */
+.icon-lastfm-circled:before {
+  content: '\ea95'; }
+
+/* 'юкХ' */
+.icon-rdio:before {
+  content: '\ea96'; }
+
+/* 'юкЦ' */
+.icon-rdio-circled:before {
+  content: '\ea97'; }
+
+/* 'юкЧ' */
+.icon-spotify:before {
+  content: '\ea98'; }
+
+/* 'юкШ' */
+.icon-spotify-circled:before {
+  content: '\ea99'; }
+
+/* 'юкЩ' */
+.icon-qq:before {
+  content: '\ea9a'; }
+
+/* 'юкЪ' */
+.icon-instagram:before {
+  content: '\ea9b'; }
+
+/* 'юкЫ' */
+.icon-dropbox-1:before {
+  content: '\ea9c'; }
+
+/* 'юкЬ' */
+.icon-evernote:before {
+  content: '\ea9d'; }
+
+/* 'юкЭ' */
+.icon-flattr:before {
+  content: '\ea9e'; }
+
+/* 'юкЮ' */
+.icon-skype-1:before {
+  content: '\ea9f'; }
+
+/* 'юкЯ' */
+.icon-skype-circled:before {
+  content: '\eaa0'; }
+
+/* 'юка' */
+.icon-renren-1:before {
+  content: '\eaa1'; }
+
+/* 'юкб' */
+.icon-sina-weibo:before {
+  content: '\eaa2'; }
+
+/* 'юкв' */
+.icon-paypal:before {
+  content: '\eaa3'; }
+
+/* 'юкг' */
+.icon-picasa:before {
+  content: '\eaa4'; }
+
+/* 'юкд' */
+.icon-soundcloud:before {
+  content: '\eaa5'; }
+
+/* 'юке' */
+.icon-mixi:before {
+  content: '\eaa6'; }
+
+/* 'юкж' */
+.icon-behance:before {
+  content: '\eaa7'; }
+
+/* 'юкз' */
+.icon-google-circles:before {
+  content: '\eaa8'; }
+
+/* 'юки' */
+.icon-vkontakte-1:before {
+  content: '\eaa9'; }
+
+/* 'юкй' */
+.icon-smashing:before {
+  content: '\eaaa'; }
+
+/* 'юкк' */
+.icon-sweden:before {
+  content: '\eaab'; }
+
+/* 'юкл' */
+.icon-db-shape:before {
+  content: '\eaac'; }
+
+/* 'юкм' */
+.icon-logo-db:before {
+  content: '\eaad'; }
+
+/* 'юкн' */
+.icon-music-outline:before {
+  content: '\eaae'; }
+
+/* 'юко' */
+.icon-music-2:before {
+  content: '\eaaf'; }
+
+/* 'юкп' */
+.icon-search-outline:before {
+  content: '\eab0'; }
+
+/* 'юк░' */
+.icon-search-2:before {
+  content: '\eab1'; }
+
+/* 'юк▒' */
+.icon-mail-2:before {
+  content: '\eab2'; }
+
+/* 'юк▓' */
+.icon-heart-2:before {
+  content: '\eab3'; }
+
+/* 'юк│' */
+.icon-heart-filled:before {
+  content: '\eab4'; }
+
+/* 'юк┤' */
+.icon-star-2:before {
+  content: '\eab5'; }
+
+/* 'юк╡' */
+.icon-star-filled:before {
+  content: '\eab6'; }
+
+/* 'юк╢' */
+.icon-user-outline:before {
+  content: '\eab7'; }
+
+/* 'юк╖' */
+.icon-user-2:before {
+  content: '\eab8'; }
+
+/* 'юк╕' */
+.icon-users-outline:before {
+  content: '\eab9'; }
+
+/* 'юк╣' */
+.icon-users-2:before {
+  content: '\eaba'; }
+
+/* 'юк║' */
+.icon-user-add-outline:before {
+  content: '\eabb'; }
+
+/* 'юк╗' */
+.icon-user-add-1:before {
+  content: '\eabc'; }
+
+/* 'юк╝' */
+.icon-user-delete-outline:before {
+  content: '\eabd'; }
+
+/* 'юк╜' */
+.icon-user-delete:before {
+  content: '\eabe'; }
+
+/* 'юк╛' */
+.icon-video-2:before {
+  content: '\eabf'; }
+
+/* 'юк┐' */
+.icon-videocam-outline:before {
+  content: '\eac0'; }
+
+/* 'юлА' */
+.icon-videocam-1:before {
+  content: '\eac1'; }
+
+/* 'юлБ' */
+.icon-picture-outline:before {
+  content: '\eac2'; }
+
+/* 'юлВ' */
+.icon-picture-2:before {
+  content: '\eac3'; }
+
+/* 'юлГ' */
+.icon-camera-outline:before {
+  content: '\eac4'; }
+
+/* 'юлД' */
+.icon-camera-2:before {
+  content: '\eac5'; }
+
+/* 'юлЕ' */
+.icon-th-outline:before {
+  content: '\eac6'; }
+
+/* 'юлЖ' */
+.icon-th-1:before {
+  content: '\eac7'; }
+
+/* 'юлЗ' */
+.icon-th-large-outline:before {
+  content: '\eac8'; }
+
+/* 'юлИ' */
+.icon-th-large-1:before {
+  content: '\eac9'; }
+
+/* 'юлЙ' */
+.icon-th-list-outline:before {
+  content: '\eaca'; }
+
+/* 'юлК' */
+.icon-th-list-1:before {
+  content: '\eacb'; }
+
+/* 'юлЛ' */
+.icon-ok-outline:before {
+  content: '\eacc'; }
+
+/* 'юлМ' */
+.icon-ok-1:before {
+  content: '\eacd'; }
+
+/* 'юлН' */
+.icon-cancel-outline:before {
+  content: '\eace'; }
+
+/* 'юлО' */
+.icon-cancel-2:before {
+  content: '\eacf'; }
+
+/* 'юлП' */
+.icon-cancel-alt:before {
+  content: '\ead0'; }
+
+/* 'юлР' */
+.icon-cancel-alt-filled:before {
+  content: '\ead1'; }
+
+/* 'юлС' */
+.icon-cancel-circled-outline:before {
+  content: '\ead2'; }
+
+/* 'юлТ' */
+.icon-cancel-circled-2:before {
+  content: '\ead3'; }
+
+/* 'юлУ' */
+.icon-plus-outline:before {
+  content: '\ead4'; }
+
+/* 'юлФ' */
+.icon-plus-2:before {
+  content: '\ead5'; }
+
+/* 'юлХ' */
+.icon-minus-outline:before {
+  content: '\ead6'; }
+
+/* 'юлЦ' */
+.icon-minus-2:before {
+  content: '\ead7'; }
+
+/* 'юлЧ' */
+.icon-divide-outline:before {
+  content: '\ead8'; }
+
+/* 'юлШ' */
+.icon-divide:before {
+  content: '\ead9'; }
+
+/* 'юлЩ' */
+.icon-eq-outline:before {
+  content: '\eada'; }
+
+/* 'юлЪ' */
+.icon-eq:before {
+  content: '\eadb'; }
+
+/* 'юлЫ' */
+.icon-info-outline:before {
+  content: '\eadc'; }
+
+/* 'юлЬ' */
+.icon-info-2:before {
+  content: '\eadd'; }
+
+/* 'юлЭ' */
+.icon-home-outline:before {
+  content: '\eade'; }
+
+/* 'юлЮ' */
+.icon-home-2:before {
+  content: '\eadf'; }
+
+/* 'юлЯ' */
+.icon-link-outline:before {
+  content: '\eae0'; }
+
+/* 'юла' */
+.icon-link-2:before {
+  content: '\eae1'; }
+
+/* 'юлб' */
+.icon-attach-outline:before {
+  content: '\eae2'; }
+
+/* 'юлв' */
+.icon-attach-2:before {
+  content: '\eae3'; }
+
+/* 'юлг' */
+.icon-lock-2:before {
+  content: '\eae4'; }
+
+/* 'юлд' */
+.icon-lock-filled:before {
+  content: '\eae5'; }
+
+/* 'юле' */
+.icon-lock-open-2:before {
+  content: '\eae6'; }
+
+/* 'юлж' */
+.icon-lock-open-filled:before {
+  content: '\eae7'; }
+
+/* 'юлз' */
+.icon-pin-outline:before {
+  content: '\eae8'; }
+
+/* 'юли' */
+.icon-pin-1:before {
+  content: '\eae9'; }
+
+/* 'юлй' */
+.icon-eye-outline:before {
+  content: '\eaea'; }
+
+/* 'юлк' */
+.icon-eye-2:before {
+  content: '\eaeb'; }
+
+/* 'юлл' */
+.icon-tag-2:before {
+  content: '\eaec'; }
+
+/* 'юлм' */
+.icon-tags-1:before {
+  content: '\eaed'; }
+
+/* 'юлн' */
+.icon-bookmark-2:before {
+  content: '\eaee'; }
+
+/* 'юло' */
+.icon-flag-2:before {
+  content: '\eaef'; }
+
+/* 'юлп' */
+.icon-flag-filled:before {
+  content: '\eaf0'; }
+
+/* 'юл░' */
+.icon-thumbs-up-2:before {
+  content: '\eaf1'; }
+
+/* 'юл▒' */
+.icon-thumbs-down-2:before {
+  content: '\eaf2'; }
+
+/* 'юл▓' */
+.icon-download-outline:before {
+  content: '\eaf3'; }
+
+/* 'юл│' */
+.icon-download-2:before {
+  content: '\eaf4'; }
+
+/* 'юл┤' */
+.icon-upload-outline:before {
+  content: '\eaf5'; }
+
+/* 'юл╡' */
+.icon-upload-2:before {
+  content: '\eaf6'; }
+
+/* 'юл╢' */
+.icon-upload-cloud-outline:before {
+  content: '\eaf7'; }
+
+/* 'юл╖' */
+.icon-upload-cloud-2:before {
+  content: '\eaf8'; }
+
+/* 'юл╕' */
+.icon-reply-outline:before {
+  content: '\eaf9'; }
+
+/* 'юл╣' */
+.icon-reply-2:before {
+  content: '\eafa'; }
+
+/* 'юл║' */
+.icon-forward-outline:before {
+  content: '\eafb'; }
+
+/* 'юл╗' */
+.icon-forward-2:before {
+  content: '\eafc'; }
+
+/* 'юл╝' */
+.icon-code-outline:before {
+  content: '\eafd'; }
+
+/* 'юл╜' */
+.icon-code-2:before {
+  content: '\eafe'; }
+
+/* 'юл╛' */
+.icon-export-outline:before {
+  content: '\eaff'; }
+
+/* 'юл┐' */
+.icon-export-2:before {
+  content: '\eb00'; }
+
+/* 'юмА' */
+.icon-pencil-2:before {
+  content: '\eb01'; }
+
+/* 'юмБ' */
+.icon-pen:before {
+  content: '\eb02'; }
+
+/* 'юмВ' */
+.icon-feather-1:before {
+  content: '\eb03'; }
+
+/* 'юмГ' */
+.icon-edit-1:before {
+  content: '\eb04'; }
+
+/* 'юмД' */
+.icon-print-2:before {
+  content: '\eb05'; }
+
+/* 'юмЕ' */
+.icon-comment-2:before {
+  content: '\eb06'; }
+
+/* 'юмЖ' */
+.icon-chat-2:before {
+  content: '\eb07'; }
+
+/* 'юмЗ' */
+.icon-chat-alt:before {
+  content: '\eb08'; }
+
+/* 'юмИ' */
+.icon-bell-2:before {
+  content: '\eb09'; }
+
+/* 'юмЙ' */
+.icon-attention-2:before {
+  content: '\eb0a'; }
+
+/* 'юмК' */
+.icon-attention-filled:before {
+  content: '\eb0b'; }
+
+/* 'юмЛ' */
+.icon-warning-empty:before {
+  content: '\eb0c'; }
+
+/* 'юмМ' */
+.icon-warning:before {
+  content: '\eb0d'; }
+
+/* 'юмН' */
+.icon-contacts:before {
+  content: '\eb0e'; }
+
+/* 'юмО' */
+.icon-vcard-1:before {
+  content: '\eb0f'; }
+
+/* 'юмП' */
+.icon-address-1:before {
+  content: '\eb10'; }
+
+/* 'юмР' */
+.icon-location-outline:before {
+  content: '\eb11'; }
+
+/* 'юмС' */
+.icon-location-2:before {
+  content: '\eb12'; }
+
+/* 'юмТ' */
+.icon-map-1:before {
+  content: '\eb13'; }
+
+/* 'юмУ' */
+.icon-direction-outline:before {
+  content: '\eb14'; }
+
+/* 'юмФ' */
+.icon-direction-2:before {
+  content: '\eb15'; }
+
+/* 'юмХ' */
+.icon-compass-2:before {
+  content: '\eb16'; }
+
+/* 'юмЦ' */
+.icon-trash-2:before {
+  content: '\eb17'; }
+
+/* 'юмЧ' */
+.icon-doc-2:before {
+  content: '\eb18'; }
+
+/* 'юмШ' */
+.icon-doc-text-2:before {
+  content: '\eb19'; }
+
+/* 'юмЩ' */
+.icon-doc-add:before {
+  content: '\eb1a'; }
+
+/* 'юмЪ' */
+.icon-doc-remove:before {
+  content: '\eb1b'; }
+
+/* 'юмЫ' */
+.icon-news:before {
+  content: '\eb1c'; }
+
+/* 'юмЬ' */
+.icon-folder-2:before {
+  content: '\eb1d'; }
+
+/* 'юмЭ' */
+.icon-folder-add:before {
+  content: '\eb1e'; }
+
+/* 'юмЮ' */
+.icon-folder-delete:before {
+  content: '\eb1f'; }
+
+/* 'юмЯ' */
+.icon-archive-1:before {
+  content: '\eb20'; }
+
+/* 'юма' */
+.icon-box-2:before {
+  content: '\eb21'; }
+
+/* 'юмб' */
+.icon-rss-outline:before {
+  content: '\eb22'; }
+
+/* 'юмв' */
+.icon-rss-2:before {
+  content: '\eb23'; }
+
+/* 'юмг' */
+.icon-phone-outline:before {
+  content: '\eb24'; }
+
+/* 'юмд' */
+.icon-phone-2:before {
+  content: '\eb25'; }
+
+/* 'юме' */
+.icon-menu-outline:before {
+  content: '\eb26'; }
+
+/* 'юмж' */
+.icon-menu-2:before {
+  content: '\eb27'; }
+
+/* 'юмз' */
+.icon-cog-outline:before {
+  content: '\eb28'; }
+
+/* 'юми' */
+.icon-cog-2:before {
+  content: '\eb29'; }
+
+/* 'юмй' */
+.icon-wrench-outline:before {
+  content: '\eb2a'; }
+
+/* 'юмк' */
+.icon-wrench-1:before {
+  content: '\eb2b'; }
+
+/* 'юмл' */
+.icon-basket-2:before {
+  content: '\eb2c'; }
+
+/* 'юмм' */
+.icon-calendar-outlilne:before {
+  content: '\eb2d'; }
+
+/* 'юмн' */
+.icon-calendar-2:before {
+  content: '\eb2e'; }
+
+/* 'юмо' */
+.icon-mic-outline:before {
+  content: '\eb2f'; }
+
+/* 'юмп' */
+.icon-mic-2:before {
+  content: '\eb30'; }
+
+/* 'юм░' */
+.icon-volume-off-1:before {
+  content: '\eb31'; }
+
+/* 'юм▒' */
+.icon-volume-low:before {
+  content: '\eb32'; }
+
+/* 'юм▓' */
+.icon-volume-middle:before {
+  content: '\eb33'; }
+
+/* 'юм│' */
+.icon-volume-high:before {
+  content: '\eb34'; }
+
+/* 'юм┤' */
+.icon-headphones-1:before {
+  content: '\eb35'; }
+
+/* 'юм╡' */
+.icon-clock-2:before {
+  content: '\eb36'; }
+
+/* 'юм╢' */
+.icon-wristwatch:before {
+  content: '\eb37'; }
+
+/* 'юм╖' */
+.icon-stopwatch:before {
+  content: '\eb38'; }
+
+/* 'юм╕' */
+.icon-lightbulb-1:before {
+  content: '\eb39'; }
+
+/* 'юм╣' */
+.icon-block-outline:before {
+  content: '\eb3a'; }
+
+/* 'юм║' */
+.icon-block-2:before {
+  content: '\eb3b'; }
+
+/* 'юм╗' */
+.icon-resize-full-outline:before {
+  content: '\eb3c'; }
+
+/* 'юм╝' */
+.icon-resize-full-2:before {
+  content: '\eb3d'; }
+
+/* 'юм╜' */
+.icon-resize-normal-outline:before {
+  content: '\eb3e'; }
+
+/* 'юм╛' */
+.icon-resize-normal:before {
+  content: '\eb3f'; }
+
+/* 'юм┐' */
+.icon-move-outline:before {
+  content: '\eb40'; }
+
+/* 'юнА' */
+.icon-move-1:before {
+  content: '\eb41'; }
+
+/* 'юнБ' */
+.icon-popup-1:before {
+  content: '\eb42'; }
+
+/* 'юнВ' */
+.icon-zoom-in-outline:before {
+  content: '\eb43'; }
+
+/* 'юнГ' */
+.icon-zoom-in-1:before {
+  content: '\eb44'; }
+
+/* 'юнД' */
+.icon-zoom-out-outline:before {
+  content: '\eb45'; }
+
+/* 'юнЕ' */
+.icon-zoom-out-1:before {
+  content: '\eb46'; }
+
+/* 'юнЖ' */
+.icon-popup-2:before {
+  content: '\eb47'; }
+
+/* 'юнЗ' */
+.icon-left-open-outline:before {
+  content: '\eb48'; }
+
+/* 'юнИ' */
+.icon-left-open-2:before {
+  content: '\eb49'; }
+
+/* 'юнЙ' */
+.icon-right-open-outline:before {
+  content: '\eb4a'; }
+
+/* 'юнК' */
+.icon-right-open-2:before {
+  content: '\eb4b'; }
+
+/* 'юнЛ' */
+.icon-down-2:before {
+  content: '\eb4c'; }
+
+/* 'юнМ' */
+.icon-left-2:before {
+  content: '\eb4d'; }
+
+/* 'юнН' */
+.icon-right-2:before {
+  content: '\eb4e'; }
+
+/* 'юнО' */
+.icon-up-2:before {
+  content: '\eb4f'; }
+
+/* 'юнП' */
+.icon-down-outline:before {
+  content: '\eb50'; }
+
+/* 'юнР' */
+.icon-left-outline:before {
+  content: '\eb51'; }
+
+/* 'юнС' */
+.icon-right-outline:before {
+  content: '\eb52'; }
+
+/* 'юнТ' */
+.icon-up-outline:before {
+  content: '\eb53'; }
+
+/* 'юнУ' */
+.icon-down-small:before {
+  content: '\eb54'; }
+
+/* 'юнФ' */
+.icon-left-small:before {
+  content: '\eb55'; }
+
+/* 'юнХ' */
+.icon-right-small:before {
+  content: '\eb56'; }
+
+/* 'юнЦ' */
+.icon-up-small:before {
+  content: '\eb57'; }
+
+/* 'юнЧ' */
+.icon-cw-outline:before {
+  content: '\eb58'; }
+
+/* 'юнШ' */
+.icon-cw-2:before {
+  content: '\eb59'; }
+
+/* 'юнЩ' */
+.icon-arrows-cw-outline:before {
+  content: '\eb5a'; }
+
+/* 'юнЪ' */
+.icon-arrows-cw-1:before {
+  content: '\eb5b'; }
+
+/* 'юнЫ' */
+.icon-loop-outline:before {
+  content: '\eb5c'; }
+
+/* 'юнЬ' */
+.icon-loop-1:before {
+  content: '\eb5d'; }
+
+/* 'юнЭ' */
+.icon-loop-alt-outline:before {
+  content: '\eb5e'; }
+
+/* 'юнЮ' */
+.icon-loop-alt:before {
+  content: '\eb5f'; }
+
+/* 'юнЯ' */
+.icon-shuffle-2:before {
+  content: '\eb60'; }
+
+/* 'юна' */
+.icon-play-outline:before {
+  content: '\eb61'; }
+
+/* 'юнб' */
+.icon-play-2:before {
+  content: '\eb62'; }
+
+/* 'юнв' */
+.icon-stop-outline:before {
+  content: '\eb63'; }
+
+/* 'юнг' */
+.icon-stop-2:before {
+  content: '\eb64'; }
+
+/* 'юнд' */
+.icon-pause-outline:before {
+  content: '\eb65'; }
+
+/* 'юне' */
+.icon-pause-2:before {
+  content: '\eb66'; }
+
+/* 'юнж' */
+.icon-fast-fw-outline:before {
+  content: '\eb67'; }
+
+/* 'юнз' */
+.icon-fast-fw-1:before {
+  content: '\eb68'; }
+
+/* 'юни' */
+.icon-rewind-outline:before {
+  content: '\eb69'; }
+
+/* 'юнй' */
+.icon-rewind:before {
+  content: '\eb6a'; }
+
+/* 'юнк' */
+.icon-record-outline:before {
+  content: '\eb6b'; }
+
+/* 'юнл' */
+.icon-record-1:before {
+  content: '\eb6c'; }
+
+/* 'юнм' */
+.icon-eject-outline:before {
+  content: '\eb6d'; }
+
+/* 'юнн' */
+.icon-eject-1:before {
+  content: '\eb6e'; }
+
+/* 'юно' */
+.icon-eject-alt-outline:before {
+  content: '\eb6f'; }
+
+/* 'юнп' */
+.icon-eject-alt:before {
+  content: '\eb70'; }
+
+/* 'юн░' */
+.icon-bat1:before {
+  content: '\eb71'; }
+
+/* 'юн▒' */
+.icon-bat2:before {
+  content: '\eb72'; }
+
+/* 'юн▓' */
+.icon-bat3:before {
+  content: '\eb73'; }
+
+/* 'юн│' */
+.icon-bat4:before {
+  content: '\eb74'; }
+
+/* 'юн┤' */
+.icon-bat-charge:before {
+  content: '\eb75'; }
+
+/* 'юн╡' */
+.icon-plug:before {
+  content: '\eb76'; }
+
+/* 'юн╢' */
+.icon-target-outline:before {
+  content: '\eb77'; }
+
+/* 'юн╖' */
+.icon-target-2:before {
+  content: '\eb78'; }
+
+/* 'юн╕' */
+.icon-wifi-outline:before {
+  content: '\eb79'; }
+
+/* 'юн╣' */
+.icon-wifi:before {
+  content: '\eb7a'; }
+
+/* 'юн║' */
+.icon-desktop-1:before {
+  content: '\eb7b'; }
+
+/* 'юн╗' */
+.icon-laptop-1:before {
+  content: '\eb7c'; }
+
+/* 'юн╝' */
+.icon-tablet-1:before {
+  content: '\eb7d'; }
+
+/* 'юн╜' */
+.icon-mobile-2:before {
+  content: '\eb7e'; }
+
+/* 'юн╛' */
+.icon-contrast:before {
+  content: '\eb7f'; }
+
+/* 'юн┐' */
+.icon-globe-outline:before {
+  content: '\eb80'; }
+
+/* 'юоА' */
+.icon-globe-2:before {
+  content: '\eb81'; }
+
+/* 'юоБ' */
+.icon-globe-alt-outline:before {
+  content: '\eb82'; }
+
+/* 'юоВ' */
+.icon-globe-alt:before {
+  content: '\eb83'; }
+
+/* 'юоГ' */
+.icon-sun-1:before {
+  content: '\eb84'; }
+
+/* 'юоД' */
+.icon-sun-filled:before {
+  content: '\eb85'; }
+
+/* 'юоЕ' */
+.icon-cloud-2:before {
+  content: '\eb86'; }
+
+/* 'юоЖ' */
+.icon-flash-outline:before {
+  content: '\eb87'; }
+
+/* 'юоЗ' */
+.icon-flash-2:before {
+  content: '\eb88'; }
+
+/* 'юоИ' */
+.icon-moon-2:before {
+  content: '\eb89'; }
+
+/* 'юоЙ' */
+.icon-waves-outline:before {
+  content: '\eb8a'; }
+
+/* 'юоК' */
+.icon-waves:before {
+  content: '\eb8b'; }
+
+/* 'юоЛ' */
+.icon-rain:before {
+  content: '\eb8c'; }
+
+/* 'юоМ' */
+.icon-cloud-sun:before {
+  content: '\eb8d'; }
+
+/* 'юоН' */
+.icon-drizzle:before {
+  content: '\eb8e'; }
+
+/* 'юоО' */
+.icon-snow:before {
+  content: '\eb8f'; }
+
+/* 'юоП' */
+.icon-cloud-flash:before {
+  content: '\eb90'; }
+
+/* 'юоР' */
+.icon-cloud-wind:before {
+  content: '\eb91'; }
+
+/* 'юоС' */
+.icon-wind:before {
+  content: '\eb92'; }
+
+/* 'юоТ' */
+.icon-plane-outline:before {
+  content: '\eb93'; }
+
+/* 'юоУ' */
+.icon-plane:before {
+  content: '\eb94'; }
+
+/* 'юоФ' */
+.icon-leaf-2:before {
+  content: '\eb95'; }
+
+/* 'юоХ' */
+.icon-lifebuoy-1:before {
+  content: '\eb96'; }
+
+/* 'юоЦ' */
+.icon-briefcase-2:before {
+  content: '\eb97'; }
+
+/* 'юоЧ' */
+.icon-brush-1:before {
+  content: '\eb98'; }
+
+/* 'юоШ' */
+.icon-pipette:before {
+  content: '\eb99'; }
+
+/* 'юоЩ' */
+.icon-power-outline:before {
+  content: '\eb9a'; }
+
+/* 'юоЪ' */
+.icon-power:before {
+  content: '\eb9b'; }
+
+/* 'юоЫ' */
+.icon-check-outline:before {
+  content: '\eb9c'; }
+
+/* 'юоЬ' */
+.icon-check-2:before {
+  content: '\eb9d'; }
+
+/* 'юоЭ' */
+.icon-gift-1:before {
+  content: '\eb9e'; }
+
+/* 'юоЮ' */
+.icon-temperatire:before {
+  content: '\eb9f'; }
+
+/* 'юоЯ' */
+.icon-chart-outline:before {
+  content: '\eba0'; }
+
+/* 'юоа' */
+.icon-chart:before {
+  content: '\eba1'; }
+
+/* 'юоб' */
+.icon-chart-alt-outline:before {
+  content: '\eba2'; }
+
+/* 'юов' */
+.icon-chart-alt:before {
+  content: '\eba3'; }
+
+/* 'юог' */
+.icon-chart-bar-outline:before {
+  content: '\eba4'; }
+
+/* 'юод' */
+.icon-chart-bar-2:before {
+  content: '\eba5'; }
+
+/* 'юое' */
+.icon-chart-pie-outline:before {
+  content: '\eba6'; }
+
+/* 'юож' */
+.icon-chart-pie-1:before {
+  content: '\eba7'; }
+
+/* 'юоз' */
+.icon-ticket-2:before {
+  content: '\eba8'; }
+
+/* 'юои' */
+.icon-credit-card-2:before {
+  content: '\eba9'; }
+
+/* 'юой' */
+.icon-clipboard-1:before {
+  content: '\ebaa'; }
+
+/* 'юок' */
+.icon-database-1:before {
+  content: '\ebab'; }
+
+/* 'юол' */
+.icon-key-outline:before {
+  content: '\ebac'; }
+
+/* 'юом' */
+.icon-key-2:before {
+  content: '\ebad'; }
+
+/* 'юон' */
+.icon-flow-split:before {
+  content: '\ebae'; }
+
+/* 'юоо' */
+.icon-flow-merge:before {
+  content: '\ebaf'; }
+
+/* 'юоп' */
+.icon-flow-parallel-1:before {
+  content: '\ebb0'; }
+
+/* 'юо░' */
+.icon-flow-cross:before {
+  content: '\ebb1'; }
+
+/* 'юо▒' */
+.icon-certificate-outline:before {
+  content: '\ebb2'; }
+
+/* 'юо▓' */
+.icon-certificate-1:before {
+  content: '\ebb3'; }
+
+/* 'юо│' */
+.icon-scissors-outline:before {
+  content: '\ebb4'; }
+
+/* 'юо┤' */
+.icon-scissors-1:before {
+  content: '\ebb5'; }
+
+/* 'юо╡' */
+.icon-flask:before {
+  content: '\ebb6'; }
+
+/* 'юо╢' */
+.icon-wine:before {
+  content: '\ebb7'; }
+
+/* 'юо╖' */
+.icon-coffee-1:before {
+  content: '\ebb8'; }
+
+/* 'юо╕' */
+.icon-beer-1:before {
+  content: '\ebb9'; }
+
+/* 'юо╣' */
+.icon-anchor-outline:before {
+  content: '\ebba'; }
+
+/* 'юо║' */
+.icon-anchor-1:before {
+  content: '\ebbb'; }
+
+/* 'юо╗' */
+.icon-puzzle-outline:before {
+  content: '\ebbc'; }
+
+/* 'юо╝' */
+.icon-puzzle-1:before {
+  content: '\ebbd'; }
+
+/* 'юо╜' */
+.icon-tree:before {
+  content: '\ebbe'; }
+
+/* 'юо╛' */
+.icon-calculator:before {
+  content: '\ebbf'; }
+
+/* 'юо┐' */
+.icon-infinity-outline:before {
+  content: '\ebc0'; }
+
+/* 'юпА' */
+.icon-infinity-1:before {
+  content: '\ebc1'; }
+
+/* 'юпБ' */
+.icon-pi-outline:before {
+  content: '\ebc2'; }
+
+/* 'юпВ' */
+.icon-pi:before {
+  content: '\ebc3'; }
+
+/* 'юпГ' */
+.icon-at:before {
+  content: '\ebc4'; }
+
+/* 'юпД' */
+.icon-at-circled:before {
+  content: '\ebc5'; }
+
+/* 'юпЕ' */
+.icon-looped-square-outline:before {
+  content: '\ebc6'; }
+
+/* 'юпЖ' */
+.icon-looped-square-interest:before {
+  content: '\ebc7'; }
+
+/* 'юпЗ' */
+.icon-sort-alphabet-outline:before {
+  content: '\ebc8'; }
+
+/* 'юпИ' */
+.icon-sort-alphabet:before {
+  content: '\ebc9'; }
+
+/* 'юпЙ' */
+.icon-sort-numeric-outline:before {
+  content: '\ebca'; }
+
+/* 'юпК' */
+.icon-sort-numeric:before {
+  content: '\ebcb'; }
+
+/* 'юпЛ' */
+.icon-dribbble-circled-1:before {
+  content: '\ebcc'; }
+
+/* 'юпМ' */
+.icon-dribbble-2:before {
+  content: '\ebcd'; }
+
+/* 'юпН' */
+.icon-facebook-circled-1:before {
+  content: '\ebce'; }
+
+/* 'юпО' */
+.icon-facebook-2:before {
+  content: '\ebcf'; }
+
+/* 'юпП' */
+.icon-flickr-circled-1:before {
+  content: '\ebd0'; }
+
+/* 'юпР' */
+.icon-flickr-2:before {
+  content: '\ebd1'; }
+
+/* 'юпС' */
+.icon-github-circled-2:before {
+  content: '\ebd2'; }
+
+/* 'юпТ' */
+.icon-github-2:before {
+  content: '\ebd3'; }
+
+/* 'юпУ' */
+.icon-lastfm-circled-1:before {
+  content: '\ebd4'; }
+
+/* 'юпФ' */
+.icon-lastfm-1:before {
+  content: '\ebd5'; }
+
+/* 'юпХ' */
+.icon-linkedin-circled-1:before {
+  content: '\ebd6'; }
+
+/* 'юпЦ' */
+.icon-linkedin-2:before {
+  content: '\ebd7'; }
+
+/* 'юпЧ' */
+.icon-pinterest-circled-2:before {
+  content: '\ebd8'; }
+
+/* 'юпШ' */
+.icon-pinterest-1:before {
+  content: '\ebd9'; }
+
+/* 'юпЩ' */
+.icon-skype-outline:before {
+  content: '\ebda'; }
+
+/* 'юпЪ' */
+.icon-skype-2:before {
+  content: '\ebdb'; }
+
+/* 'юпЫ' */
+.icon-tumbler-circled:before {
+  content: '\ebdc'; }
+
+/* 'юпЬ' */
+.icon-tumbler:before {
+  content: '\ebdd'; }
+
+/* 'юпЭ' */
+.icon-twitter-circled-1:before {
+  content: '\ebde'; }
+
+/* 'юпЮ' */
+.icon-twitter-2:before {
+  content: '\ebdf'; }
+
+/* 'юпЯ' */
+.icon-vimeo-circled-1:before {
+  content: '\ebe0'; }
+
+/* 'юпа' */
+.icon-vimeo-1:before {
+  content: '\ebe1'; }
+
+/* 'юпб' */
+.icon-search-3:before {
+  content: '\ebe2'; }
+
+/* 'юпв' */
+.icon-mail-3:before {
+  content: '\ebe3'; }
+
+/* 'юпг' */
+.icon-heart-3:before {
+  content: '\ebe4'; }
+
+/* 'юпд' */
+.icon-heart-empty-2:before {
+  content: '\ebe5'; }
+
+/* 'юпе' */
+.icon-star-3:before {
+  content: '\ebe6'; }
+
+/* 'юпж' */
+.icon-user-3:before {
+  content: '\ebe7'; }
+
+/* 'юпз' */
+.icon-video-3:before {
+  content: '\ebe8'; }
+
+/* 'юпи' */
+.icon-picture-3:before {
+  content: '\ebe9'; }
+
+/* 'юпй' */
+.icon-camera-3:before {
+  content: '\ebea'; }
+
+/* 'юпк' */
+.icon-ok-2:before {
+  content: '\ebeb'; }
+
+/* 'юпл' */
+.icon-ok-circle:before {
+  content: '\ebec'; }
+
+/* 'юпм' */
+.icon-cancel-3:before {
+  content: '\ebed'; }
+
+/* 'юпн' */
+.icon-cancel-circle:before {
+  content: '\ebee'; }
+
+/* 'юпо' */
+.icon-plus-3:before {
+  content: '\ebef'; }
+
+/* 'юпп' */
+.icon-plus-circle:before {
+  content: '\ebf0'; }
+
+/* 'юп░' */
+.icon-minus-3:before {
+  content: '\ebf1'; }
+
+/* 'юп▒' */
+.icon-minus-circle:before {
+  content: '\ebf2'; }
+
+/* 'юп▓' */
+.icon-help-2:before {
+  content: '\ebf3'; }
+
+/* 'юп│' */
+.icon-info-3:before {
+  content: '\ebf4'; }
+
+/* 'юп┤' */
+.icon-home-3:before {
+  content: '\ebf5'; }
+
+/* 'юп╡' */
+.icon-link-3:before {
+  content: '\ebf6'; }
+
+/* 'юп╢' */
+.icon-attach-3:before {
+  content: '\ebf7'; }
+
+/* 'юп╖' */
+.icon-lock-3:before {
+  content: '\ebf8'; }
+
+/* 'юп╕' */
+.icon-lock-empty:before {
+  content: '\ebf9'; }
+
+/* 'юп╣' */
+.icon-lock-open-3:before {
+  content: '\ebfa'; }
+
+/* 'юп║' */
+.icon-lock-open-empty:before {
+  content: '\ebfb'; }
+
+/* 'юп╗' */
+.icon-pin-2:before {
+  content: '\ebfc'; }
+
+/* 'юп╝' */
+.icon-eye-3:before {
+  content: '\ebfd'; }
+
+/* 'юп╜' */
+.icon-tag-3:before {
+  content: '\ebfe'; }
+
+/* 'юп╛' */
+.icon-tag-empty:before {
+  content: '\ebff'; }
+
+/* 'юп┐' */
+.icon-download-3:before {
+  content: '\ec00'; }
+
+/* 'ю░А' */
+.icon-upload-3:before {
+  content: '\ec01'; }
+
+/* 'ю░Б' */
+.icon-download-cloud-1:before {
+  content: '\ec02'; }
+
+/* 'ю░В' */
+.icon-upload-cloud-3:before {
+  content: '\ec03'; }
+
+/* 'ю░Г' */
+.icon-quote-left-1:before {
+  content: '\ec04'; }
+
+/* 'ю░Д' */
+.icon-quote-right-1:before {
+  content: '\ec05'; }
+
+/* 'ю░Е' */
+.icon-quote-left-alt:before {
+  content: '\ec06'; }
+
+/* 'ю░Ж' */
+.icon-quote-right-alt:before {
+  content: '\ec07'; }
+
+/* 'ю░З' */
+.icon-pencil-3:before {
+  content: '\ec08'; }
+
+/* 'ю░И' */
+.icon-pencil-neg:before {
+  content: '\ec09'; }
+
+/* 'ю░Й' */
+.icon-pencil-alt:before {
+  content: '\ec0a'; }
+
+/* 'ю░К' */
+.icon-undo:before {
+  content: '\ec0b'; }
+
+/* 'ю░Л' */
+.icon-comment-3:before {
+  content: '\ec0c'; }
+
+/* 'ю░М' */
+.icon-comment-inv:before {
+  content: '\ec0d'; }
+
+/* 'ю░Н' */
+.icon-comment-alt:before {
+  content: '\ec0e'; }
+
+/* 'ю░О' */
+.icon-comment-inv-alt:before {
+  content: '\ec0f'; }
+
+/* 'ю░П' */
+.icon-comment-alt2:before {
+  content: '\ec10'; }
+
+/* 'ю░Р' */
+.icon-comment-inv-alt2:before {
+  content: '\ec11'; }
+
+/* 'ю░С' */
+.icon-chat-3:before {
+  content: '\ec12'; }
+
+/* 'ю░Т' */
+.icon-chat-inv:before {
+  content: '\ec13'; }
+
+/* 'ю░У' */
+.icon-location-3:before {
+  content: '\ec14'; }
+
+/* 'ю░Ф' */
+.icon-location-inv:before {
+  content: '\ec15'; }
+
+/* 'ю░Х' */
+.icon-location-alt:before {
+  content: '\ec16'; }
+
+/* 'ю░Ц' */
+.icon-compass-3:before {
+  content: '\ec17'; }
+
+/* 'ю░Ч' */
+.icon-trash-3:before {
+  content: '\ec18'; }
+
+/* 'ю░Ш' */
+.icon-trash-empty:before {
+  content: '\ec19'; }
+
+/* 'ю░Щ' */
+.icon-doc-3:before {
+  content: '\ec1a'; }
+
+/* 'ю░Ъ' */
+.icon-doc-inv-1:before {
+  content: '\ec1b'; }
+
+/* 'ю░Ы' */
+.icon-doc-alt:before {
+  content: '\ec1c'; }
+
+/* 'ю░Ь' */
+.icon-doc-inv-alt:before {
+  content: '\ec1d'; }
+
+/* 'ю░Э' */
+.icon-article:before {
+  content: '\ec1e'; }
+
+/* 'ю░Ю' */
+.icon-article-alt:before {
+  content: '\ec1f'; }
+
+/* 'ю░Я' */
+.icon-book-open-1:before {
+  content: '\ec20'; }
+
+/* 'ю░а' */
+.icon-folder-3:before {
+  content: '\ec21'; }
+
+/* 'ю░б' */
+.icon-folder-empty-1:before {
+  content: '\ec22'; }
+
+/* 'ю░в' */
+.icon-box-3:before {
+  content: '\ec23'; }
+
+/* 'ю░г' */
+.icon-rss-3:before {
+  content: '\ec24'; }
+
+/* 'ю░д' */
+.icon-rss-alt:before {
+  content: '\ec25'; }
+
+/* 'ю░е' */
+.icon-cog-3:before {
+  content: '\ec26'; }
+
+/* 'ю░ж' */
+.icon-wrench-2:before {
+  content: '\ec27'; }
+
+/* 'ю░з' */
+.icon-share-1:before {
+  content: '\ec28'; }
+
+/* 'ю░и' */
+.icon-calendar-3:before {
+  content: '\ec29'; }
+
+/* 'ю░й' */
+.icon-calendar-inv:before {
+  content: '\ec2a'; }
+
+/* 'ю░к' */
+.icon-calendar-alt:before {
+  content: '\ec2b'; }
+
+/* 'ю░л' */
+.icon-mic-3:before {
+  content: '\ec2c'; }
+
+/* 'ю░м' */
+.icon-volume-off-2:before {
+  content: '\ec2d'; }
+
+/* 'ю░н' */
+.icon-volume-up-1:before {
+  content: '\ec2e'; }
+
+/* 'ю░о' */
+.icon-headphones-2:before {
+  content: '\ec2f'; }
+
+/* 'ю░п' */
+.icon-clock-3:before {
+  content: '\ec30'; }
+
+/* 'ю░░' */
+.icon-lamp-1:before {
+  content: '\ec31'; }
+
+/* 'ю░▒' */
+.icon-block-3:before {
+  content: '\ec32'; }
+
+/* 'ю░▓' */
+.icon-resize-full-3:before {
+  content: '\ec33'; }
+
+/* 'ю░│' */
+.icon-resize-full-alt-1:before {
+  content: '\ec34'; }
+
+/* 'ю░┤' */
+.icon-resize-small-2:before {
+  content: '\ec35'; }
+
+/* 'ю░╡' */
+.icon-resize-small-alt:before {
+  content: '\ec36'; }
+
+/* 'ю░╢' */
+.icon-resize-vertical-1:before {
+  content: '\ec37'; }
+
+/* 'ю░╖' */
+.icon-resize-horizontal-1:before {
+  content: '\ec38'; }
+
+/* 'ю░╕' */
+.icon-move-2:before {
+  content: '\ec39'; }
+
+/* 'ю░╣' */
+.icon-popup-3:before {
+  content: '\ec3a'; }
+
+/* 'ю░║' */
+.icon-down-3:before {
+  content: '\ec3b'; }
+
+/* 'ю░╗' */
+.icon-left-3:before {
+  content: '\ec3c'; }
+
+/* 'ю░╝' */
+.icon-right-3:before {
+  content: '\ec3d'; }
+
+/* 'ю░╜' */
+.icon-up-3:before {
+  content: '\ec3e'; }
+
+/* 'ю░╛' */
+.icon-down-circle:before {
+  content: '\ec3f'; }
+
+/* 'ю░┐' */
+.icon-left-circle:before {
+  content: '\ec40'; }
+
+/* 'ю▒А' */
+.icon-right-circle:before {
+  content: '\ec41'; }
+
+/* 'ю▒Б' */
+.icon-up-circle:before {
+  content: '\ec42'; }
+
+/* 'ю▒В' */
+.icon-cw-3:before {
+  content: '\ec43'; }
+
+/* 'ю▒Г' */
+.icon-loop-2:before {
+  content: '\ec44'; }
+
+/* 'ю▒Д' */
+.icon-loop-alt-1:before {
+  content: '\ec45'; }
+
+/* 'ю▒Е' */
+.icon-exchange-1:before {
+  content: '\ec46'; }
+
+/* 'ю▒Ж' */
+.icon-split:before {
+  content: '\ec47'; }
+
+/* 'ю▒З' */
+.icon-arrow-curved:before {
+  content: '\ec48'; }
+
+/* 'ю▒И' */
+.icon-play-3:before {
+  content: '\ec49'; }
+
+/* 'ю▒Й' */
+.icon-play-circle2:before {
+  content: '\ec4a'; }
+
+/* 'ю▒К' */
+.icon-stop-3:before {
+  content: '\ec4b'; }
+
+/* 'ю▒Л' */
+.icon-pause-3:before {
+  content: '\ec4c'; }
+
+/* 'ю▒М' */
+.icon-to-start-2:before {
+  content: '\ec4d'; }
+
+/* 'ю▒Н' */
+.icon-to-end-2:before {
+  content: '\ec4e'; }
+
+/* 'ю▒О' */
+.icon-eject-2:before {
+  content: '\ec4f'; }
+
+/* 'ю▒П' */
+.icon-target-3:before {
+  content: '\ec50'; }
+
+/* 'ю▒Р' */
+.icon-signal-2:before {
+  content: '\ec51'; }
+
+/* 'ю▒С' */
+.icon-award-1:before {
+  content: '\ec52'; }
+
+/* 'ю▒Т' */
+.icon-award-empty:before {
+  content: '\ec53'; }
+
+/* 'ю▒У' */
+.icon-list-2:before {
+  content: '\ec54'; }
+
+/* 'ю▒Ф' */
+.icon-list-nested:before {
+  content: '\ec55'; }
+
+/* 'ю▒Х' */
+.icon-bat-empty:before {
+  content: '\ec56'; }
+
+/* 'ю▒Ц' */
+.icon-bat-half:before {
+  content: '\ec57'; }
+
+/* 'ю▒Ч' */
+.icon-bat-full:before {
+  content: '\ec58'; }
+
+/* 'ю▒Ш' */
+.icon-bat-charge-1:before {
+  content: '\ec59'; }
+
+/* 'ю▒Щ' */
+.icon-mobile-3:before {
+  content: '\ec5a'; }
+
+/* 'ю▒Ъ' */
+.icon-cd-1:before {
+  content: '\ec5b'; }
+
+/* 'ю▒Ы' */
+.icon-equalizer:before {
+  content: '\ec5c'; }
+
+/* 'ю▒Ь' */
+.icon-cursor:before {
+  content: '\ec5d'; }
+
+/* 'ю▒Э' */
+.icon-aperture:before {
+  content: '\ec5e'; }
+
+/* 'ю▒Ю' */
+.icon-aperture-alt:before {
+  content: '\ec5f'; }
+
+/* 'ю▒Я' */
+.icon-steering-wheel:before {
+  content: '\ec60'; }
+
+/* 'ю▒а' */
+.icon-book-2:before {
+  content: '\ec61'; }
+
+/* 'ю▒б' */
+.icon-book-alt:before {
+  content: '\ec62'; }
+
+/* 'ю▒в' */
+.icon-brush-2:before {
+  content: '\ec63'; }
+
+/* 'ю▒г' */
+.icon-brush-alt:before {
+  content: '\ec64'; }
+
+/* 'ю▒д' */
+.icon-eyedropper:before {
+  content: '\ec65'; }
+
+/* 'ю▒е' */
+.icon-layers:before {
+  content: '\ec66'; }
+
+/* 'ю▒ж' */
+.icon-layers-alt:before {
+  content: '\ec67'; }
+
+/* 'ю▒з' */
+.icon-sun-2:before {
+  content: '\ec68'; }
+
+/* 'ю▒и' */
+.icon-sun-inv:before {
+  content: '\ec69'; }
+
+/* 'ю▒й' */
+.icon-cloud-3:before {
+  content: '\ec6a'; }
+
+/* 'ю▒к' */
+.icon-rain-1:before {
+  content: '\ec6b'; }
+
+/* 'ю▒л' */
+.icon-flash-3:before {
+  content: '\ec6c'; }
+
+/* 'ю▒м' */
+.icon-moon-3:before {
+  content: '\ec6d'; }
+
+/* 'ю▒н' */
+.icon-moon-inv:before {
+  content: '\ec6e'; }
+
+/* 'ю▒о' */
+.icon-umbrella-1:before {
+  content: '\ec6f'; }
+
+/* 'ю▒п' */
+.icon-chart-bar-3:before {
+  content: '\ec70'; }
+
+/* 'ю▒░' */
+.icon-chart-pie-2:before {
+  content: '\ec71'; }
+
+/* 'ю▒▒' */
+.icon-chart-pie-alt:before {
+  content: '\ec72'; }
+
+/* 'ю▒▓' */
+.icon-key-3:before {
+  content: '\ec73'; }
+
+/* 'ю▒│' */
+.icon-key-inv:before {
+  content: '\ec74'; }
+
+/* 'ю▒┤' */
+.icon-hash:before {
+  content: '\ec75'; }
+
+/* 'ю▒╡' */
+.icon-at-1:before {
+  content: '\ec76'; }
+
+/* 'ю▒╢' */
+.icon-pilcrow:before {
+  content: '\ec77'; }
+
+/* 'ю▒╖' */
+.icon-dial:before {
+  content: '\ec78'; }
+
+/* 'ю▒╕' */
+.icon-search-4:before {
+  content: '\ec79'; }
+
+/* 'ю▒╣' */
+.icon-mail-4:before {
+  content: '\ec7a'; }
+
+/* 'ю▒║' */
+.icon-heart-4:before {
+  content: '\ec7b'; }
+
+/* 'ю▒╗' */
+.icon-star-4:before {
+  content: '\ec7c'; }
+
+/* 'ю▒╝' */
+.icon-user-4:before {
+  content: '\ec7d'; }
+
+/* 'ю▒╜' */
+.icon-user-woman:before {
+  content: '\ec7e'; }
+
+/* 'ю▒╛' */
+.icon-user-pair:before {
+  content: '\ec7f'; }
+
+/* 'ю▒┐' */
+.icon-video-alt:before {
+  content: '\ec80'; }
+
+/* 'ю▓А' */
+.icon-videocam-2:before {
+  content: '\ec81'; }
+
+/* 'ю▓Б' */
+.icon-videocam-alt:before {
+  content: '\ec82'; }
+
+/* 'ю▓В' */
+.icon-camera-4:before {
+  content: '\ec83'; }
+
+/* 'ю▓Г' */
+.icon-th-2:before {
+  content: '\ec84'; }
+
+/* 'ю▓Д' */
+.icon-th-list-2:before {
+  content: '\ec85'; }
+
+/* 'ю▓Е' */
+.icon-ok-3:before {
+  content: '\ec86'; }
+
+/* 'ю▓Ж' */
+.icon-cancel-4:before {
+  content: '\ec87'; }
+
+/* 'ю▓З' */
+.icon-cancel-circle-1:before {
+  content: '\ec88'; }
+
+/* 'ю▓И' */
+.icon-plus-4:before {
+  content: '\ec89'; }
+
+/* 'ю▓Й' */
+.icon-home-4:before {
+  content: '\ec8a'; }
+
+/* 'ю▓К' */
+.icon-lock-4:before {
+  content: '\ec8b'; }
+
+/* 'ю▓Л' */
+.icon-lock-open-4:before {
+  content: '\ec8c'; }
+
+/* 'ю▓М' */
+.icon-eye-4:before {
+  content: '\ec8d'; }
+
+/* 'ю▓Н' */
+.icon-tag-4:before {
+  content: '\ec8e'; }
+
+/* 'ю▓О' */
+.icon-thumbs-up-3:before {
+  content: '\ec8f'; }
+
+/* 'ю▓П' */
+.icon-thumbs-down-3:before {
+  content: '\ec90'; }
+
+/* 'ю▓Р' */
+.icon-download-4:before {
+  content: '\ec91'; }
+
+/* 'ю▓С' */
+.icon-export-3:before {
+  content: '\ec92'; }
+
+/* 'ю▓Т' */
+.icon-pencil-4:before {
+  content: '\ec93'; }
+
+/* 'ю▓У' */
+.icon-pencil-alt-1:before {
+  content: '\ec94'; }
+
+/* 'ю▓Ф' */
+.icon-edit-2:before {
+  content: '\ec95'; }
+
+/* 'ю▓Х' */
+.icon-chat-4:before {
+  content: '\ec96'; }
+
+/* 'ю▓Ц' */
+.icon-print-3:before {
+  content: '\ec97'; }
+
+/* 'ю▓Ч' */
+.icon-bell-3:before {
+  content: '\ec98'; }
+
+/* 'ю▓Ш' */
+.icon-attention-3:before {
+  content: '\ec99'; }
+
+/* 'ю▓Щ' */
+.icon-info-4:before {
+  content: '\ec9a'; }
+
+/* 'ю▓Ъ' */
+.icon-question:before {
+  content: '\ec9b'; }
+
+/* 'ю▓Ы' */
+.icon-location-4:before {
+  content: '\ec9c'; }
+
+/* 'ю▓Ь' */
+.icon-trash-4:before {
+  content: '\ec9d'; }
+
+/* 'ю▓Э' */
+.icon-doc-4:before {
+  content: '\ec9e'; }
+
+/* 'ю▓Ю' */
+.icon-article-1:before {
+  content: '\ec9f'; }
+
+/* 'ю▓Я' */
+.icon-article-alt-1:before {
+  content: '\eca0'; }
+
+/* 'ю▓а' */
+.icon-rss-4:before {
+  content: '\eca1'; }
+
+/* 'ю▓б' */
+.icon-wrench-3:before {
+  content: '\eca2'; }
+
+/* 'ю▓в' */
+.icon-basket-3:before {
+  content: '\eca3'; }
+
+/* 'ю▓г' */
+.icon-basket-alt:before {
+  content: '\eca4'; }
+
+/* 'ю▓д' */
+.icon-calendar-4:before {
+  content: '\eca5'; }
+
+/* 'ю▓е' */
+.icon-calendar-alt-1:before {
+  content: '\eca6'; }
+
+/* 'ю▓ж' */
+.icon-volume-off-3:before {
+  content: '\eca7'; }
+
+/* 'ю▓з' */
+.icon-volume-down-1:before {
+  content: '\eca8'; }
+
+/* 'ю▓и' */
+.icon-volume-up-2:before {
+  content: '\eca9'; }
+
+/* 'ю▓й' */
+.icon-bullhorn:before {
+  content: '\ecaa'; }
+
+/* 'ю▓к' */
+.icon-clock-4:before {
+  content: '\ecab'; }
+
+/* 'ю▓л' */
+.icon-clock-alt:before {
+  content: '\ecac'; }
+
+/* 'ю▓м' */
+.icon-stop-4:before {
+  content: '\ecad'; }
+
+/* 'ю▓н' */
+.icon-resize-full-4:before {
+  content: '\ecae'; }
+
+/* 'ю▓о' */
+.icon-resize-small-3:before {
+  content: '\ecaf'; }
+
+/* 'ю▓п' */
+.icon-zoom-in-2:before {
+  content: '\ecb0'; }
+
+/* 'ю▓░' */
+.icon-zoom-out-2:before {
+  content: '\ecb1'; }
+
+/* 'ю▓▒' */
+.icon-popup-4:before {
+  content: '\ecb2'; }
+
+/* 'ю▓▓' */
+.icon-down-dir-2:before {
+  content: '\ecb3'; }
+
+/* 'ю▓│' */
+.icon-left-dir-2:before {
+  content: '\ecb4'; }
+
+/* 'ю▓┤' */
+.icon-right-dir-2:before {
+  content: '\ecb5'; }
+
+/* 'ю▓╡' */
+.icon-up-dir-2:before {
+  content: '\ecb6'; }
+
+/* 'ю▓╢' */
+.icon-down-4:before {
+  content: '\ecb7'; }
+
+/* 'ю▓╖' */
+.icon-up-4:before {
+  content: '\ecb8'; }
+
+/* 'ю▓╕' */
+.icon-cw-4:before {
+  content: '\ecb9'; }
+
+/* 'ю▓╣' */
+.icon-signal-3:before {
+  content: '\ecba'; }
+
+/* 'ю▓║' */
+.icon-award-2:before {
+  content: '\ecbb'; }
+
+/* 'ю▓╗' */
+.icon-mobile-4:before {
+  content: '\ecbc'; }
+
+/* 'ю▓╝' */
+.icon-mobile-alt:before {
+  content: '\ecbd'; }
+
+/* 'ю▓╜' */
+.icon-tablet-2:before {
+  content: '\ecbe'; }
+
+/* 'ю▓╛' */
+.icon-ipod:before {
+  content: '\ecbf'; }
+
+/* 'ю▓┐' */
+.icon-cd-2:before {
+  content: '\ecc0'; }
+
+/* 'ю│А' */
+.icon-grid:before {
+  content: '\ecc1'; }
+
+/* 'ю│Б' */
+.icon-book-3:before {
+  content: '\ecc2'; }
+
+/* 'ю│В' */
+.icon-easel:before {
+  content: '\ecc3'; }
+
+/* 'ю│Г' */
+.icon-globe-3:before {
+  content: '\ecc4'; }
+
+/* 'ю│Д' */
+.icon-chart-1:before {
+  content: '\ecc5'; }
+
+/* 'ю│Е' */
+.icon-chart-bar-4:before {
+  content: '\ecc6'; }
+
+/* 'ю│Ж' */
+.icon-chart-pie-3:before {
+  content: '\ecc7'; }
+
+/* 'ю│З' */
+.icon-dollar-1:before {
+  content: '\ecc8'; }
+
+/* 'ю│И' */
+.icon-at-2:before {
+  content: '\ecc9'; }
+
+/* 'ю│Й' */
+.icon-colon:before {
+  content: '\ecca'; }
+
+/* 'ю│К' */
+.icon-semicolon:before {
+  content: '\eccb'; }
+
+/* 'ю│Л' */
+.icon-squares:before {
+  content: '\eccc'; }
+
+/* 'ю│М' */
+.icon-money-1:before {
+  content: '\eccd'; }
+
+/* 'ю│Н' */
+.icon-facebook-3:before {
+  content: '\ecce'; }
+
+/* 'ю│О' */
+.icon-facebook-rect:before {
+  content: '\eccf'; }
+
+/* 'ю│П' */
+.icon-twitter-3:before {
+  content: '\ecd0'; }
+
+/* 'ю│Р' */
+.icon-twitter-bird:before {
+  content: '\ecd1'; }
+
+/* 'ю│С' */
+.icon-twitter-rect:before {
+  content: '\ecd2'; }
+
+/* 'ю│Т' */
+.icon-youtube-1:before {
+  content: '\ecd3'; }
+
+/* 'ю│У' */
+.icon-windy-rain-inv:before {
+  content: '\ecd4'; }
+
+/* 'ю│Ф' */
+.icon-snow-inv:before {
+  content: '\ecd5'; }
+
+/* 'ю│Х' */
+.icon-snow-heavy-inv:before {
+  content: '\ecd6'; }
+
+/* 'ю│Ц' */
+.icon-hail-inv:before {
+  content: '\ecd7'; }
+
+/* 'ю│Ч' */
+.icon-clouds-inv:before {
+  content: '\ecd8'; }
+
+/* 'ю│Ш' */
+.icon-clouds-flash-inv:before {
+  content: '\ecd9'; }
+
+/* 'ю│Щ' */
+.icon-temperature:before {
+  content: '\ecda'; }
+
+/* 'ю│Ъ' */
+.icon-compass-4:before {
+  content: '\ecdb'; }
+
+/* 'ю│Ы' */
+.icon-na:before {
+  content: '\ecdc'; }
+
+/* 'ю│Ь' */
+.icon-celcius:before {
+  content: '\ecdd'; }
+
+/* 'ю│Э' */
+.icon-fahrenheit:before {
+  content: '\ecde'; }
+
+/* 'ю│Ю' */
+.icon-clouds-flash-alt:before {
+  content: '\ecdf'; }
+
+/* 'ю│Я' */
+.icon-sun-inv-1:before {
+  content: '\ece0'; }
+
+/* 'ю│а' */
+.icon-moon-inv-1:before {
+  content: '\ece1'; }
+
+/* 'ю│б' */
+.icon-cloud-sun-inv:before {
+  content: '\ece2'; }
+
+/* 'ю│в' */
+.icon-cloud-moon-inv:before {
+  content: '\ece3'; }
+
+/* 'ю│г' */
+.icon-cloud-inv:before {
+  content: '\ece4'; }
+
+/* 'ю│д' */
+.icon-cloud-flash-inv:before {
+  content: '\ece5'; }
+
+/* 'ю│е' */
+.icon-drizzle-inv:before {
+  content: '\ece6'; }
+
+/* 'ю│ж' */
+.icon-rain-inv:before {
+  content: '\ece7'; }
+
+/* 'ю│з' */
+.icon-windy-inv:before {
+  content: '\ece8'; }
+
+/* 'ю│и' */
+.icon-sunrise:before {
+  content: '\ece9'; }
+
+/* 'ю│й' */
+.icon-sun-3:before {
+  content: '\ecea'; }
+
+/* 'ю│к' */
+.icon-moon-4:before {
+  content: '\eceb'; }
+
+/* 'ю│л' */
+.icon-eclipse:before {
+  content: '\ecec'; }
+
+/* 'ю│м' */
+.icon-mist:before {
+  content: '\eced'; }
+
+/* 'ю│н' */
+.icon-wind-1:before {
+  content: '\ecee'; }
+
+/* 'ю│о' */
+.icon-snowflake:before {
+  content: '\ecef'; }
+
+/* 'ю│п' */
+.icon-cloud-sun-1:before {
+  content: '\ecf0'; }
+
+/* 'ю│░' */
+.icon-cloud-moon:before {
+  content: '\ecf1'; }
+
+/* 'ю│▒' */
+.icon-fog-sun:before {
+  content: '\ecf2'; }
+
+/* 'ю│▓' */
+.icon-fog-moon:before {
+  content: '\ecf3'; }
+
+/* 'ю││' */
+.icon-fog-cloud:before {
+  content: '\ecf4'; }
+
+/* 'ю│┤' */
+.icon-fog:before {
+  content: '\ecf5'; }
+
+/* 'ю│╡' */
+.icon-cloud-4:before {
+  content: '\ecf6'; }
+
+/* 'ю│╢' */
+.icon-cloud-flash-1:before {
+  content: '\ecf7'; }
+
+/* 'ю│╖' */
+.icon-cloud-flash-alt:before {
+  content: '\ecf8'; }
+
+/* 'ю│╕' */
+.icon-drizzle-1:before {
+  content: '\ecf9'; }
+
+/* 'ю│╣' */
+.icon-rain-2:before {
+  content: '\ecfa'; }
+
+/* 'ю│║' */
+.icon-windy:before {
+  content: '\ecfb'; }
+
+/* 'ю│╗' */
+.icon-windy-rain:before {
+  content: '\ecfc'; }
+
+/* 'ю│╝' */
+.icon-snow-1:before {
+  content: '\ecfd'; }
+
+/* 'ю│╜' */
+.icon-snow-alt:before {
+  content: '\ecfe'; }
+
+/* 'ю│╛' */
+.icon-snow-heavy:before {
+  content: '\ecff'; }
+
+/* 'ю│┐' */
+.icon-hail:before {
+  content: '\ed00'; }
+
+/* 'ю┤А' */
+.icon-clouds:before {
+  content: '\ed01'; }
+
+/* 'ю┤Б' */
+.icon-clouds-flash:before {
+  content: '\ed02'; }
+
+/* 'ю┤В' */
+.icon-search-5:before {
+  content: '\ed03'; }
+
+/* 'ю┤Г' */
+.icon-mail-5:before {
+  content: '\ed04'; }
+
+/* 'ю┤Д' */
+.icon-heart-5:before {
+  content: '\ed05'; }
+
+/* 'ю┤Е' */
+.icon-heart-broken:before {
+  content: '\ed06'; }
+
+/* 'ю┤Ж' */
+.icon-star-5:before {
+  content: '\ed07'; }
+
+/* 'ю┤З' */
+.icon-star-empty-2:before {
+  content: '\ed08'; }
+
+/* 'ю┤И' */
+.icon-star-half-1:before {
+  content: '\ed09'; }
+
+/* 'ю┤Й' */
+.icon-star-half_empty:before {
+  content: '\ed0a'; }
+
+/* 'ю┤К' */
+.icon-user-5:before {
+  content: '\ed0b'; }
+
+/* 'ю┤Л' */
+.icon-user-male:before {
+  content: '\ed0c'; }
+
+/* 'ю┤М' */
+.icon-user-female:before {
+  content: '\ed0d'; }
+
+/* 'ю┤Н' */
+.icon-users-3:before {
+  content: '\ed0e'; }
+
+/* 'ю┤О' */
+.icon-movie:before {
+  content: '\ed0f'; }
+
+/* 'ю┤П' */
+.icon-videocam-3:before {
+  content: '\ed10'; }
+
+/* 'ю┤Р' */
+.icon-isight:before {
+  content: '\ed11'; }
+
+/* 'ю┤С' */
+.icon-camera-5:before {
+  content: '\ed12'; }
+
+/* 'ю┤Т' */
+.icon-menu-3:before {
+  content: '\ed13'; }
+
+/* 'ю┤У' */
+.icon-th-thumb:before {
+  content: '\ed14'; }
+
+/* 'ю┤Ф' */
+.icon-th-thumb-empty:before {
+  content: '\ed15'; }
+
+/* 'ю┤Х' */
+.icon-th-list-3:before {
+  content: '\ed16'; }
+
+/* 'ю┤Ц' */
+.icon-ok-4:before {
+  content: '\ed17'; }
+
+/* 'ю┤Ч' */
+.icon-ok-circled-1:before {
+  content: '\ed18'; }
+
+/* 'ю┤Ш' */
+.icon-cancel-5:before {
+  content: '\ed19'; }
+
+/* 'ю┤Щ' */
+.icon-cancel-circled-3:before {
+  content: '\ed1a'; }
+
+/* 'ю┤Ъ' */
+.icon-plus-5:before {
+  content: '\ed1b'; }
+
+/* 'ю┤Ы' */
+.icon-help-circled-2:before {
+  content: '\ed1c'; }
+
+/* 'ю┤Ь' */
+.icon-help-circled-alt:before {
+  content: '\ed1d'; }
+
+/* 'ю┤Э' */
+.icon-info-circled-2:before {
+  content: '\ed1e'; }
+
+/* 'ю┤Ю' */
+.icon-info-circled-alt:before {
+  content: '\ed1f'; }
+
+/* 'ю┤Я' */
+.icon-home-5:before {
+  content: '\ed20'; }
+
+/* 'ю┤а' */
+.icon-link-4:before {
+  content: '\ed21'; }
+
+/* 'ю┤б' */
+.icon-attach-4:before {
+  content: '\ed22'; }
+
+/* 'ю┤в' */
+.icon-lock-5:before {
+  content: '\ed23'; }
+
+/* 'ю┤г' */
+.icon-lock-alt:before {
+  content: '\ed24'; }
+
+/* 'ю┤д' */
+.icon-lock-open-5:before {
+  content: '\ed25'; }
+
+/* 'ю┤е' */
+.icon-lock-open-alt-1:before {
+  content: '\ed26'; }
+
+/* 'ю┤ж' */
+.icon-eye-5:before {
+  content: '\ed27'; }
+
+/* 'ю┤з' */
+.icon-download-5:before {
+  content: '\ed28'; }
+
+/* 'ю┤и' */
+.icon-upload-4:before {
+  content: '\ed29'; }
+
+/* 'ю┤й' */
+.icon-download-cloud-2:before {
+  content: '\ed2a'; }
+
+/* 'ю┤к' */
+.icon-upload-cloud-4:before {
+  content: '\ed2b'; }
+
+/* 'ю┤л' */
+.icon-reply-3:before {
+  content: '\ed2c'; }
+
+/* 'ю┤м' */
+.icon-pencil-5:before {
+  content: '\ed2d'; }
+
+/* 'ю┤н' */
+.icon-export-4:before {
+  content: '\ed2e'; }
+
+/* 'ю┤о' */
+.icon-print-4:before {
+  content: '\ed2f'; }
+
+/* 'ю┤п' */
+.icon-retweet-2:before {
+  content: '\ed30'; }
+
+/* 'ю┤░' */
+.icon-comment-4:before {
+  content: '\ed31'; }
+
+/* 'ю┤▒' */
+.icon-chat-5:before {
+  content: '\ed32'; }
+
+/* 'ю┤▓' */
+.icon-bell-4:before {
+  content: '\ed33'; }
+
+/* 'ю┤│' */
+.icon-attention-4:before {
+  content: '\ed34'; }
+
+/* 'ю┤┤' */
+.icon-attention-alt-1:before {
+  content: '\ed35'; }
+
+/* 'ю┤╡' */
+.icon-location-5:before {
+  content: '\ed36'; }
+
+/* 'ю┤╢' */
+.icon-trash-5:before {
+  content: '\ed37'; }
+
+/* 'ю┤╖' */
+.icon-doc-5:before {
+  content: '\ed38'; }
+
+/* 'ю┤╕' */
+.icon-newspaper-1:before {
+  content: '\ed39'; }
+
+/* 'ю┤╣' */
+.icon-folder-4:before {
+  content: '\ed3a'; }
+
+/* 'ю┤║' */
+.icon-folder-open-1:before {
+  content: '\ed3b'; }
+
+/* 'ю┤╗' */
+.icon-folder-empty-2:before {
+  content: '\ed3c'; }
+
+/* 'ю┤╝' */
+.icon-folder-open-empty-1:before {
+  content: '\ed3d'; }
+
+/* 'ю┤╜' */
+.icon-cog-4:before {
+  content: '\ed3e'; }
+
+/* 'ю┤╛' */
+.icon-calendar-5:before {
+  content: '\ed3f'; }
+
+/* 'ю┤┐' */
+.icon-login-2:before {
+  content: '\ed40'; }
+
+/* 'ю╡А' */
+.icon-logout-2:before {
+  content: '\ed41'; }
+
+/* 'ю╡Б' */
+.icon-mic-4:before {
+  content: '\ed42'; }
+
+/* 'ю╡В' */
+.icon-mic-off:before {
+  content: '\ed43'; }
+
+/* 'ю╡Г' */
+.icon-clock-5:before {
+  content: '\ed44'; }
+
+/* 'ю╡Д' */
+.icon-stopwatch-1:before {
+  content: '\ed45'; }
+
+/* 'ю╡Е' */
+.icon-hourglass-1:before {
+  content: '\ed46'; }
+
+/* 'ю╡Ж' */
+.icon-zoom-in-3:before {
+  content: '\ed47'; }
+
+/* 'ю╡З' */
+.icon-zoom-out-3:before {
+  content: '\ed48'; }
+
+/* 'ю╡И' */
+.icon-down-open-2:before {
+  content: '\ed49'; }
+
+/* 'ю╡Й' */
+.icon-left-open-3:before {
+  content: '\ed4a'; }
+
+/* 'ю╡К' */
+.icon-right-open-3:before {
+  content: '\ed4b'; }
+
+/* 'ю╡Л' */
+.icon-up-open-2:before {
+  content: '\ed4c'; }
+
+/* 'ю╡М' */
+.icon-down-5:before {
+  content: '\ed4d'; }
+
+/* 'ю╡Н' */
+.icon-left-4:before {
+  content: '\ed4e'; }
+
+/* 'ю╡О' */
+.icon-right-4:before {
+  content: '\ed4f'; }
+
+/* 'ю╡П' */
+.icon-up-5:before {
+  content: '\ed50'; }
+
+/* 'ю╡Р' */
+.icon-down-bold-1:before {
+  content: '\ed51'; }
+
+/* 'ю╡С' */
+.icon-left-bold-1:before {
+  content: '\ed52'; }
+
+/* 'ю╡Т' */
+.icon-right-bold-1:before {
+  content: '\ed53'; }
+
+/* 'ю╡У' */
+.icon-up-bold-1:before {
+  content: '\ed54'; }
+
+/* 'ю╡Ф' */
+.icon-down-fat:before {
+  content: '\ed55'; }
+
+/* 'ю╡Х' */
+.icon-left-fat:before {
+  content: '\ed56'; }
+
+/* 'ю╡Ц' */
+.icon-right-fat:before {
+  content: '\ed57'; }
+
+/* 'ю╡Ч' */
+.icon-up-fat:before {
+  content: '\ed58'; }
+
+/* 'ю╡Ш' */
+.icon-ccw-2:before {
+  content: '\ed59'; }
+
+/* 'ю╡Щ' */
+.icon-shuffle-3:before {
+  content: '\ed5a'; }
+
+/* 'ю╡Ъ' */
+.icon-play-4:before {
+  content: '\ed5b'; }
+
+/* 'ю╡Ы' */
+.icon-pause-4:before {
+  content: '\ed5c'; }
+
+/* 'ю╡Ь' */
+.icon-stop-5:before {
+  content: '\ed5d'; }
+
+/* 'ю╡Э' */
+.icon-to-end-3:before {
+  content: '\ed5e'; }
+
+/* 'ю╡Ю' */
+.icon-to-start-3:before {
+  content: '\ed5f'; }
+
+/* 'ю╡Я' */
+.icon-fast-forward-1:before {
+  content: '\ed60'; }
+
+/* 'ю╡а' */
+.icon-fast-backward-1:before {
+  content: '\ed61'; }
+
+/* 'ю╡б' */
+.icon-trophy-1:before {
+  content: '\ed62'; }
+
+/* 'ю╡в' */
+.icon-monitor-1:before {
+  content: '\ed63'; }
+
+/* 'ю╡г' */
+.icon-tablet-3:before {
+  content: '\ed64'; }
+
+/* 'ю╡д' */
+.icon-mobile-5:before {
+  content: '\ed65'; }
+
+/* 'ю╡е' */
+.icon-data-science:before {
+  content: '\ed66'; }
+
+/* 'ю╡ж' */
+.icon-data-science-inv:before {
+  content: '\ed67'; }
+
+/* 'ю╡з' */
+.icon-inbox-2:before {
+  content: '\ed68'; }
+
+/* 'ю╡и' */
+.icon-globe-4:before {
+  content: '\ed69'; }
+
+/* 'ю╡й' */
+.icon-globe-inv:before {
+  content: '\ed6a'; }
+
+/* 'ю╡к' */
+.icon-flash-4:before {
+  content: '\ed6b'; }
+
+/* 'ю╡л' */
+.icon-cloud-5:before {
+  content: '\ed6c'; }
+
+/* 'ю╡м' */
+.icon-coverflow:before {
+  content: '\ed6d'; }
+
+/* 'ю╡н' */
+.icon-coverflow-empty:before {
+  content: '\ed6e'; }
+
+/* 'ю╡о' */
+.icon-math:before {
+  content: '\ed6f'; }
+
+/* 'ю╡п' */
+.icon-math-circled:before {
+  content: '\ed70'; }
+
+/* 'ю╡░' */
+.icon-math-circled-empty:before {
+  content: '\ed71'; }
+
+/* 'ю╡▒' */
+.icon-paper-plane-1:before {
+  content: '\ed72'; }
+
+/* 'ю╡▓' */
+.icon-paper-plane-alt:before {
+  content: '\ed73'; }
+
+/* 'ю╡│' */
+.icon-paper-plane-alt2:before {
+  content: '\ed74'; }
+
+/* 'ю╡┤' */
+.icon-fontsize:before {
+  content: '\ed75'; }
+
+/* 'ю╡╡' */
+.icon-color-adjust:before {
+  content: '\ed76'; }
+
+/* 'ю╡╢' */
+.icon-fire-1:before {
+  content: '\ed77'; }
+
+/* 'ю╡╖' */
+.icon-chart-bar-5:before {
+  content: '\ed78'; }
+
+/* 'ю╡╕' */
+.icon-hdd-1:before {
+  content: '\ed79'; }
+
+/* 'ю╡╣' */
+.icon-connected-object:before {
+  content: '\ed7a'; }
+
+/* 'ю╡║' */
+.icon-ruler:before {
+  content: '\ed7b'; }
+
+/* 'ю╡╗' */
+.icon-vector:before {
+  content: '\ed7c'; }
+
+/* 'ю╡╝' */
+.icon-vector-pencil:before {
+  content: '\ed7d'; }
+
+/* 'ю╡╜' */
+.icon-at-3:before {
+  content: '\ed7e'; }
+
+/* 'ю╡╛' */
+.icon-hash-1:before {
+  content: '\ed7f'; }
+
+/* 'ю╡┐' */
+.icon-female-1:before {
+  content: '\ed80'; }
+
+/* 'ю╢А' */
+.icon-male-1:before {
+  content: '\ed81'; }
+
+/* 'ю╢Б' */
+.icon-spread:before {
+  content: '\ed82'; }
+
+/* 'ю╢В' */
+.icon-king:before {
+  content: '\ed83'; }
+
+/* 'ю╢Г' */
+.icon-anchor-2:before {
+  content: '\ed84'; }
+
+/* 'ю╢Д' */
+.icon-joystick:before {
+  content: '\ed85'; }
+
+/* 'ю╢Е' */
+.icon-spinner1:before {
+  content: '\ed86'; }
+
+/* 'ю╢Ж' */
+.icon-spinner2:before {
+  content: '\ed87'; }
+
+/* 'ю╢З' */
+.icon-github-3:before {
+  content: '\ed88'; }
+
+/* 'ю╢И' */
+.icon-github-circled-3:before {
+  content: '\ed89'; }
+
+/* 'ю╢Й' */
+.icon-github-circled-alt:before {
+  content: '\ed8a'; }
+
+/* 'ю╢К' */
+.icon-github-circled-alt2:before {
+  content: '\ed8b'; }
+
+/* 'ю╢Л' */
+.icon-twitter-4:before {
+  content: '\ed8c'; }
+
+/* 'ю╢М' */
+.icon-twitter-circled-2:before {
+  content: '\ed8d'; }
+
+/* 'ю╢Н' */
+.icon-facebook-4:before {
+  content: '\ed8e'; }
+
+/* 'ю╢О' */
+.icon-facebook-circled-2:before {
+  content: '\ed8f'; }
+
+/* 'ю╢П' */
+.icon-gplus-2:before {
+  content: '\ed90'; }
+
+/* 'ю╢Р' */
+.icon-gplus-circled-1:before {
+  content: '\ed91'; }
+
+/* 'ю╢С' */
+.icon-linkedin-3:before {
+  content: '\ed92'; }
+
+/* 'ю╢Т' */
+.icon-linkedin-circled-2:before {
+  content: '\ed93'; }
+
+/* 'ю╢У' */
+.icon-dribbble-3:before {
+  content: '\ed94'; }
+
+/* 'ю╢Ф' */
+.icon-dribbble-circled-2:before {
+  content: '\ed95'; }
+
+/* 'ю╢Х' */
+.icon-instagram-1:before {
+  content: '\ed96'; }
+
+/* 'ю╢Ц' */
+.icon-instagram-circled:before {
+  content: '\ed97'; }
+
+/* 'ю╢Ч' */
+.icon-soundcloud-1:before {
+  content: '\ed98'; }
+
+/* 'ю╢Ш' */
+.icon-soundcloud-circled:before {
+  content: '\ed99'; }
+
+/* 'ю╢Щ' */
+.icon-mfg-logo:before {
+  content: '\ed9a'; }
+
+/* 'ю╢Ъ' */
+.icon-mfg-logo-circled:before {
+  content: '\ed9b'; }
+
+/* 'ю╢Ы' */
+.icon-aboveground-rail:before {
+  content: '\ed9c'; }
+
+/* 'ю╢Ь' */
+.icon-airfield:before {
+  content: '\ed9d'; }
+
+/* 'ю╢Э' */
+.icon-airport:before {
+  content: '\ed9e'; }
+
+/* 'ю╢Ю' */
+.icon-art-gallery:before {
+  content: '\ed9f'; }
+
+/* 'ю╢Я' */
+.icon-bar:before {
+  content: '\eda0'; }
+
+/* 'ю╢а' */
+.icon-baseball:before {
+  content: '\eda1'; }
+
+/* 'ю╢б' */
+.icon-basketball:before {
+  content: '\eda2'; }
+
+/* 'ю╢в' */
+.icon-beer-2:before {
+  content: '\eda3'; }
+
+/* 'ю╢г' */
+.icon-belowground-rail:before {
+  content: '\eda4'; }
+
+/* 'ю╢д' */
+.icon-bicycle:before {
+  content: '\eda5'; }
+
+/* 'ю╢е' */
+.icon-bus:before {
+  content: '\eda6'; }
+
+/* 'ю╢ж' */
+.icon-cafe:before {
+  content: '\eda7'; }
+
+/* 'ю╢з' */
+.icon-campsite:before {
+  content: '\eda8'; }
+
+/* 'ю╢и' */
+.icon-cemetery:before {
+  content: '\eda9'; }
+
+/* 'ю╢й' */
+.icon-cinema:before {
+  content: '\edaa'; }
+
+/* 'ю╢к' */
+.icon-college:before {
+  content: '\edab'; }
+
+/* 'ю╢л' */
+.icon-commerical-building:before {
+  content: '\edac'; }
+
+/* 'ю╢м' */
+.icon-credit-card-3:before {
+  content: '\edad'; }
+
+/* 'ю╢н' */
+.icon-cricket:before {
+  content: '\edae'; }
+
+/* 'ю╢о' */
+.icon-embassy:before {
+  content: '\edaf'; }
+
+/* 'ю╢п' */
+.icon-fast-food:before {
+  content: '\edb0'; }
+
+/* 'ю╢░' */
+.icon-ferry:before {
+  content: '\edb1'; }
+
+/* 'ю╢▒' */
+.icon-fire-station:before {
+  content: '\edb2'; }
+
+/* 'ю╢▓' */
+.icon-football:before {
+  content: '\edb3'; }
+
+/* 'ю╢│' */
+.icon-fuel:before {
+  content: '\edb4'; }
+
+/* 'ю╢┤' */
+.icon-garden:before {
+  content: '\edb5'; }
+
+/* 'ю╢╡' */
+.icon-giraffe:before {
+  content: '\edb6'; }
+
+/* 'ю╢╢' */
+.icon-golf:before {
+  content: '\edb7'; }
+
+/* 'ю╢╖' */
+.icon-grocery-store:before {
+  content: '\edb8'; }
+
+/* 'ю╢╕' */
+.icon-harbor:before {
+  content: '\edb9'; }
+
+/* 'ю╢╣' */
+.icon-heliport:before {
+  content: '\edba'; }
+
+/* 'ю╢║' */
+.icon-hospital-1:before {
+  content: '\edbb'; }
+
+/* 'ю╢╗' */
+.icon-industrial-building:before {
+  content: '\edbc'; }
+
+/* 'ю╢╝' */
+.icon-library:before {
+  content: '\edbd'; }
+
+/* 'ю╢╜' */
+.icon-lodging:before {
+  content: '\edbe'; }
+
+/* 'ю╢╛' */
+.icon-london-underground:before {
+  content: '\edbf'; }
+
+/* 'ю╢┐' */
+.icon-minefield:before {
+  content: '\edc0'; }
+
+/* 'ю╖А' */
+.icon-monument:before {
+  content: '\edc1'; }
+
+/* 'ю╖Б' */
+.icon-museum:before {
+  content: '\edc2'; }
+
+/* 'ю╖В' */
+.icon-pharmacy:before {
+  content: '\edc3'; }
+
+/* 'ю╖Г' */
+.icon-pitch:before {
+  content: '\edc4'; }
+
+/* 'ю╖Д' */
+.icon-police:before {
+  content: '\edc5'; }
+
+/* 'ю╖Е' */
+.icon-post:before {
+  content: '\edc6'; }
+
+/* 'ю╖Ж' */
+.icon-prison:before {
+  content: '\edc7'; }
+
+/* 'ю╖З' */
+.icon-rail:before {
+  content: '\edc8'; }
+
+/* 'ю╖И' */
+.icon-religious-christian:before {
+  content: '\edc9'; }
+
+/* 'ю╖Й' */
+.icon-religious-islam:before {
+  content: '\edca'; }
+
+/* 'ю╖К' */
+.icon-religious-jewish:before {
+  content: '\edcb'; }
+
+/* 'ю╖Л' */
+.icon-restaurant:before {
+  content: '\edcc'; }
+
+/* 'ю╖М' */
+.icon-roadblock:before {
+  content: '\edcd'; }
+
+/* 'ю╖Н' */
+.icon-school:before {
+  content: '\edce'; }
+
+/* 'ю╖О' */
+.icon-shop:before {
+  content: '\edcf'; }
+
+/* 'ю╖П' */
+.icon-skiing:before {
+  content: '\edd0'; }
+
+/* 'ю╖Р' */
+.icon-soccer:before {
+  content: '\edd1'; }
+
+/* 'ю╖С' */
+.icon-swimming:before {
+  content: '\edd2'; }
+
+/* 'ю╖Т' */
+.icon-tennis:before {
+  content: '\edd3'; }
+
+/* 'ю╖У' */
+.icon-theatre:before {
+  content: '\edd4'; }
+
+/* 'ю╖Ф' */
+.icon-toilet:before {
+  content: '\edd5'; }
+
+/* 'ю╖Х' */
+.icon-town-hall:before {
+  content: '\edd6'; }
+
+/* 'ю╖Ц' */
+.icon-trash-6:before {
+  content: '\edd7'; }
+
+/* 'ю╖Ч' */
+.icon-tree-1:before {
+  content: '\edd8'; }
+
+/* 'ю╖Ш' */
+.icon-tree-2:before {
+  content: '\edd9'; }
+
+/* 'ю╖Щ' */
+.icon-warehouse:before {
+  content: '\edda'; }
+
+/* 'ю╖Ъ' */
+.icon-duckduckgo:before {
+  content: '\eddb'; }
+
+/* 'ю╖Ы' */
+.icon-aim:before {
+  content: '\eddc'; }
+
+/* 'ю╖Ь' */
+.icon-delicious:before {
+  content: '\eddd'; }
+
+/* 'ю╖Э' */
+.icon-paypal-1:before {
+  content: '\edde'; }
+
+/* 'ю╖Ю' */
+.icon-flattr-1:before {
+  content: '\eddf'; }
+
+/* 'ю╖Я' */
+.icon-android-1:before {
+  content: '\ede0'; }
+
+/* 'ю╖а' */
+.icon-eventful:before {
+  content: '\ede1'; }
+
+/* 'ю╖б' */
+.icon-smashmag:before {
+  content: '\ede2'; }
+
+/* 'ю╖в' */
+.icon-gplus-3:before {
+  content: '\ede3'; }
+
+/* 'ю╖г' */
+.icon-wikipedia:before {
+  content: '\ede4'; }
+
+/* 'ю╖д' */
+.icon-lanyrd:before {
+  content: '\ede5'; }
+
+/* 'ю╖е' */
+.icon-calendar-6:before {
+  content: '\ede6'; }
+
+/* 'ю╖ж' */
+.icon-stumbleupon-1:before {
+  content: '\ede7'; }
+
+/* 'ю╖з' */
+.icon-fivehundredpx:before {
+  content: '\ede8'; }
+
+/* 'ю╖и' */
+.icon-pinterest-2:before {
+  content: '\ede9'; }
+
+/* 'ю╖й' */
+.icon-bitcoin-1:before {
+  content: '\edea'; }
+
+/* 'ю╖к' */
+.icon-w3c:before {
+  content: '\edeb'; }
+
+/* 'ю╖л' */
+.icon-foursquare-1:before {
+  content: '\edec'; }
+
+/* 'ю╖м' */
+.icon-html5-1:before {
+  content: '\eded'; }
+
+/* 'ю╖н' */
+.icon-ie-1:before {
+  content: '\edee'; }
+
+/* 'ю╖о' */
+.icon-call:before {
+  content: '\edef'; }
+
+/* 'ю╖п' */
+.icon-grooveshark:before {
+  content: '\edf0'; }
+
+/* 'ю╖░' */
+.icon-ninetyninedesigns:before {
+  content: '\edf1'; }
+
+/* 'ю╖▒' */
+.icon-forrst:before {
+  content: '\edf2'; }
+
+/* 'ю╖▓' */
+.icon-digg:before {
+  content: '\edf3'; }
+
+/* 'ю╖│' */
+.icon-spotify-1:before {
+  content: '\edf4'; }
+
+/* 'ю╖┤' */
+.icon-reddit:before {
+  content: '\edf5'; }
+
+/* 'ю╖╡' */
+.icon-guest:before {
+  content: '\edf6'; }
+
+/* 'ю╖╢' */
+.icon-gowalla:before {
+  content: '\edf7'; }
+
+/* 'ю╖╖' */
+.icon-appstore:before {
+  content: '\edf8'; }
+
+/* 'ю╖╕' */
+.icon-blogger:before {
+  content: '\edf9'; }
+
+/* 'ю╖╣' */
+.icon-cc-1:before {
+  content: '\edfa'; }
+
+/* 'ю╖║' */
+.icon-dribbble-4:before {
+  content: '\edfb'; }
+
+/* 'ю╖╗' */
+.icon-evernote-1:before {
+  content: '\edfc'; }
+
+/* 'ю╖╝' */
+.icon-flickr-3:before {
+  content: '\edfd'; }
+
+/* 'ю╖╜' */
+.icon-google:before {
+  content: '\edfe'; }
+
+/* 'ю╖╛' */
+.icon-viadeo:before {
+  content: '\edff'; }
+
+/* 'ю╖┐' */
+.icon-instapaper:before {
+  content: '\ee00'; }
+
+/* 'ю╕А' */
+.icon-weibo-1:before {
+  content: '\ee01'; }
+
+/* 'ю╕Б' */
+.icon-klout:before {
+  content: '\ee02'; }
+
+/* 'ю╕В' */
+.icon-linkedin-4:before {
+  content: '\ee03'; }
+
+/* 'ю╕Г' */
+.icon-meetup:before {
+  content: '\ee04'; }
+
+/* 'ю╕Д' */
+.icon-vk:before {
+  content: '\ee05'; }
+
+/* 'ю╕Е' */
+.icon-plancast:before {
+  content: '\ee06'; }
+
+/* 'ю╕Ж' */
+.icon-disqus:before {
+  content: '\ee07'; }
+
+/* 'ю╕З' */
+.icon-rss-5:before {
+  content: '\ee08'; }
+
+/* 'ю╕И' */
+.icon-skype-3:before {
+  content: '\ee09'; }
+
+/* 'ю╕Й' */
+.icon-twitter-5:before {
+  content: '\ee0a'; }
+
+/* 'ю╕К' */
+.icon-youtube-2:before {
+  content: '\ee0b'; }
+
+/* 'ю╕Л' */
+.icon-vimeo-2:before {
+  content: '\ee0c'; }
+
+/* 'ю╕М' */
+.icon-windows-1:before {
+  content: '\ee0d'; }
+
+/* 'ю╕Н' */
+.icon-xing-1:before {
+  content: '\ee0e'; }
+
+/* 'ю╕О' */
+.icon-yahoo:before {
+  content: '\ee0f'; }
+
+/* 'ю╕П' */
+.icon-chrome-1:before {
+  content: '\ee10'; }
+
+/* 'ю╕Р' */
+.icon-email:before {
+  content: '\ee11'; }
+
+/* 'ю╕С' */
+.icon-macstore:before {
+  content: '\ee12'; }
+
+/* 'ю╕Т' */
+.icon-myspace:before {
+  content: '\ee13'; }
+
+/* 'ю╕У' */
+.icon-podcast:before {
+  content: '\ee14'; }
+
+/* 'ю╕Ф' */
+.icon-amazon:before {
+  content: '\ee15'; }
+
+/* 'ю╕Х' */
+.icon-steam:before {
+  content: '\ee16'; }
+
+/* 'ю╕Ц' */
+.icon-cloudapp:before {
+  content: '\ee17'; }
+
+/* 'ю╕Ч' */
+.icon-dropbox-2:before {
+  content: '\ee18'; }
+
+/* 'ю╕Ш' */
+.icon-ebay:before {
+  content: '\ee19'; }
+
+/* 'ю╕Щ' */
+.icon-facebook-5:before {
+  content: '\ee1a'; }
+
+/* 'ю╕Ъ' */
+.icon-github-4:before {
+  content: '\ee1b'; }
+
+/* 'ю╕Ы' */
+.icon-github-circled-4:before {
+  content: '\ee1c'; }
+
+/* 'ю╕Ь' */
+.icon-googleplay:before {
+  content: '\ee1d'; }
+
+/* 'ю╕Э' */
+.icon-itunes:before {
+  content: '\ee1e'; }
+
+/* 'ю╕Ю' */
+.icon-plurk:before {
+  content: '\ee1f'; }
+
+/* 'ю╕Я' */
+.icon-songkick:before {
+  content: '\ee20'; }
+
+/* 'ю╕а' */
+.icon-lastfm-2:before {
+  content: '\ee21'; }
+
+/* 'ю╕б' */
+.icon-gmail:before {
+  content: '\ee22'; }
+
+/* 'ю╕в' */
+.icon-pinboard:before {
+  content: '\ee23'; }
+
+/* 'ю╕г' */
+.icon-openid:before {
+  content: '\ee24'; }
+
+/* 'ю╕д' */
+.icon-quora:before {
+  content: '\ee25'; }
+
+/* 'ю╕е' */
+.icon-soundcloud-2:before {
+  content: '\ee26'; }
+
+/* 'ю╕ж' */
+.icon-tumblr-2:before {
+  content: '\ee27'; }
+
+/* 'ю╕з' */
+.icon-eventasaurus:before {
+  content: '\ee28'; }
+
+/* 'ю╕и' */
+.icon-wordpress:before {
+  content: '\ee29'; }
+
+/* 'ю╕й' */
+.icon-yelp:before {
+  content: '\ee2a'; }
+
+/* 'ю╕к' */
+.icon-intensedebate:before {
+  content: '\ee2b'; }
+
+/* 'ю╕л' */
+.icon-eventbrite:before {
+  content: '\ee2c'; }
+
+/* 'ю╕м' */
+.icon-scribd:before {
+  content: '\ee2d'; }
+
+/* 'ю╕н' */
+.icon-posterous:before {
+  content: '\ee2e'; }
+
+/* 'ю╕о' */
+.icon-stripe:before {
+  content: '\ee2f'; }
+
+/* 'ю╕п' */
+.icon-opentable:before {
+  content: '\ee30'; }
+
+/* 'ю╕░' */
+.icon-cart:before {
+  content: '\ee31'; }
+
+/* 'ю╕▒' */
+.icon-print-5:before {
+  content: '\ee32'; }
+
+/* 'ю╕▓' */
+.icon-angellist:before {
+  content: '\ee33'; }
+
+/* 'ю╕│' */
+.icon-instagram-2:before {
+  content: '\ee34'; }
+
+/* 'ю╕┤' */
+.icon-dwolla:before {
+  content: '\ee35'; }
+
+/* 'ю╕╡' */
+.icon-appnet:before {
+  content: '\ee36'; }
+
+/* 'ю╕╢' */
+.icon-statusnet:before {
+  content: '\ee37'; }
+
+/* 'ю╕╖' */
+.icon-acrobat:before {
+  content: '\ee38'; }
+
+/* 'ю╕╕' */
+.icon-drupal:before {
+  content: '\ee39'; }
+
+/* 'ю╕╣' */
+.icon-buffer:before {
+  content: '\ee3a'; }
+
+/* 'ю╕║' */
+.icon-pocket:before {
+  content: '\ee3b'; }
+
+/* 'ю╕╗' */
+.icon-bitbucket-1:before {
+  content: '\ee3c'; }
+
+/* 'ю╕╝' */
+.icon-lego:before {
+  content: '\ee3d'; }
+
+/* 'ю╕╜' */
+.icon-login-3:before {
+  content: '\ee3e'; }
+
+/* 'ю╕╛' */
+.icon-stackoverflow-1:before {
+  content: '\ee3f'; }
+
+/* 'ю╕┐' */
+.icon-hackernews:before {
+  content: '\ee40'; }
+
+/* 'ю╣А' */
+.icon-lkdto:before {
+  content: '\ee41'; }
+
+/* 'ю╣Б' */
+.icon-facebook-6:before {
+  content: '\ee42'; }
+
+/* 'ю╣В' */
+.icon-facebook-rect-1:before {
+  content: '\ee43'; }
+
+/* 'ю╣Г' */
+.icon-twitter-6:before {
+  content: '\ee44'; }
+
+/* 'ю╣Д' */
+.icon-twitter-bird-1:before {
+  content: '\ee45'; }
+
+/* 'ю╣Е' */
+.icon-vimeo-3:before {
+  content: '\ee46'; }
+
+/* 'ю╣Ж' */
+.icon-vimeo-rect:before {
+  content: '\ee47'; }
+
+/* 'ю╣З' */
+.icon-tumblr-3:before {
+  content: '\ee48'; }
+
+/* 'ю╣И' */
+.icon-tumblr-rect:before {
+  content: '\ee49'; }
+
+/* 'ю╣Й' */
+.icon-googleplus-rect:before {
+  content: '\ee4a'; }
+
+/* 'ю╣К' */
+.icon-github-text:before {
+  content: '\ee4b'; }
+
+/* 'ю╣Л' */
+.icon-github-5:before {
+  content: '\ee4c'; }
+
+/* 'ю╣М' */
+.icon-skype-4:before {
+  content: '\ee4d'; }
+
+/* 'ю╣Н' */
+.icon-icq:before {
+  content: '\ee4e'; }
+
+/* 'ю╣О' */
+.icon-yandex:before {
+  content: '\ee4f'; }
+
+/* 'ю╣П' */
+.icon-yandex-rect:before {
+  content: '\ee50'; }
+
+/* 'ю╣Р' */
+.icon-vkontakte-rect:before {
+  content: '\ee51'; }
+
+/* 'ю╣С' */
+.icon-odnoklassniki:before {
+  content: '\ee52'; }
+
+/* 'ю╣Т' */
+.icon-odnoklassniki-rect:before {
+  content: '\ee53'; }
+
+/* 'ю╣У' */
+.icon-friendfeed:before {
+  content: '\ee54'; }
+
+/* 'ю╣Ф' */
+.icon-friendfeed-rect:before {
+  content: '\ee55'; }
+
+/* 'ю╣Х' */
+.icon-blogger-1:before {
+  content: '\ee56'; }
+
+/* 'ю╣Ц' */
+.icon-blogger-rect:before {
+  content: '\ee57'; }
+
+/* 'ю╣Ч' */
+.icon-deviantart:before {
+  content: '\ee58'; }
+
+/* 'ю╣Ш' */
+.icon-jabber:before {
+  content: '\ee59'; }
+
+/* 'ю╣Щ' */
+.icon-lastfm-3:before {
+  content: '\ee5a'; }
+
+/* 'ю╣Ъ' */
+.icon-lastfm-rect:before {
+  content: '\ee5b'; }
+
+/* 'ю╣Ы' */
+.icon-linkedin-5:before {
+  content: '\ee5c'; }
+
+/* 'ю╣Ь' */
+.icon-linkedin-rect:before {
+  content: '\ee5d'; }
+
+/* 'ю╣Э' */
+.icon-picasa-1:before {
+  content: '\ee5e'; }
+
+/* 'ю╣Ю' */
+.icon-wordpress-1:before {
+  content: '\ee5f'; }
+
+/* 'ю╣Я' */
+.icon-instagram-3:before {
+  content: '\ee60'; }
+
+/* 'ю╣а' */
+.icon-instagram-filled:before {
+  content: '\ee61'; }
+
+/* 'ю╣б' */
+.icon-diigo:before {
+  content: '\ee62'; }
+
+/* 'ю╣в' */
+.icon-box-4:before {
+  content: '\ee63'; }
+
+/* 'ю╣г' */
+.icon-box-rect:before {
+  content: '\ee64'; }
+
+/* 'ю╣д' */
+.icon-tudou:before {
+  content: '\ee65'; }
+
+/* 'ю╣е' */
+.icon-youku:before {
+  content: '\ee66'; }
+
+/* 'ю╣ж' */
+.icon-win8:before {
+  content: '\ee67'; }
+
+/* 'ю╣з' */
+.icon-amex:before {
+  content: '\ee68'; }
+
+/* 'ю╣и' */
+.icon-discover:before {
+  content: '\ee69'; }
+
+/* 'ю╣й' */
+.icon-visa:before {
+  content: '\ee6a'; }
+
+/* 'ю╣к' */
+.icon-mastercard:before {
+  content: '\ee6b'; }
+
+/* 'ю╣л' */
+.icon-houzz:before {
+  content: '\ee6c'; }
+
+/* 'ю╣м' */
+.icon-bandcamp:before {
+  content: '\ee6d'; }
+
+/* 'ю╣н' */
+.icon-codepen:before {
+  content: '\ee6e'; }
+
+/* 'ю╣о' */
+.icon-glass-1:before {
+  content: '\ee6f'; }
+
+/* 'ю╣п' */
+.icon-music-3:before {
+  content: '\ee70'; }
+
+/* 'ю╣░' */
+.icon-search-6:before {
+  content: '\ee71'; }
+
+/* 'ю╣▒' */
+.icon-search-circled:before {
+  content: '\ee72'; }
+
+/* 'ю╣▓' */
+.icon-mail-6:before {
+  content: '\ee73'; }
+
+/* 'ю╣│' */
+.icon-mail-circled:before {
+  content: '\ee74'; }
+
+/* 'ю╣┤' */
+.icon-heart-6:before {
+  content: '\ee75'; }
+
+/* 'ю╣╡' */
+.icon-heart-circled:before {
+  content: '\ee76'; }
+
+/* 'ю╣╢' */
+.icon-heart-empty-3:before {
+  content: '\ee77'; }
+
+/* 'ю╣╖' */
+.icon-star-6:before {
+  content: '\ee78'; }
+
+/* 'ю╣╕' */
+.icon-star-circled:before {
+  content: '\ee79'; }
+
+/* 'ю╣╣' */
+.icon-star-empty-3:before {
+  content: '\ee7a'; }
+
+/* 'ю╣║' */
+.icon-user-6:before {
+  content: '\ee7b'; }
+
+/* 'ю╣╗' */
+.icon-group:before {
+  content: '\ee7c'; }
+
+/* 'ю╣╝' */
+.icon-group-circled:before {
+  content: '\ee7d'; }
+
+/* 'ю╣╜' */
+.icon-torso:before {
+  content: '\ee7e'; }
+
+/* 'ю╣╛' */
+.icon-video-4:before {
+  content: '\ee7f'; }
+
+/* 'ю╣┐' */
+.icon-video-circled:before {
+  content: '\ee80'; }
+
+/* 'ю║А' */
+.icon-video-alt-1:before {
+  content: '\ee81'; }
+
+/* 'ю║Б' */
+.icon-videocam-4:before {
+  content: '\ee82'; }
+
+/* 'ю║В' */
+.icon-video-chat:before {
+  content: '\ee83'; }
+
+/* 'ю║Г' */
+.icon-picture-4:before {
+  content: '\ee84'; }
+
+/* 'ю║Д' */
+.icon-camera-6:before {
+  content: '\ee85'; }
+
+/* 'ю║Е' */
+.icon-photo:before {
+  content: '\ee86'; }
+
+/* 'ю║Ж' */
+.icon-photo-circled:before {
+  content: '\ee87'; }
+
+/* 'ю║З' */
+.icon-th-large-2:before {
+  content: '\ee88'; }
+
+/* 'ю║И' */
+.icon-th-3:before {
+  content: '\ee89'; }
+
+/* 'ю║Й' */
+.icon-th-list-4:before {
+  content: '\ee8a'; }
+
+/* 'ю║К' */
+.icon-view-mode:before {
+  content: '\ee8b'; }
+
+/* 'ю║Л' */
+.icon-ok-5:before {
+  content: '\ee8c'; }
+
+/* 'ю║М' */
+.icon-ok-circled-2:before {
+  content: '\ee8d'; }
+
+/* 'ю║Н' */
+.icon-ok-circled2-1:before {
+  content: '\ee8e'; }
+
+/* 'ю║О' */
+.icon-cancel-6:before {
+  content: '\ee8f'; }
+
+/* 'ю║П' */
+.icon-cancel-circled-4:before {
+  content: '\ee90'; }
+
+/* 'ю║Р' */
+.icon-cancel-circled2-1:before {
+  content: '\ee91'; }
+
+/* 'ю║С' */
+.icon-plus-6:before {
+  content: '\ee92'; }
+
+/* 'ю║Т' */
+.icon-plus-circled-2:before {
+  content: '\ee93'; }
+
+/* 'ю║У' */
+.icon-minus-4:before {
+  content: '\ee94'; }
+
+/* 'ю║Ф' */
+.icon-minus-circled-2:before {
+  content: '\ee95'; }
+
+/* 'ю║Х' */
+.icon-help-3:before {
+  content: '\ee96'; }
+
+/* 'ю║Ц' */
+.icon-help-circled-3:before {
+  content: '\ee97'; }
+
+/* 'ю║Ч' */
+.icon-info-circled-3:before {
+  content: '\ee98'; }
+
+/* 'ю║Ш' */
+.icon-home-6:before {
+  content: '\ee99'; }
+
+/* 'ю║Щ' */
+.icon-home-circled:before {
+  content: '\ee9a'; }
+
+/* 'ю║Ъ' */
+.icon-website:before {
+  content: '\ee9b'; }
+
+/* 'ю║Ы' */
+.icon-website-circled:before {
+  content: '\ee9c'; }
+
+/* 'ю║Ь' */
+.icon-attach-5:before {
+  content: '\ee9d'; }
+
+/* 'ю║Э' */
+.icon-attach-circled:before {
+  content: '\ee9e'; }
+
+/* 'ю║Ю' */
+.icon-lock-6:before {
+  content: '\ee9f'; }
+
+/* 'ю║Я' */
+.icon-lock-circled:before {
+  content: '\eea0'; }
+
+/* 'ю║а' */
+.icon-lock-open-6:before {
+  content: '\eea1'; }
+
+/* 'ю║б' */
+.icon-lock-open-alt-2:before {
+  content: '\eea2'; }
+
+/* 'ю║в' */
+.icon-eye-6:before {
+  content: '\eea3'; }
+
+/* 'ю║г' */
+.icon-eye-off-1:before {
+  content: '\eea4'; }
+
+/* 'ю║д' */
+.icon-tag-5:before {
+  content: '\eea5'; }
+
+/* 'ю║е' */
+.icon-tags-2:before {
+  content: '\eea6'; }
+
+/* 'ю║ж' */
+.icon-bookmark-3:before {
+  content: '\eea7'; }
+
+/* 'ю║з' */
+.icon-bookmark-empty-1:before {
+  content: '\eea8'; }
+
+/* 'ю║и' */
+.icon-flag-3:before {
+  content: '\eea9'; }
+
+/* 'ю║й' */
+.icon-flag-circled:before {
+  content: '\eeaa'; }
+
+/* 'ю║к' */
+.icon-thumbs-up-4:before {
+  content: '\eeab'; }
+
+/* 'ю║л' */
+.icon-thumbs-down-4:before {
+  content: '\eeac'; }
+
+/* 'ю║м' */
+.icon-download-6:before {
+  content: '\eead'; }
+
+/* 'ю║н' */
+.icon-download-alt:before {
+  content: '\eeae'; }
+
+/* 'ю║о' */
+.icon-upload-5:before {
+  content: '\eeaf'; }
+
+/* 'ю║п' */
+.icon-share-2:before {
+  content: '\eeb0'; }
+
+/* 'ю║░' */
+.icon-quote-1:before {
+  content: '\eeb1'; }
+
+/* 'ю║▒' */
+.icon-quote-circled:before {
+  content: '\eeb2'; }
+
+/* 'ю║▓' */
+.icon-export-5:before {
+  content: '\eeb3'; }
+
+/* 'ю║│' */
+.icon-pencil-6:before {
+  content: '\eeb4'; }
+
+/* 'ю║┤' */
+.icon-pencil-circled:before {
+  content: '\eeb5'; }
+
+/* 'ю║╡' */
+.icon-edit-3:before {
+  content: '\eeb6'; }
+
+/* 'ю║╢' */
+.icon-edit-circled:before {
+  content: '\eeb7'; }
+
+/* 'ю║╖' */
+.icon-edit-alt:before {
+  content: '\eeb8'; }
+
+/* 'ю║╕' */
+.icon-print-6:before {
+  content: '\eeb9'; }
+
+/* 'ю║╣' */
+.icon-retweet-3:before {
+  content: '\eeba'; }
+
+/* 'ю║║' */
+.icon-comment-5:before {
+  content: '\eebb'; }
+
+/* 'ю║╗' */
+.icon-comment-alt-1:before {
+  content: '\eebc'; }
+
+/* 'ю║╝' */
+.icon-bell-5:before {
+  content: '\eebd'; }
+
+/* 'ю║╜' */
+.icon-warning-1:before {
+  content: '\eebe'; }
+
+/* 'ю║╛' */
+.icon-exclamation:before {
+  content: '\eebf'; }
+
+/* 'ю║┐' */
+.icon-error:before {
+  content: '\eec0'; }
+
+/* 'ю╗А' */
+.icon-error-alt:before {
+  content: '\eec1'; }
+
+/* 'ю╗Б' */
+.icon-location-6:before {
+  content: '\eec2'; }
+
+/* 'ю╗В' */
+.icon-location-circled:before {
+  content: '\eec3'; }
+
+/* 'ю╗Г' */
+.icon-compass-5:before {
+  content: '\eec4'; }
+
+/* 'ю╗Д' */
+.icon-compass-circled:before {
+  content: '\eec5'; }
+
+/* 'ю╗Е' */
+.icon-trash-7:before {
+  content: '\eec6'; }
+
+/* 'ю╗Ж' */
+.icon-trash-circled:before {
+  content: '\eec7'; }
+
+/* 'ю╗З' */
+.icon-doc-6:before {
+  content: '\eec8'; }
+
+/* 'ю╗И' */
+.icon-doc-circled:before {
+  content: '\eec9'; }
+
+/* 'ю╗Й' */
+.icon-doc-new:before {
+  content: '\eeca'; }
+
+/* 'ю╗К' */
+.icon-doc-new-circled:before {
+  content: '\eecb'; }
+
+/* 'ю╗Л' */
+.icon-folder-5:before {
+  content: '\eecc'; }
+
+/* 'ю╗М' */
+.icon-folder-circled:before {
+  content: '\eecd'; }
+
+/* 'ю╗Н' */
+.icon-folder-close:before {
+  content: '\eece'; }
+
+/* 'ю╗О' */
+.icon-folder-open-2:before {
+  content: '\eecf'; }
+
+/* 'ю╗П' */
+.icon-rss-6:before {
+  content: '\eed0'; }
+
+/* 'ю╗Р' */
+.icon-phone-3:before {
+  content: '\eed1'; }
+
+/* 'ю╗С' */
+.icon-phone-circled:before {
+  content: '\eed2'; }
+
+/* 'ю╗Т' */
+.icon-cog-5:before {
+  content: '\eed3'; }
+
+/* 'ю╗У' */
+.icon-cog-circled:before {
+  content: '\eed4'; }
+
+/* 'ю╗Ф' */
+.icon-cogs:before {
+  content: '\eed5'; }
+
+/* 'ю╗Х' */
+.icon-wrench-4:before {
+  content: '\eed6'; }
+
+/* 'ю╗Ц' */
+.icon-wrench-circled:before {
+  content: '\eed7'; }
+
+/* 'ю╗Ч' */
+.icon-basket-4:before {
+  content: '\eed8'; }
+
+/* 'ю╗Ш' */
+.icon-basket-circled:before {
+  content: '\eed9'; }
+
+/* 'ю╗Щ' */
+.icon-calendar-7:before {
+  content: '\eeda'; }
+
+/* 'ю╗Ъ' */
+.icon-calendar-circled:before {
+  content: '\eedb'; }
+
+/* 'ю╗Ы' */
+.icon-mic-5:before {
+  content: '\eedc'; }
+
+/* 'ю╗Ь' */
+.icon-mic-circled:before {
+  content: '\eedd'; }
+
+/* 'ю╗Э' */
+.icon-volume-off-4:before {
+  content: '\eede'; }
+
+/* 'ю╗Ю' */
+.icon-volume-down-2:before {
+  content: '\eedf'; }
+
+/* 'ю╗Я' */
+.icon-volume-1:before {
+  content: '\eee0'; }
+
+/* 'ю╗а' */
+.icon-volume-up-3:before {
+  content: '\eee1'; }
+
+/* 'ю╗б' */
+.icon-headphones-3:before {
+  content: '\eee2'; }
+
+/* 'ю╗в' */
+.icon-clock-6:before {
+  content: '\eee3'; }
+
+/* 'ю╗г' */
+.icon-clock-circled:before {
+  content: '\eee4'; }
+
+/* 'ю╗д' */
+.icon-lightbulb-2:before {
+  content: '\eee5'; }
+
+/* 'ю╗е' */
+.icon-lightbulb-alt:before {
+  content: '\eee6'; }
+
+/* 'ю╗ж' */
+.icon-block-4:before {
+  content: '\eee7'; }
+
+/* 'ю╗з' */
+.icon-resize-full-5:before {
+  content: '\eee8'; }
+
+/* 'ю╗и' */
+.icon-resize-full-alt-2:before {
+  content: '\eee9'; }
+
+/* 'ю╗й' */
+.icon-resize-small-4:before {
+  content: '\eeea'; }
+
+/* 'ю╗к' */
+.icon-resize-vertical-2:before {
+  content: '\eeeb'; }
+
+/* 'ю╗л' */
+.icon-resize-horizontal-2:before {
+  content: '\eeec'; }
+
+/* 'ю╗м' */
+.icon-move-3:before {
+  content: '\eeed'; }
+
+/* 'ю╗н' */
+.icon-zoom-in-4:before {
+  content: '\eeee'; }
+
+/* 'ю╗о' */
+.icon-zoom-out-4:before {
+  content: '\eeef'; }
+
+/* 'ю╗п' */
+.icon-down-open-3:before {
+  content: '\eef0'; }
+
+/* 'ю╗░' */
+.icon-left-open-4:before {
+  content: '\eef1'; }
+
+/* 'ю╗▒' */
+.icon-right-open-4:before {
+  content: '\eef2'; }
+
+/* 'ю╗▓' */
+.icon-up-open-3:before {
+  content: '\eef3'; }
+
+/* 'ю╗│' */
+.icon-down-6:before {
+  content: '\eef4'; }
+
+/* 'ю╗┤' */
+.icon-left-5:before {
+  content: '\eef5'; }
+
+/* 'ю╗╡' */
+.icon-right-5:before {
+  content: '\eef6'; }
+
+/* 'ю╗╢' */
+.icon-up-6:before {
+  content: '\eef7'; }
+
+/* 'ю╗╖' */
+.icon-down-circled-2:before {
+  content: '\eef8'; }
+
+/* 'ю╗╕' */
+.icon-left-circled-2:before {
+  content: '\eef9'; }
+
+/* 'ю╗╣' */
+.icon-right-circled-2:before {
+  content: '\eefa'; }
+
+/* 'ю╗║' */
+.icon-up-circled-2:before {
+  content: '\eefb'; }
+
+/* 'ю╗╗' */
+.icon-down-hand-1:before {
+  content: '\eefc'; }
+
+/* 'ю╗╝' */
+.icon-left-hand-1:before {
+  content: '\eefd'; }
+
+/* 'ю╗╜' */
+.icon-right-hand-1:before {
+  content: '\eefe'; }
+
+/* 'ю╗╛' */
+.icon-up-hand-1:before {
+  content: '\eeff'; }
+
+/* 'ю╗┐' */
+.icon-cw-5:before {
+  content: '\ef00'; }
+
+/* 'ю╝А' */
+.icon-cw-circled:before {
+  content: '\ef01'; }
+
+/* 'ю╝Б' */
+.icon-arrows-cw-2:before {
+  content: '\ef02'; }
+
+/* 'ю╝В' */
+.icon-shuffle-4:before {
+  content: '\ef03'; }
+
+/* 'ю╝Г' */
+.icon-play-5:before {
+  content: '\ef04'; }
+
+/* 'ю╝Д' */
+.icon-play-circled-1:before {
+  content: '\ef05'; }
+
+/* 'ю╝Е' */
+.icon-play-circled2-1:before {
+  content: '\ef06'; }
+
+/* 'ю╝Ж' */
+.icon-stop-6:before {
+  content: '\ef07'; }
+
+/* 'ю╝З' */
+.icon-stop-circled:before {
+  content: '\ef08'; }
+
+/* 'ю╝И' */
+.icon-pause-5:before {
+  content: '\ef09'; }
+
+/* 'ю╝Й' */
+.icon-pause-circled:before {
+  content: '\ef0a'; }
+
+/* 'ю╝К' */
+.icon-record-2:before {
+  content: '\ef0b'; }
+
+/* 'ю╝Л' */
+.icon-eject-3:before {
+  content: '\ef0c'; }
+
+/* 'ю╝М' */
+.icon-backward:before {
+  content: '\ef0d'; }
+
+/* 'ю╝Н' */
+.icon-backward-circled:before {
+  content: '\ef0e'; }
+
+/* 'ю╝О' */
+.icon-fast-backward-2:before {
+  content: '\ef0f'; }
+
+/* 'ю╝П' */
+.icon-fast-forward-2:before {
+  content: '\ef10'; }
+
+/* 'ю╝Р' */
+.icon-forward-3:before {
+  content: '\ef11'; }
+
+/* 'ю╝С' */
+.icon-forward-circled:before {
+  content: '\ef12'; }
+
+/* 'ю╝Т' */
+.icon-step-backward:before {
+  content: '\ef13'; }
+
+/* 'ю╝У' */
+.icon-step-forward:before {
+  content: '\ef14'; }
+
+/* 'ю╝Ф' */
+.icon-target-4:before {
+  content: '\ef15'; }
+
+/* 'ю╝Х' */
+.icon-signal-4:before {
+  content: '\ef16'; }
+
+/* 'ю╝Ц' */
+.icon-desktop-2:before {
+  content: '\ef17'; }
+
+/* 'ю╝Ч' */
+.icon-desktop-circled:before {
+  content: '\ef18'; }
+
+/* 'ю╝Ш' */
+.icon-laptop-2:before {
+  content: '\ef19'; }
+
+/* 'ю╝Щ' */
+.icon-laptop-circled:before {
+  content: '\ef1a'; }
+
+/* 'ю╝Ъ' */
+.icon-network-1:before {
+  content: '\ef1b'; }
+
+/* 'ю╝Ы' */
+.icon-inbox-3:before {
+  content: '\ef1c'; }
+
+/* 'ю╝Ь' */
+.icon-inbox-circled:before {
+  content: '\ef1d'; }
+
+/* 'ю╝Э' */
+.icon-inbox-alt:before {
+  content: '\ef1e'; }
+
+/* 'ю╝Ю' */
+.icon-globe-5:before {
+  content: '\ef1f'; }
+
+/* 'ю╝Я' */
+.icon-globe-alt-1:before {
+  content: '\ef20'; }
+
+/* 'ю╝а' */
+.icon-cloud-6:before {
+  content: '\ef21'; }
+
+/* 'ю╝б' */
+.icon-cloud-circled:before {
+  content: '\ef22'; }
+
+/* 'ю╝в' */
+.icon-flight-2:before {
+  content: '\ef23'; }
+
+/* 'ю╝г' */
+.icon-leaf-3:before {
+  content: '\ef24'; }
+
+/* 'ю╝д' */
+.icon-font-1:before {
+  content: '\ef25'; }
+
+/* 'ю╝е' */
+.icon-fontsize-1:before {
+  content: '\ef26'; }
+
+/* 'ю╝ж' */
+.icon-bold-1:before {
+  content: '\ef27'; }
+
+/* 'ю╝з' */
+.icon-italic-1:before {
+  content: '\ef28'; }
+
+/* 'ю╝и' */
+.icon-text-height-1:before {
+  content: '\ef29'; }
+
+/* 'ю╝й' */
+.icon-text-width-1:before {
+  content: '\ef2a'; }
+
+/* 'ю╝к' */
+.icon-align-left-1:before {
+  content: '\ef2b'; }
+
+/* 'ю╝л' */
+.icon-align-center-1:before {
+  content: '\ef2c'; }
+
+/* 'ю╝м' */
+.icon-align-right-1:before {
+  content: '\ef2d'; }
+
+/* 'ю╝н' */
+.icon-align-justify-1:before {
+  content: '\ef2e'; }
+
+/* 'ю╝о' */
+.icon-list-3:before {
+  content: '\ef2f'; }
+
+/* 'ю╝п' */
+.icon-indent-left-1:before {
+  content: '\ef30'; }
+
+/* 'ю╝░' */
+.icon-indent-right-1:before {
+  content: '\ef31'; }
+
+/* 'ю╝▒' */
+.icon-briefcase-3:before {
+  content: '\ef32'; }
+
+/* 'ю╝▓' */
+.icon-off-1:before {
+  content: '\ef33'; }
+
+/* 'ю╝│' */
+.icon-road-1:before {
+  content: '\ef34'; }
+
+/* 'ю╝┤' */
+.icon-qrcode-1:before {
+  content: '\ef35'; }
+
+/* 'ю╝╡' */
+.icon-barcode-1:before {
+  content: '\ef36'; }
+
+/* 'ю╝╢' */
+.icon-braille:before {
+  content: '\ef37'; }
+
+/* 'ю╝╖' */
+.icon-book-4:before {
+  content: '\ef38'; }
+
+/* 'ю╝╕' */
+.icon-adjust-1:before {
+  content: '\ef39'; }
+
+/* 'ю╝╣' */
+.icon-tint-1:before {
+  content: '\ef3a'; }
+
+/* 'ю╝║' */
+.icon-check-3:before {
+  content: '\ef3b'; }
+
+/* 'ю╝╗' */
+.icon-check-empty-1:before {
+  content: '\ef3c'; }
+
+/* 'ю╝╝' */
+.icon-asterisk-1:before {
+  content: '\ef3d'; }
+
+/* 'ю╝╜' */
+.icon-gift-2:before {
+  content: '\ef3e'; }
+
+/* 'ю╝╛' */
+.icon-fire-2:before {
+  content: '\ef3f'; }
+
+/* 'ю╝┐' */
+.icon-magnet-2:before {
+  content: '\ef40'; }
+
+/* 'ю╜А' */
+.icon-chart-2:before {
+  content: '\ef41'; }
+
+/* 'ю╜Б' */
+.icon-chart-circled:before {
+  content: '\ef42'; }
+
+/* 'ю╜В' */
+.icon-credit-card-4:before {
+  content: '\ef43'; }
+
+/* 'ю╜Г' */
+.icon-megaphone-2:before {
+  content: '\ef44'; }
+
+/* 'ю╜Д' */
+.icon-clipboard-2:before {
+  content: '\ef45'; }
+
+/* 'ю╜Е' */
+.icon-hdd-2:before {
+  content: '\ef46'; }
+
+/* 'ю╜Ж' */
+.icon-key-4:before {
+  content: '\ef47'; }
+
+/* 'ю╜З' */
+.icon-certificate-2:before {
+  content: '\ef48'; }
+
+/* 'ю╜И' */
+.icon-tasks-1:before {
+  content: '\ef49'; }
+
+/* 'ю╜Й' */
+.icon-filter-1:before {
+  content: '\ef4a'; }
+
+/* 'ю╜К' */
+.icon-gauge-2:before {
+  content: '\ef4b'; }
+
+/* 'ю╜Л' */
+.icon-smiley:before {
+  content: '\ef4c'; }
+
+/* 'ю╜М' */
+.icon-smiley-circled:before {
+  content: '\ef4d'; }
+
+/* 'ю╜Н' */
+.icon-address-book:before {
+  content: '\ef4e'; }
+
+/* 'ю╜О' */
+.icon-address-book-alt:before {
+  content: '\ef4f'; }
+
+/* 'ю╜П' */
+.icon-asl:before {
+  content: '\ef50'; }
+
+/* 'ю╜Р' */
+.icon-glasses:before {
+  content: '\ef51'; }
+
+/* 'ю╜С' */
+.icon-hearing-impaired:before {
+  content: '\ef52'; }
+
+/* 'ю╜Т' */
+.icon-iphone-home:before {
+  content: '\ef53'; }
+
+/* 'ю╜У' */
+.icon-person:before {
+  content: '\ef54'; }
+
+/* 'ю╜Ф' */
+.icon-adult:before {
+  content: '\ef55'; }
+
+/* 'ю╜Х' */
+.icon-child:before {
+  content: '\ef56'; }
+
+/* 'ю╜Ц' */
+.icon-blind:before {
+  content: '\ef57'; }
+
+/* 'ю╜Ч' */
+.icon-guidedog:before {
+  content: '\ef58'; }
+
+/* 'ю╜Ш' */
+.icon-accessibility:before {
+  content: '\ef59'; }
+
+/* 'ю╜Щ' */
+.icon-universal-access:before {
+  content: '\ef5a'; }
+
+/* 'ю╜Ъ' */
+.icon-male-2:before {
+  content: '\ef5b'; }
+
+/* 'ю╜Ы' */
+.icon-female-2:before {
+  content: '\ef5c'; }
+
+/* 'ю╜Ь' */
+.icon-behance-1:before {
+  content: '\ef5d'; }
+
+/* 'ю╜Э' */
+.icon-blogger-2:before {
+  content: '\ef5e'; }
+
+/* 'ю╜Ю' */
+.icon-cc-2:before {
+  content: '\ef5f'; }
+
+/* 'ю╜Я' */
+.icon-css:before {
+  content: '\ef60'; }
+
+/* 'ю╜а' */
+.icon-delicious-1:before {
+  content: '\ef61'; }
+
+/* 'ю╜б' */
+.icon-deviantart-1:before {
+  content: '\ef62'; }
+
+/* 'ю╜в' */
+.icon-digg-1:before {
+  content: '\ef63'; }
+
+/* 'ю╜г' */
+.icon-dribbble-5:before {
+  content: '\ef64'; }
+
+/* 'ю╜д' */
+.icon-facebook-7:before {
+  content: '\ef65'; }
+
+/* 'ю╜е' */
+.icon-flickr-4:before {
+  content: '\ef66'; }
+
+/* 'ю╜ж' */
+.icon-foursquare-2:before {
+  content: '\ef67'; }
+
+/* 'ю╜з' */
+.icon-friendfeed-1:before {
+  content: '\ef68'; }
+
+/* 'ю╜и' */
+.icon-friendfeed-rect-1:before {
+  content: '\ef69'; }
+
+/* 'ю╜й' */
+.icon-github-6:before {
+  content: '\ef6a'; }
+
+/* 'ю╜к' */
+.icon-github-text-1:before {
+  content: '\ef6b'; }
+
+/* 'ю╜л' */
+.icon-googleplus:before {
+  content: '\ef6c'; }
+
+/* 'ю╜м' */
+.icon-instagram-4:before {
+  content: '\ef6d'; }
+
+/* 'ю╜н' */
+.icon-linkedin-6:before {
+  content: '\ef6e'; }
+
+/* 'ю╜о' */
+.icon-path:before {
+  content: '\ef6f'; }
+
+/* 'ю╜п' */
+.icon-picasa-2:before {
+  content: '\ef70'; }
+
+/* 'ю╜░' */
+.icon-pinterest-3:before {
+  content: '\ef71'; }
+
+/* 'ю╜▒' */
+.icon-reddit-1:before {
+  content: '\ef72'; }
+
+/* 'ю╜▓' */
+.icon-skype-5:before {
+  content: '\ef73'; }
+
+/* 'ю╜│' */
+.icon-slideshare:before {
+  content: '\ef74'; }
+
+/* 'ю╜┤' */
+.icon-stackoverflow-2:before {
+  content: '\ef75'; }
+
+/* 'ю╜╡' */
+.icon-stumbleupon-2:before {
+  content: '\ef76'; }
+
+/* 'ю╜╢' */
+.icon-twitter-7:before {
+  content: '\ef77'; }
+
+/* 'ю╜╖' */
+.icon-tumblr-4:before {
+  content: '\ef78'; }
+
+/* 'ю╜╕' */
+.icon-vimeo-4:before {
+  content: '\ef79'; }
+
+/* 'ю╜╣' */
+.icon-vkontakte-2:before {
+  content: '\ef7a'; }
+
+/* 'ю╜║' */
+.icon-w3c-1:before {
+  content: '\ef7b'; }
+
+/* 'ю╜╗' */
+.icon-wordpress-2:before {
+  content: '\ef7c'; }
+
+/* 'ю╜╝' */
+.icon-youtube-3:before {
+  content: '\ef7d'; }
+
+/* 'ю╜╜' */
+.icon-music-4:before {
+  content: '\ef7e'; }
+
+/* 'ю╜╛' */
+.icon-search-7:before {
+  content: '\ef7f'; }
+
+/* 'ю╜┐' */
+.icon-mail-7:before {
+  content: '\ef80'; }
+
+/* 'ю╛А' */
+.icon-heart-7:before {
+  content: '\ef81'; }
+
+/* 'ю╛Б' */
+.icon-star-7:before {
+  content: '\ef82'; }
+
+/* 'ю╛В' */
+.icon-user-7:before {
+  content: '\ef83'; }
+
+/* 'ю╛Г' */
+.icon-videocam-5:before {
+  content: '\ef84'; }
+
+/* 'ю╛Д' */
+.icon-camera-7:before {
+  content: '\ef85'; }
+
+/* 'ю╛Е' */
+.icon-photo-1:before {
+  content: '\ef86'; }
+
+/* 'ю╛Ж' */
+.icon-attach-6:before {
+  content: '\ef87'; }
+
+/* 'ю╛З' */
+.icon-lock-7:before {
+  content: '\ef88'; }
+
+/* 'ю╛И' */
+.icon-eye-7:before {
+  content: '\ef89'; }
+
+/* 'ю╛Й' */
+.icon-tag-6:before {
+  content: '\ef8a'; }
+
+/* 'ю╛К' */
+.icon-thumbs-up-5:before {
+  content: '\ef8b'; }
+
+/* 'ю╛Л' */
+.icon-pencil-7:before {
+  content: '\ef8c'; }
+
+/* 'ю╛М' */
+.icon-comment-6:before {
+  content: '\ef8d'; }
+
+/* 'ю╛Н' */
+.icon-location-7:before {
+  content: '\ef8e'; }
+
+/* 'ю╛О' */
+.icon-cup-1:before {
+  content: '\ef8f'; }
+
+/* 'ю╛П' */
+.icon-trash-8:before {
+  content: '\ef90'; }
+
+/* 'ю╛Р' */
+.icon-doc-7:before {
+  content: '\ef91'; }
+
+/* 'ю╛С' */
+.icon-note-1:before {
+  content: '\ef92'; }
+
+/* 'ю╛Т' */
+.icon-cog-6:before {
+  content: '\ef93'; }
+
+/* 'ю╛У' */
+.icon-params:before {
+  content: '\ef94'; }
+
+/* 'ю╛Ф' */
+.icon-calendar-8:before {
+  content: '\ef95'; }
+
+/* 'ю╛Х' */
+.icon-sound-1:before {
+  content: '\ef96'; }
+
+/* 'ю╛Ц' */
+.icon-clock-7:before {
+  content: '\ef97'; }
+
+/* 'ю╛Ч' */
+.icon-lightbulb-3:before {
+  content: '\ef98'; }
+
+/* 'ю╛Ш' */
+.icon-tv:before {
+  content: '\ef99'; }
+
+/* 'ю╛Щ' */
+.icon-desktop-3:before {
+  content: '\ef9a'; }
+
+/* 'ю╛Ъ' */
+.icon-mobile-6:before {
+  content: '\ef9b'; }
+
+/* 'ю╛Ы' */
+.icon-cd-3:before {
+  content: '\ef9c'; }
+
+/* 'ю╛Ь' */
+.icon-inbox-4:before {
+  content: '\ef9d'; }
+
+/* 'ю╛Э' */
+.icon-globe-6:before {
+  content: '\ef9e'; }
+
+/* 'ю╛Ю' */
+.icon-cloud-7:before {
+  content: '\ef9f'; }
+
+/* 'ю╛Я' */
+.icon-paper-plane-2:before {
+  content: '\efa0'; }
+
+/* 'ю╛а' */
+.icon-fire-3:before {
+  content: '\efa1'; }
+
+/* 'ю╛б' */
+.icon-graduation-cap-1:before {
+  content: '\efa2'; }
+
+/* 'ю╛в' */
+.icon-megaphone-3:before {
+  content: '\efa3'; }
+
+/* 'ю╛г' */
+.icon-database-2:before {
+  content: '\efa4'; }
+
+/* 'ю╛д' */
+.icon-key-5:before {
+  content: '\efa5'; }
+
+/* 'ю╛е' */
+.icon-beaker-1:before {
+  content: '\efa6'; }
+
+/* 'ю╛ж' */
+.icon-truck-1:before {
+  content: '\efa7'; }
+
+/* 'ю╛з' */
+.icon-money-2:before {
+  content: '\efa8'; }
+
+/* 'ю╛и' */
+.icon-food-1:before {
+  content: '\efa9'; }
+
+/* 'ю╛й' */
+.icon-shop-1:before {
+  content: '\efaa'; }
+
+/* 'ю╛к' */
+.icon-diamond:before {
+  content: '\efab'; }
+
+/* 'ю╛л' */
+.icon-t-shirt:before {
+  content: '\efac'; }
+
+/* 'ю╛м' */
+.icon-wallet:before {
+  content: '\efad'; }
+
+/* 'ю╛н' */
+.icon-search-8:before {
+  content: '\efae'; }
+
+/* 'ю╛о' */
+.icon-mail-8:before {
+  content: '\efaf'; }
+
+/* 'ю╛п' */
+.icon-heart-8:before {
+  content: '\efb0'; }
+
+/* 'ю╛░' */
+.icon-heart-empty-4:before {
+  content: '\efb1'; }
+
+/* 'ю╛▒' */
+.icon-star-8:before {
+  content: '\efb2'; }
+
+/* 'ю╛▓' */
+.icon-user-8:before {
+  content: '\efb3'; }
+
+/* 'ю╛│' */
+.icon-video-5:before {
+  content: '\efb4'; }
+
+/* 'ю╛┤' */
+.icon-picture-5:before {
+  content: '\efb5'; }
+
+/* 'ю╛╡' */
+.icon-th-large-3:before {
+  content: '\efb6'; }
+
+/* 'ю╛╢' */
+.icon-th-4:before {
+  content: '\efb7'; }
+
+/* 'ю╛╖' */
+.icon-th-list-5:before {
+  content: '\efb8'; }
+
+/* 'ю╛╕' */
+.icon-ok-6:before {
+  content: '\efb9'; }
+
+/* 'ю╛╣' */
+.icon-ok-circle-1:before {
+  content: '\efba'; }
+
+/* 'ю╛║' */
+.icon-cancel-7:before {
+  content: '\efbb'; }
+
+/* 'ю╛╗' */
+.icon-cancel-circle-2:before {
+  content: '\efbc'; }
+
+/* 'ю╛╝' */
+.icon-plus-circle-1:before {
+  content: '\efbd'; }
+
+/* 'ю╛╜' */
+.icon-minus-circle-1:before {
+  content: '\efbe'; }
+
+/* 'ю╛╛' */
+.icon-link-5:before {
+  content: '\efbf'; }
+
+/* 'ю╛┐' */
+.icon-attach-7:before {
+  content: '\efc0'; }
+
+/* 'ю┐А' */
+.icon-lock-8:before {
+  content: '\efc1'; }
+
+/* 'ю┐Б' */
+.icon-lock-open-7:before {
+  content: '\efc2'; }
+
+/* 'ю┐В' */
+.icon-tag-7:before {
+  content: '\efc3'; }
+
+/* 'ю┐Г' */
+.icon-reply-4:before {
+  content: '\efc4'; }
+
+/* 'ю┐Д' */
+.icon-reply-all-2:before {
+  content: '\efc5'; }
+
+/* 'ю┐Е' */
+.icon-forward-4:before {
+  content: '\efc6'; }
+
+/* 'ю┐Ж' */
+.icon-code-3:before {
+  content: '\efc7'; }
+
+/* 'ю┐З' */
+.icon-retweet-4:before {
+  content: '\efc8'; }
+
+/* 'ю┐И' */
+.icon-comment-7:before {
+  content: '\efc9'; }
+
+/* 'ю┐Й' */
+.icon-comment-alt-2:before {
+  content: '\efca'; }
+
+/* 'ю┐К' */
+.icon-chat-6:before {
+  content: '\efcb'; }
+
+/* 'ю┐Л' */
+.icon-attention-5:before {
+  content: '\efcc'; }
+
+/* 'ю┐М' */
+.icon-location-8:before {
+  content: '\efcd'; }
+
+/* 'ю┐Н' */
+.icon-doc-8:before {
+  content: '\efce'; }
+
+/* 'ю┐О' */
+.icon-docs-landscape:before {
+  content: '\efcf'; }
+
+/* 'ю┐П' */
+.icon-folder-6:before {
+  content: '\efd0'; }
+
+/* 'ю┐Р' */
+.icon-archive-2:before {
+  content: '\efd1'; }
+
+/* 'ю┐С' */
+.icon-rss-7:before {
+  content: '\efd2'; }
+
+/* 'ю┐Т' */
+.icon-rss-alt-1:before {
+  content: '\efd3'; }
+
+/* 'ю┐У' */
+.icon-cog-7:before {
+  content: '\efd4'; }
+
+/* 'ю┐Ф' */
+.icon-logout-3:before {
+  content: '\efd5'; }
+
+/* 'ю┐Х' */
+.icon-clock-8:before {
+  content: '\efd6'; }
+
+/* 'ю┐Ц' */
+.icon-block-5:before {
+  content: '\efd7'; }
+
+/* 'ю┐Ч' */
+.icon-resize-full-6:before {
+  content: '\efd8'; }
+
+/* 'ю┐Ш' */
+.icon-resize-full-circle:before {
+  content: '\efd9'; }
+
+/* 'ю┐Щ' */
+.icon-popup-5:before {
+  content: '\efda'; }
+
+/* 'ю┐Ъ' */
+.icon-left-open-5:before {
+  content: '\efdb'; }
+
+/* 'ю┐Ы' */
+.icon-right-open-5:before {
+  content: '\efdc'; }
+
+/* 'ю┐Ь' */
+.icon-down-circle-1:before {
+  content: '\efdd'; }
+
+/* 'ю┐Э' */
+.icon-left-circle-1:before {
+  content: '\efde'; }
+
+/* 'ю┐Ю' */
+.icon-right-circle-1:before {
+  content: '\efdf'; }
+
+/* 'ю┐Я' */
+.icon-up-circle-1:before {
+  content: '\efe0'; }
+
+/* 'ю┐а' */
+.icon-down-dir-3:before {
+  content: '\efe1'; }
+
+/* 'ю┐б' */
+.icon-right-dir-3:before {
+  content: '\efe2'; }
+
+/* 'ю┐в' */
+.icon-down-micro:before {
+  content: '\efe3'; }
+
+/* 'ю┐г' */
+.icon-up-micro:before {
+  content: '\efe4'; }
+
+/* 'ю┐д' */
+.icon-cw-circle:before {
+  content: '\efe5'; }
+
+/* 'ю┐е' */
+.icon-arrows-cw-3:before {
+  content: '\efe6'; }
+
+/* 'ю┐ж' */
+.icon-updown-circle:before {
+  content: '\efe7'; }
+
+/* 'ю┐з' */
+.icon-target-5:before {
+  content: '\efe8'; }
+
+/* 'ю┐и' */
+.icon-signal-5:before {
+  content: '\efe9'; }
+
+/* 'ю┐й' */
+.icon-progress-4:before {
+  content: '\efea'; }
+
+/* 'ю┐к' */
+.icon-progress-5:before {
+  content: '\efeb'; }
+
+/* 'ю┐л' */
+.icon-progress-6:before {
+  content: '\efec'; }
+
+/* 'ю┐м' */
+.icon-progress-7:before {
+  content: '\efed'; }
+
+/* 'ю┐н' */
+.icon-progress-8:before {
+  content: '\efee'; }
+
+/* 'ю┐о' */
+.icon-progress-9:before {
+  content: '\efef'; }
+
+/* 'ю┐п' */
+.icon-progress-10:before {
+  content: '\eff0'; }
+
+/* 'ю┐░' */
+.icon-progress-11:before {
+  content: '\eff1'; }
+
+/* 'ю┐▒' */
+.icon-font-2:before {
+  content: '\eff2'; }
+
+/* 'ю┐▓' */
+.icon-list-4:before {
+  content: '\eff3'; }
+
+/* 'ю┐│' */
+.icon-list-numbered-1:before {
+  content: '\eff4'; }
+
+/* 'ю┐┤' */
+.icon-indent-left-2:before {
+  content: '\eff5'; }
+
+/* 'ю┐╡' */
+.icon-indent-right-2:before {
+  content: '\eff6'; }
+
+/* 'ю┐╢' */
+.icon-cloud-8:before {
+  content: '\eff7'; }
+
+/* 'ю┐╖' */
+.icon-terminal-1:before {
+  content: '\eff8'; }
+
+/* 'ю┐╕' */
+.icon-facebook-rect-2:before {
+  content: '\eff9'; }
+
+/* 'ю┐╣' */
+.icon-twitter-bird-2:before {
+  content: '\effa'; }
+
+/* 'ю┐║' */
+.icon-vimeo-rect-1:before {
+  content: '\effb'; }
+
+/* 'ю┐╗' */
+.icon-tumblr-rect-1:before {
+  content: '\effc'; }
+
+/* 'ю┐╝' */
+.icon-googleplus-rect-1:before {
+  content: '\effd'; }
+
+/* 'ю┐╜' */
+.icon-linkedin-rect-1:before {
+  content: '\effe'; }
+
+/* 'ю┐╛' */
+.icon-skype-6:before {
+  content: '\efff'; }
+
+/* 'ю┐┐' */
+.icon-vkontakte-rect-1:before {
+  content: '\f000'; }
+
+/* 'яАА' */
+.icon-youtube-4:before {
+  content: '\f001'; }
+
+/* 'яАБ' */
+.icon-left-hand:before {
+  content: '\e8cc'; }
+
+/* 'югМ' */
+
+/*# sourceMappingURL=fontello.css.map */
