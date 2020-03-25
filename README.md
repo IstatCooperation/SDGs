@@ -87,5 +87,10 @@ populate_PxWeb_subindicatorData.sql
 ``` 
 The files above manage also a secondary language in PxWeb. You can found the arabic as primary language and the english as secondary.  
 
+
+## Acknowledgement
+
+The first release the software has been developed in the framework of the project in Palestine "Monitoring of Sustainable Development Goals Indicators" funded by AICS
+
 ## License
 `SDGs WA` and `MDT2PxWeb` are EUPL-licensed
