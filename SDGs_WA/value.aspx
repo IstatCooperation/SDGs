@@ -3,9 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <main id="content" class="row">
-        <div class="large-12 columns">
-            <div><a href="./index.aspx">Goals</a> &gt; <a href="./target.aspx?goalId=<asp:Literal ID='goalId' runat='server' />">Targets &amp; Indicators</a> &gt; <a href="./indicator.aspx?indId=<asp:Literal ID='indId' runat='server' />&targId=<asp:Literal ID='targIdBack' runat='server' />">Subindicators</a> &gt; Insert values</div>
+    <main id="content">
+           <div class="row">
+        <div class="large-8 columns">
+            <div><a href="./index.aspx"><%:Session["GOAL_LABEL"]%>s</a> &gt; <a href="./target.aspx?goalId=<asp:Literal ID='goalId' runat='server' />">Targets &amp; Indicators</a> &gt; <a href="./indicator.aspx?indId=<asp:Literal ID='indId' runat='server' />&targId=<asp:Literal ID='targIdBack' runat='server' />">Subindicators</a> &gt; Insert values</div>
             <div class="www" style="font-size: 16pt; margin-bottom: 20px;">
                 <b>Indicator from Target
                     <asp:Literal runat="server" ID="title" /></b>
@@ -13,15 +14,23 @@
                     <asp:Literal runat="server" ID="indicatorNL" />
                     -
                     <asp:Literal runat="server" ID="subTitle" /></h3>
-                <h3>Subindicator
-                    <asp:Literal runat="server" ID="subindicatorCode" /></h3>
+                <h3>Subindicator: 
+                    <b><asp:Literal runat="server" ID="subindicatorCodeValue" /></b>   <%=getOtherCodeValues() %></h3>
                 <asp:Literal runat="server" ID="indCode" Visible="false" />
+                  <asp:Literal runat="server" ID="subindicatorCode"  Visible="false"/> 
             </div>
         </div>
-
+             <div class="large-2  columns">
+             <asp:Literal ID="saveMessage" runat="server" />
+              </div>
+         <div class="large-1  columns">
+              <asp:Button ID="Button1" Text="Save" OnClick="Save" runat="server" />
+              </div>
+                </div>
+           <div class="row">
         <div class="large-12 columns">
             <div class="loading"></div>
-        <asp:Literal ID="saveMessage" runat="server" />
+        
             <table id="valueTable" class="display compact nowrap insert-value" style="width: 100%">
                 <thead>
                     <tr>
@@ -47,10 +56,10 @@
                                     <asp:TextBox ID="TIME_DETAIL" Text='<%#Eval("TIME_DETAIL") %>' runat="server" />
                                 </td>
                                 <td>
-                                    <asp:TextBox ID="BASE_PER" Text='<%#Eval("BASE_PER") %>' runat="server" />
+                                    <asp:TextBox ID="BASE_PER" Text='<%#Eval("BASE_PER") %>' runat="server"   />
                                 </td>
                                 <td class="comment">
-                                    <asp:TextBox ID="COMMENT_OBS" Text='<%#Eval("COMMENT_OBS") %>' TextMode="MultiLine" runat="server" />
+                                    <asp:TextBox ID="COMMENT_OBS" Text='<%#Eval("COMMENT_OBS") %>' TextMode="MultiLine" runat="server"  />
                                 </td>
                                 <td class="comment">
                                     <asp:TextBox ID="SOURCE_DETAIL" Text='<%#Eval("SOURCE_DETAIL") %>' TextMode="MultiLine" runat="server" />
@@ -63,6 +72,7 @@
                     </asp:Repeater>
                 </tbody>
             </table>
+             </div>
             <asp:Button ID="save" Text="Save" OnClick="Save" runat="server" />
         </div>
     </main>

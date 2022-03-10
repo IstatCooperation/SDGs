@@ -1,0 +1,343 @@
+"Original indicator Reference","Original code","indicators name","subject name","palestine","subject","target","indicator","sub","Database CODE","indcode"
+monitoring indicators,"15.01",Number of Livestock ,Agriculture,970.0,"15","0203","01","00","9701502030100","9701502030100"
+monitoring indicators,"15.02",Cultivated Area by Type of Crop and Type of Irrigation,Agriculture,970.0,"15","0204","02","00","9701502040200","9701502040200"
+monitoring indicators,"15.03",Value of agricultural exports,Agriculture,970.0,"15","020b","03","00","97015020b0300","97015020b0300"
+monitoring indicators,"15.04",Value of agricultural imports,Agriculture,970.0,"15","020b","04","00","97015020b0400","97015020b0400"
+SDGs ,"2.3.1 ",Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size,Agriculture,970.0,"15","0203","05","00","9701502030500",C020301
+SDGs ,"2.3.2 ","Average income of small-scale food producers, by sex and indigenous status",Agriculture,970.0,"15","0203","06","00","9701502030600",C020302
+SDGs ,"2.a.1.1 ",The agriculture orientation index for government expenditures,Agriculture,970.0,"15","020a","07","01","97015020a0701","97015020a0701"
+SDGs ,"2.a.1.2",Agriculture share of Government Expenditure (%),Agriculture,970.0,"15","020a","07","02","97015020a0702","97015020a0702"
+SDGs ,"2.a.1.3",Agriculture value added share of GDP,Agriculture,970.0,"15","020a","07","03","97015020a0703","97015020a0703"
+SDGs ,"2.a.2 ",Total official flows (official development assistance plus other official flows) to the agriculture sector,Agriculture,970.0,"15","020a","08","00","97015020a0800",C020a02
+SDGs ,"2.b.1 ",Agricultural export subsidies,Agriculture,971.0,"15","020b","09","00","97115020b0900",C020b02
+SDGs ,"14.4.1",Proportion of fish stocks within biologically sustainable levels,Agriculture,970.0,"15","1404","10","00","9701514041000",C140401
+SDGs ,"14.7.1 ","Sustainable fisheries as a proportion of GDP in small island developing States, least developed countries and all countries",Agriculture,970.0,"15","1407","11","00","9701514071100",C140701
+monitoring indicators,"03.01",Gross Enrollment Rate,Education,970.0,"03","0401","01","00","9700304010100","9700304010100"
+monitoring indicators,"03.02",Net Enrollment Rate,Education,970.0,"03","0401","02","00","9700304010200","9700304010200"
+monitoring indicators,"03.03",Average Number of Students per Teacher,Education,970.0,"03","0399","03","00","9700303990300","9700303990300"
+monitoring indicators,"03.04",Average Number of Students Per Class,Education,970.0,"03","0399","04","00","9700303990400","9700303990400"
+monitoring indicators,"03.05","The average achievement of the 4th basic grade students in the Mathematics, Science and Arabic language subjects  ",Education,970.0,"03","0401","05","00","9700304010500","9700304010500"
+monitoring indicators,"03.06","The average achievement of the 5th basic grade students in the Mathematics, Science and Arabic language subjects  ",Education,970.0,"03","0401","06","00","9700304010600","9700304010600"
+monitoring indicators,"03.07","The average achievement of the 9th basic grade students in the Mathematics, Science and Arabic language subjects  ",Education,970.0,"03","0401","07","00","9700304010700","9700304010700"
+monitoring indicators,"03.08","The average achievement of the 10th grade students in the Mathematics, Science and Arabic language subjects  ",Education,970.0,"03","0401","08","00","9700304010800","9700304010800"
+monitoring indicators,"03.09",Percentage of Schools access to Internet,Education,970.0,"03","040a","09","00","97003040a0900","97003040a0900"
+monitoring indicators,"03.10",Average Number of Students Per Computer,Education,970.0,"03","040a","10","00","97003040a1000","97003040a1000"
+monitoring indicators,"03.11",Number of students with dissabilities who enrolled in governmental schools,Education,970.0,"03","0405","11","00","9700304051100","9700304051100"
+monitoring indicators,"03.12",Percentage Distribution of Individuals (15 Years and above) by educational Attainment,Education,970.0,"03","0399","12","00","9700303991200","9700303991200"
+monitoring indicators,"03.13",Literacy Rate for individuals 15 years and above,Education,970.0,"03","0401","13","00","9700304011300","9700304011300"
+monitoring indicators,"03.14",Ratio of Females to Males in Education Stages,Education,970.0,"03","0405","14","00","9700304051400","9700304051400"
+monitoring indicators,"03.15",Number of Graduates from Palestinian Higher Institutions,Education,970.0,"03","0403","15","00","9700304031500","9700304031500"
+SDGs ,"4.1.1 ","Proportion of children and young people: (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex",Education,970.0,"03","0401","16","00","9700304011600",C040101
+SDGs ,"4.1.2","Completion rate (primary education, lower secondary education, upper secondary education)",Education,970.0,"03","0401","17","00","9700304011700","9700304011700"
+SDGs ,"4.2.1 ","Proportion of children aged 24-59 months who are developmentally on track in health, learning and psychosocial well-being, by sex",Education,970.0,"03","0402","18","00","9700304021800",C040201
+SDGs ,"4.2.2 ","Participation rate in organized learning (one year before the official primary entry age), by sex",Education,970.0,"03","0402","19","00","9700304021900",C040202
+SDGs ,"4.3.1 ","Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex",Education,970.0,"03","0403","20","00","9700304032000",C040301
+SDGs ,"4.5.1 ","Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated",Education,971.0,"03","0405","21","00","9710304052100",C040501
+SDGs ,"4.6.1 ","Proportion of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex",Education,972.0,"03","0406","22","00","9720304062200",C040601
+SDGs ,"4.7.1","Extent to which (i) global citizenship education and (ii) education for sustainable development, including gender equality and human rights, are mainstreamed at all levels in: (a) national education policies; (b) curricula; (c) teacher education; and (d) ",Education,973.0,"03","0407","23","00","9730304072300",C040701
+SDGs ,"4.a.1.1",Proportion of schools with access to: (a) electricity,Education,974.0,"03","040a","24","01","97403040a2401","97403040a2401"
+SDGs ,"4.a.1.2",Proportion of schools with access to: (b) the Internet for pedagogical purposes,Education,975.0,"03","040a","24","02","97503040a2402","97503040a2402"
+SDGs ,"4.a.1.3",Proportion of schools with access to: (c) computers for pedagogical purposes,Education,976.0,"03","040a","24","03","97603040a2403","97603040a2403"
+SDGs ,"4.a.1.4",Proportion of schools with access to: (d) adapted infrastructure and materials for students with disabilities ,Education,977.0,"03","040a","24","04","97703040a2404","97703040a2404"
+SDGs ,"4.a.1.5",Proportion of schools with access to:  (e) basic drinking water,Education,978.0,"03","040a","24","05","97803040a2405","97803040a2405"
+SDGs ,"4.a.1.6",Proportion of schools with access to:(f) single-sex basic sanitation facilities,Education,979.0,"03","040a","24","06","97903040a2406","97903040a2406"
+SDGs ,"4.a.1.7",Proportion of schools with access to:(g) basic handwashing facilities (as per the WASH indicator definitions),Education,980.0,"03","040a","24","07","98003040a2407","98003040a2407"
+SDGs ,"4.b.1",Volume of official development assistance flows for scholarships by sector and type of study,Education,981.0,"03","040b","25","00","98103040b2500",C040b01
+SDGs ,"4.c.1 ",Proportion of teachers in: (a) pre-primary; (b) primary; (c) lower secondary; and (d) upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching a,Education,982.0,"03","040c","26","00","98203040c2600",C040c01
+monitoring indicators,"21.01",Per capita share of electricity,Energy,970.0,"20","0701","01","00","9702107010100","9702107010100"
+monitoring indicators,"21.02",Capacity of Photo-voltaic,Energy,970.0,"20","0702","02","00","9702107020200","9702107020200"
+SDGs ,"7.1.1",Proportion of population with access to electricity,Energy,970.0,"20","0701","03","00","9702107010300",C070101
+SDGs ,"7.1.2",Proportion of population with primary reliance on clean fuels and technology,Energy,970.0,"20","0701","04","00","9702107010400",C070102
+SDGs ,"7.2.1",Renewable energy share in the total final energy consumption,Energy,970.0,"20","0702","05","00","9702107020500",C070201
+SDGs ,"7.3.1",Energy intensity measured in terms of primary energy and GDP,Energy,970.0,"20","0703","06","00","9702107030600",C070301
+SDGs ,"7.a.1 ","International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems",Energy,970.0,"20","070a","07","00","97021070a0700",C070a01
+SDGs ,"7.b.1",Installed renewable energy-generating capacity in developing countries (in watts per capita),Energy,970.0,"20","070b","08","00","97021070b0800",C070b01
+SDGs ,"12.a.1",Installed renewable energy-generating capacity in developing countries (in watts per capita),Energy,970.0,"20","120a","09","00","97021120a0900",C120a01
+SDGs ,"12.c.1","12.c.1 Amount of fossil-fuel subsidies per unit of GDP (production and consumption) and as a proportion of total national expenditure on fossil fuels",Energy,970.0,"20","120c","10","00","97021120c1000",C120c01
+monitoring indicators,"16.01",quantity of collected solid waste ,Environment,970.0,"16","1106","01","00","9701611060100","9701611060100"
+monitoring indicators,"16.02",quantity of collected medical waste ,Environment,970.0,"16","1204","02","00","9701612040200","9701612040200"
+SDGs ,"1.5.3",Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030,Environment,970.0,"16","0105","03","00","9701601050300",C200304
+SDGs ,"1.5.4",Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies,Environment,970.0,"16","0105","04","00","9701601050400",C200305
+SDGs ,"2.5.1",Number of plant and animal genetic resources for food and agriculture secured in either medium or long-term conservation facilities,Environment,970.0,"16","0205","05","00","9701602050500",C020501
+SDGs ,"2.5.2",Proportion of local breeds classified as being at risk of extinction,Environment,970.0,"16","0205","06","00","9701602050600",C020502
+SDGs ,"6.3.1",Proportion of domestic and industrial wastewater flows safely treated,Environment,970.0,"16","0603","07","00","9701606030700",C060301
+SDGs ,"6.b.1",Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management,Environment,970.0,"16","060b","08","00","97016060b0800",C060b01
+SDGs ,"8.4.1","Material footprint, material footprint per capita, and material footprint per GDP",Environment,970.0,"16","0804","09","00","9701608040900",C200202
+SDGs ,"9.4.1",CO2 emission per unit of value added,Environment,970.0,"16","0904","10","00","9701609041000",C090401
+SDGs ,"11.6.1","Proportion of municipal solid waste collected and managed in controlled facilities out of total municipal waste generated, by cities ",Environment,970.0,"16","1106","11","00","9701611061100",C110601
+SDGs ,"116,2",Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted),Environment,970.0,"16","1106","12","00","9701611061200","9701611061200"
+SDGs ,"11.b.1",Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030,Environment,970.0,"16","110b","13","00","97016110b1300",C200304
+SDGs ,"11.b.2",Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies,Environment,970.0,"16","110b","14","00","97016110b1400",C200305
+SDGs ,"12.1.1",Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies,Environment,970.0,"16","1201","15","00","9701612011500",C120101
+SDGs ,"12.2.1","Material footprint, material footprint per capita, and material footprint per GDP",Environment,970.0,"16","1202","16","00","9701612021600",C200202
+SDGs ,"12.3.1",(a) Food loss index and (b) food waste index,Environment,970.0,"16","1203","17","00","9701612031700",C120301
+SDGs ,"12.4.1","Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement",Environment,970.0,"16","1204","18","00","9701612041800",C120401
+SDGs ,"12.4.2","Hazardous waste generated per capita and proportion of hazardous waste treated, by type of treatment",Environment,970.0,"16","1204","19","00","9701612041900",C120402
+SDGs ,"12.5.1","National recycling rate, tons of material recycled",Environment,970.0,"16","1205","20","00","9701612052000",C120501
+SDGs ,"12.6.1",Number of companies publishing sustainability reports,Environment,970.0,"16","1206","21","00","9701612062100",C120601
+SDGs ,"12.7.1",Number of countries implementing sustainable public procurement policies and action plans,Environment,970.0,"16","1207","22","00","9701612072200",C120701
+SDGs ,"12.8.1",Extent to which (i) global citizenship education and (ii) education for sustainable development (including climate change education) are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment,Environment,970.0,"16","1208","23","00","9701612082300",C120801
+SDGs ,"13.1.2",Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030,Environment,970.0,"16","1301","24","00","9701613012400",C200304
+SDGs ,"13.1.3",Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies,Environment,970.0,"16","1301","25","00","9701613012500",C200305
+SDGs ,"13.2.1","Number of countries with nationally determined contributions, long-term strategies, national adaptation plans, strategies as reported in adaptation communications and national communications",Environment,970.0,"16","1302","26","00","9701613022600",C130201
+SDGs ,"13.2.2",Total greenhouse gas emissions per year,Environment,970.0,"16","1302","27","00","9701613022700","9701613022700"
+SDGs ,"13.3.1",Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment,Environment,970.0,"16","1303","28","00","9701613032800",C130301
+SDGs ,"13.b.1","Number of least developed countries and small island developing States with nationally determined contributions, long-term strategies, national adaptation plans, strategies as reported in adaptation communications and national communications",Environment,970.0,"16","130b","29","00","97016130b2900",C130b01
+SDGs ,"14.1.1",(a) Index of coastal eutrophication; and (b) plastic debris densityi,Environment,970.0,"16","1401","30","00","9701614013000",C140101
+SDGs ,"14.2.1",Number of countries using ecosystem-based approaches to managing marine areas,Environment,970.0,"16","1402","31","00","9701614023100",C140201
+SDGs ,"14.3.1","Average marine acidity (pH) measured at agreed suite of representative sampling stations
+",Environment,970.0,"16","1403","32","00","9701614033200",C140301
+SDGs ,"14.5.1","Coverage of protected areas in relation to marine areas
+",Environment,970.0,"16","1405","33","00","9701614053300",C140501
+SDGs ,"15.1.2","Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type ",Environment,970.0,"16","1501","34","00","9701615013400",C150102
+SDGs ,"15.2.1",Progress towards sustainable forest management,Environment,970.0,"16","1502","35","00","9701615023500",C150201
+SDGs ,"15.4.1",Coverage by protected areas of important sites for mountain biodiversity ,Environment,970.0,"16","1504","36","00","9701615043600",C150401
+SDGs ,"15.5.1",Red List Index,Environment,970.0,"16","1505","37","00","9701615053700",C150501
+SDGs ,"15.6.1","Number of countries that have adopted legislative, administrative and policy frameworks to ensure fair and equitable sharing of benefits",Environment,970.0,"16","1506","38","00","9701615063800",C150601
+SDGs ,"15.7.1",Proportion of traded wildlife that was poached or illicitly trafficked,Environment,970.0,"16","1507","39","00","9701615073900",C200206
+SDGs ,"15.8.1",Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species,Environment,970.0,"16","1508","40","00","9701615084000",C150801
+SDGs ,"15.9.1",(a) Number of countries that have established national targets in accordance with or similar to Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020 in their national biodiversity strategy and action plans and the progress reported,Environment,970.0,"16","1509","41","00","9701615094100",C150901
+SDGs ,"15.a.1",(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments,Environment,970.0,"16","150a","42","00","97016150a4200",C200207
+SDGs ,"15.b.1",(a) Official development assistance on conservation and sustainable use of biodiversity; and (b) revenue generated and finance mobilized from biodiversity-relevant economic instruments,Environment,970.0,"16","150b","43","00","97016150b4300",C200207
+SDGs ,"15.c.1",Proportion of traded wildlife that was poached or illicitly trafficked,Environment,970.0,"16","150c","44","00","97016150c4400",C200206
+SDGs ,"17.7.1","Total amount of approved funding for developing countries to promote the development, transfer, dissemination and diffusion of environmentally sound technologies",Environment,970.0,"16","1707","45","00","9701617074500",C170701
+SDGs ,"1.a.2","Proportion of total government spending on essential services (education, health and social protection)",Finance,970.0,"14","010a","01","00","97014010a0100",C010a02
+SDGs ,"8.10.1.1","Number of commercial bank branches per 100,000 adults",Finance,970.0,"14","0810","02","01","9701408100201","9701408100201"
+SDGs ,"8.10.1.2","Number of automated teller machines (ATMs) per 100,000 adults",Finance,970.0,"14","0810","02","02","9701408100202","9701408100202"
+SDGs ,"8.10.2",Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider,Finance,970.0,"14","0810","03","00","9701408100300",C081002
+SDGs ,"9.a.1",Total official international support (official development assistance plus other official flows) to infrastructure,Finance,970.0,"14","090a","04","00","97014090a0400",C090a01
+SDGs ,"10.4.2",Redistributive impact of fiscal policy,Finance,970.0,"14","1004","05","00","9701410040500","9701410040500"
+SDGs ,"10.5.1",Financial Soundness Indicators,Finance,970.0,"14","1005","06","00","9701410050600",C100501
+SDGs ,"10.7.1",Recruitment cost borne by employee as a proportion of yearly income earned in country of destination,Finance,970.0,"14","1007","07","00","9701410070700",C100701
+SDGs ,"10.b.1","Total resource flows for development, by recipient and donor countries and type of flow (e.g. official development assistance, foreign direct investment and other flows)",Finance,970.0,"14","100b","08","00","97014100b0800",C100b01
+SDGs ,"10.c.1",Remittance costs as a proportion of the amount remitted,Finance,970.0,"14","100c","09","00","97014100c0900",C100c01
+SDGs ,"13.a.1",Amounts provided and mobilized in United States dollars per year in relation to the continued existing collective mobilization goal of the $100 billion commitment through to 2025,Finance,970.0,"14","130a","10","00","97014130a1000",C130a01
+SDGs ,"16.4.1",Total value of inward and outward illicit financial flows (in current United States dollars),Finance,970.0,"14","1604","11","00","9701416041100",C160401
+SDGs ,"16.6.1","Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)",Finance,970.0,"14","1606","12","00","9701416061200",C160601
+SDGs ,"17.1.1","Total government revenue as a proportion of GDP, by source",Finance,970.0,"14","1701","13","00","9701417011300",C170101
+SDGs ,"17.1.2",Proportion of domestic budget funded by domestic taxes,Finance,970.0,"14","1702","14","00","9701417021400",C170102
+SDGs ,"17.2.1","Net official development assistance, total and to least developed countries, as a proportion of the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee donors’ gross national income (GNI)",Finance,970.0,"14","1702","15","00","9701417021500",C170201
+SDGs ,"17.3.1","Foreign direct investment, official development assistance and South-South cooperation as a proportion of gross national income",Finance,970.0,"14","1703","16","00","9701417031600",C170301
+SDGs ,"17.3.2",Volume of remittances (in United States dollars) as a proportion of total GDP,Finance,970.0,"14","1703","17","00","9701417031700",C170302
+SDGs ,"17.4.1",Debt service as a proportion of exports of goods and services,Finance,970.0,"14","1704","18","00","9701417041800",C170401
+SDGs ,"17.5.1","Number of countries that adopt and implement investment promotion regimes for developing countries, including the least developed countries",Finance,970.0,"14","1705","19","00","9701417051900",C170501
+SDGs ,"2.1.1 ",Prevalence of undernourishment,Food Security & Nutrition,970.0,"24","0201","01","00","9702402010100",C020101
+SDGs ,"2.1.2.1","Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)",Food Security & Nutrition,970.0,"24","0201","02","01","9702402010201","9702402010201"
+SDGs ,"2.1.2.2","Prevalence of severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)",Food Security & Nutrition,970.0,"24","0201","02","02","9702402010202","9702402010202"
+SDGs ,"2.2.1 ",Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age,Food Security & Nutrition,970.0,"24","0202","03","00","9702402020300",C020201
+SDGs ,"2.2.2.1","Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting)",Food Security & Nutrition,970.0,"24","0202","04","01","9702402020401","9702402020401"
+SDGs ,"2.2.2.2","Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type ( overweight)",Food Security & Nutrition,970.0,"24","0202","04","02","9702402020402","9702402020402"
+SDGs ,"3.7.2.1","Adolescent birth rate (aged 10-14 years) per 1,000 women in that age group",Gender,970.0,"18","0307","01","01","9701803070101","9701803070101"
+SDGs ,"3.7.2.2","Adolescent birth rate (aged 15-19 years) per 1,000 women in that age group",Gender,970.0,"18","0307","01","02","9701803070102","9701803070102"
+SDGs ,"5.1.1","Whether or not legal frameworks are in place to promote, enforce and monitor equality and non‑discrimination on the basis of sex",Gender,970.0,"18","0501","02","00","9701805010200",C050101
+SDGs ,"5.2.1","Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age",Gender,970.0,"18","0502","03","00","9701805020300",C050201
+SDGs ,"5.2.2","Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence",Gender,970.0,"18","0502","04","00","9701805020400",C050202
+SDGs ,"5.3.1.1",Proportion of women aged 20-24 years who were married or in a union before age 15,Gender,970.0,"18","0503","05","01","9701805030501","9701805030501"
+SDGs ,"5.3.1.2",Proportion of women aged 20-24 years who were married or in a union before age 18,Gender,970.0,"18","0503","05","02","9701805030502","9701805030502"
+SDGs ,"5.3.2","Proportion of girls and women aged 15-49 years who have undergone female genital mutilation/cutting, by age",Gender,970.0,"18","0503","06","00","9701805030600",C050302
+SDGs ,"5.4.1","Proportion of time spent on unpaid domestic and care work, by sex, age and location",Gender,970.0,"18","0504","07","00","9701805040700",C050401
+SDGs ,"5.5.1.1",Proportion of seats held by women in national parliaments ,Gender,970.0,"18","0505","08","01","9701805050801","9701805050801"
+SDGs ,"5.5.1.2",Proportion of seats held by women in local governments,Gender,970.0,"18","0505","08","02","9701805050802","9701805050802"
+SDGs ,"5.5.2",Proportion of women in managerial positions,Gender,970.0,"18","0505","09","00","9701805050900",C050502
+SDGs ,"5.6.1","Proportion of women aged 15-49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care",Gender,971.0,"18","0506","10","00","9711805061000",C050601
+SDGs ,"5.6.2","Number of countries with laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education",Gender,970.0,"18","0506","11","00","9701805061100",C050602
+SDGs ,"5.a.2",Proportion of countries where the legal framework (including customary law) guarantees women’s equal rights to land ownership and/or control,Gender,970.0,"18","050a","12","00","97018050a1200",C050a02
+SDGs ,"5.c.1",Proportion of countries with systems to track and make public allocations for gender equality and women’s empowerment,Gender,970.0,"18","050c","13","00","97018050c1300",C050c01
+SDGs ,"11.7.2","Proportion of persons victim of physical or sexual harassment, by sex, age, disability status and place of occurrence, in the previous 12 months",Gender,970.0,"18","1107","14","00","9701811071400",C110702
+SDGs ,"16.2.1",Proportion of children aged 1-17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month,Gender,970.0,"18","1602","15","00","9701816021500",C160201
+SDGs ,"16.2.3",Proportion of young women and men aged 18‑29 years who experienced sexual violence by age 18,Gender,970.0,"18","1602","16","00","9701816021600",C160203
+monitoring indicators,"02.01",Infant mortality rate per 1000 live birth,Health,970.0,"02","0399","01","00","9700203990100","9700203990100"
+monitoring indicators,"02.02",Under Five Mortality Rate per 1000 live birth,Health,970.0,"02","0302","02","00","9700203020200","9700203020200"
+monitoring indicators,"02.03",Average Number of Beds per thousand of Population,Health,970.0,"02","0308","03","00","9700203080300","9700203080300"
+monitoring indicators,"02.04",Percentage of Women 15-49 Years Who Received Antenatal Care  (at Least 4 Visits),Health,970.0,"02","0308","04","00","9700203080400","9700203080400"
+monitoring indicators,"02.05",Percentage of Vaccination Coverage ,Health,970.0,"02","0308","05","00","9700203080500","9700203080500"
+monitoring indicators,"02.06", Health expenditure by Central government as percentage of GDP,Health,970.0,"02","010a","06","00","97002010a0600","97002010a0600"
+monitoring indicators,"02.07",Health expenditure by central government expenditure per capita,Health,970.0,"02","010a","07","00","97002010a0700","97002010a0700"
+monitoring indicators,"02.08", Health expenditure by Central government as percentage of total cuurent expenditure on health,Health,970.0,"02","010a","08","00","97002010a0800","97002010a0800"
+monitoring indicators,"02.09", Health expenditure by Household out-of-Pocket Payment as percentage  of total cuurent expenditure on health,Health,970.0,"02","010a","09","00","97002010a0900","97002010a0900"
+SDGs ,"2.2.3.1",Prevalence of anaemia in women aged 15 to 49 years,Health,970.0,"02","0202","10","01","9700202021001","9700202021001"
+SDGs ,"2.2.3.2",Prevalence of anaemia in pregnant women aged 15 to 49 years,Health,970.0,"02","0202","10","02","9700202021002","9700202021002"
+SDGs ,"2.2.3.3",Prevalence of anaemia in non-nonpregnant women aged 15 to 49 years,Health,970.0,"02","0202","10","03","9700202021003","9700202021003"
+SDGs ,"3.1.1  ",Maternal mortality ratio,Health,970.0,"02","0301","11","00","9700203011100","9700203011100"
+SDGs ,"3.1.2 ",Proportion of births attended by skilled health personnel,Health,970.0,"02","0301","12","00","9700203011200",C030102
+SDGs ,"3.2.1",Under-five mortality rate,Health,970.0,"02","0302","13","00","9700203021300",C030201
+SDGs ,"3.2.2 ",Neonatal mortality rate,Health,970.0,"02","0302","14","00","9700203021400",C030202
+SDGs ,"3.3.1 ","Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations",Health,970.0,"02","0303","15","00","9700203031500",C030301
+SDGs ,"3.3.2 ","Tuberculosis incidence per 100,000 population",Health,970.0,"02","0303","16","00","9700203031600",C030302
+SDGs ,"3.3.3","Malaria incidence per 1,000 population",Health,970.0,"02","0303","17","00","9700203031700",C030303
+SDGs ,"3.3.4","Hepatitis B incidence per 100,000 population",Health,970.0,"02","0303","18","00","9700203031800",C030304
+SDGs ,"3.3.5",Number of people requiring interventions against neglected tropical diseases,Health,970.0,"02","0303","19","00","9700203031900",C030305
+SDGs ,"3.4.1 ","Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease (Per 10,000)",Health,970.0,"02","0304","20","00","9700203042000",C030401
+SDGs ,"3.5.1 ","Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders",Health,970.0,"02","0305","21","00","9700203052100",C030501
+SDGs ,"3.5.2 ","Harmful use of alcohol, defined according to the national context as alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol",Health,970.0,"02","0305","22","00","9700203052200",C030502
+SDGs ,"3.6.1",Death rate due to road traffic injuries,Health,970.0,"02","0306","23","00","9700203062300",C030601
+SDGs ,"3.7.1 ",Proportion of women of reproductive age (aged 15-49 years) who have their need for family planning satisfied with modern methods,Health,970.0,"02","0307","24","00","9700203072400",C030701
+SDGs ,"3.8.1 ","Coverage of essential health services (defined as the average coverage of essential services based on tracer interventions that include reproductive, maternal, newborn and child health, infectious diseases, non-communicable diseases and service capacity a",Health,970.0,"02","0308","25","00","9700203082500",C030801
+SDGs ,"3.8.2.1",Proportion of population with large household expenditures on health as a share of total household expenditure or income (more than 10%),Health,970.0,"02","0308","26","01","9700203082601","9700203082601"
+SDGs ,"3.8.2.2",Proportion of population with large household expenditures on health as a share of total household expenditure or income (more than 25%),Health,970.0,"02","0308","26","02","9700203082602","9700203082602"
+SDGs ,"3.9.1 ",Mortality rate attributed to household and ambient air pollution,Health,970.0,"02","0309","27","00","9700203092700",C030901
+SDGs ,"3.9.2 ","Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (exposure to unsafe Water, Sanitation and Hygiene for All (WASH) services)",Health,970.0,"02","0309","28","00","9700203092800",C030902
+SDGs ,"3.9.3 ",Mortality rate attributed to unintentional poisoning,Health,970.0,"02","0309","29","00","9700203092900",C030903
+SDGs ,"3.a.1",Age-standardized prevalence of current tobacco use among persons aged 15 years and older,Health,970.0,"02","030a","30","00","97002030a3000",C030a01
+SDGs ,"3.b.1 ",Proportion of the target population covered by all vaccines included in their national programme,Health,970.0,"02","030b","31","00","97002030b3100",C030b01
+SDGs ,"3.b.2",Total net official development assistance to medical research and basic health sectors,Health,970.0,"02","030b","32","00","97002030b3200",C030b02
+SDGs ,"3.b.3",Proportion of health facilities that have a core set of relevant essential medicines available and affordable on a sustainable basis,Health,970.0,"02","030b","33","00","97002030b3300",C030b03
+SDGs ,"3.c.1 ",Health worker density and distribution,Health,970.0,"02","030c","34","00","97002030c3400",C030c01
+SDGs ,"3.d.1 ",International Health Regulations (IHR) capacity and health emergency preparedness,Health,970.0,"02","030d","35","00","97002030d3500",C030d01
+SDGs ,"3.d.2",Percentage of bloodstream infections due to selected antimicrobial-resistant organisms,Health,970.0,"02","030d","36","00","97002030d3600","97002030d3600"
+monitoring indicators,"06.01",percentage of households connected to public water network ,Housing and Building,970.0,"06","0601","01","00","9700606010100","9700606010100"
+monitoring indicators,"06.02",Percentage of connected households to wastewater network ,Housing and Building,970.0,"06","0602","02","00","9700606020200","9700606020200"
+SDGs ,"1.4.1",Proportion of population living in households with access to basic services,Housing and Building,970.0,"06","0104","02","00","9700601040200",C010401
+SDGs ,"6.2.1.1",Proportion of population using safely managed sanitation services ,Housing and Building,970.0,"06","0602","03","01","9700606020301","9700606020301"
+SDGs ,"6.2.1.2",Proportion of population using  a hand-washing facility with soap and water,Housing and Building,970.0,"06","0602","03","02","9700606020302","9700606020302"
+SDGs ,"9.1.1",Proportion of the rural population who live within 2 km of an allseason road,Housing and Building,970.0,"06","0901","04","00","9700609010400",C090101
+SDGs ,"11.1.1 ","Proportion of urban population living in slums, informal settlements or inadequate housing",Housing and Building,970.0,"06","1101","05","00","9700611010500",C110101
+SDGs ,"11.a.1 ","Number of countries that have national urban policies or regional development plans that (a) respond to population dynamics, (b) ensure balanced territorial development, (c) increase local fiscal space ",Housing and Building,970.0,"06","110a","06","00","97006110a0600",C110a01
+SDGs ,"9.2.1.1",Manufacturing value added as a proportion of GDP ,Industry,970.0,"21","0903","01","01","9702109030101","9702109030101"
+SDGs ,"9.2.1.2",Manufacturing value added as per capita,Industry,970.0,"21","0903","01","02","9702109030102","9702109030102"
+SDGs ,"9.3.1",Proportion of small-scale industries in total industry value added,Industry,970.0,"21","0903","02","00","9702109030200",C090301
+SDGs ,"9.3.2",Proportion of small-scale industries with a loan or line of credit,Industry,970.0,"21","0903","03","00","9702109030300",C090302
+SDGs ,"9.b.1",Proportion of medium and high-tech industry value added in total value added,Industry,970.0,"21","090b","04","00","97021090b0400",C090b01
+SDGs ,"4.4.1","Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill",Information Technology and research,970.0,"05","0404","01","00","9700504040100",C040401
+SDGs ,"5.b.1 ","Proportion of individuals who own a mobile telephone, by sex",Information Technology and research,970.0,"05","050b","02","00","97005050b0200",C050b01
+SDGs ,"9.5.1",Research and development expenditure as a proportion of GDP,Information Technology and research,970.0,"05","0905","03","00","9700509050300",C090501
+SDGs ,"9.5.2",Researchers (in full-time equivalent) per million inhabitants,Information Technology and research,970.0,"05","0905","04","00","9700509050400",C090502
+SDGs ,"9.c.1 ","Proportion of population covered by a mobile network, by technology",Information Technology and research,970.0,"05","090c","05","00","97005090c0500",C090c01
+SDGs ,"14.a.1  ",Proportion of total research budget allocated to research in the field of marine technology,Information Technology and research,970.0,"05","140a","06","00","97005140a0600","97005140a0600"
+SDGs ,"17.6.1 ","Fixed Internet broadband subscriptions per 100 inhabitants, by speed",Information Technology and research,970.0,"05","1706","07","00","9700517060700",C170601
+SDGs ,"17.8.1 ",Proportion of individuals using the Internet,Information Technology and research,970.0,"05","1708","08","00","9700517080800",C170801
+monitoring indicators,"19.01",Number of ratified international conventions_trites by the state of palestine,International Cooperation,970.0,"19","1006","01","00","9701910060100","9701910060100"
+monitoring indicators,"09.01",Number of Palestinian Detainees,Israeli Violation,970.0,"09","0999","01","00","9700909990100","9700909990100"
+monitoring indicators,"09.02",Number of Palestinian Martyrs,Israeli Violation,970.0,"09","0999","02","00","9700909990200","9700909990200"
+monitoring indicators,"09.03",Number of Israeli Settlements,Israeli Violation,970.0,"09","0999","03","00","9700909990300","9700909990300"
+monitoring indicators,"09.04",Number of Settlers in the Israeli Settlements,Israeli Violation,970.0,"09","0999","04","00","9700909990400","9700909990400"
+monitoring indicators,"10.01",Labour Force Participation Rate of Individuals Aged (15 Years and Above) by region,Labour,970.0,"10","0805","01","00","9701008050100","9701008050100"
+monitoring indicators,"10.02",Unemployment Rate of Participants in the Labour Force Aged (15 Years and Above) by region,Labour,970.0,"10","0805","02","00","9701008050200","9701008050200"
+monitoring indicators,"10.03",Percentage Distribution of Employed Individuals Aged (15 Years and Above) by region,Labour,970.0,"10","0805","03","00","9701008050300","9701008050300"
+monitoring indicators,"10.04",Average Daily Wage in NIS for Wage Employees by region,Labour,970.0,"10","0805","04","00","9701008050400","9701008050400"
+monitoring indicators,"10.05",Percentage of Informal Emplyment of Individuals Aged 15 Years and Above by region,Labour,970.0,"10","0803","05","00","9701008030500","9701008030500"
+monitoring indicators,"10.06",Employment to population ratio by region,Labour,970.0,"10","0805","06","00","9701008050600","9701008050600"
+monitoring indicators,"10.07",Ratio of self-employed and household members contributing to its expenditures to total employees by region by region,Labour,970.0,"10","0803","07","00","9701008030700","9701008030700"
+monitoring indicators,"10.08",Women's share of paid employment in the non-agricultural sector by region,Labour,970.0,"10","0803","08","00","9701008030800","9701008030800"
+SDGs ,"8.3.1.1","Proportion of informal employment in total employment, by sex",Labour,970.0,"10","0803","09","01","9701008030901","9701008030901"
+SDGs ,"8.3.1.2","Proportion of informal employment in non_agriculture employment, by sex",Labour,970.0,"10","0803","09","02","9701008030902","9701008030902"
+SDGs ,"8.3.1.3","Proportion of informal employment in agriculture employment, by sex",Labour,970.0,"10","0803","09","03","9701008030903","9701008030903"
+SDGs ,"8.5.1 ","Average hourly earnings of female and male employees, by occupation, age and persons with disabilities",Labour,970.0,"10","0805","10","00","9701008051000",C080501
+SDGs ,"8.5.2 ","Unemployment rate, by sex, age and persons with disabilities",Labour,970.0,"10","0805","11","00","9701008051100",C080502
+SDGs ,"8.6.1 ","Proportion of youth (aged 15-24 years) not in education, employment or training",Labour,970.0,"10","0806","12","00","9701008061200",C080601
+SDGs ,"8.7.1 ","Proportion and number of children aged 5‑17 years engaged in child labour, by sex and age",Labour,970.0,"10","0807","13","00","9701008071300",C080701
+SDGs ,"8.8.1 ","Frequency rates of fatal and non-fatal occupational injuries, by sex and migrant status",Labour,970.0,"10","0808","14","00","9701008081400",C080801
+SDGs ,"8.8.2","Level of national compliance of labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status",Labour,970.0,"10","0808","15","00","9701008081500",C080802
+SDGs ,"8.b.1","Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy",Labour,970.0,"10","080b","16","00","97010080b1600",C080b01
+SDGs ,"9.2.2 ",Manufacturing employment as a proportion of total employment,Labour,970.0,"10","0902","17","00","9701009021700",C090202
+SDGs ,"10.4.1","Labour share of GDP, comprising wages and social protection transfers",Labour,970.0,"10","1004","18","00","9701010041800",C100401
+SDGs ,"2.4.1",Proportion of agricultural area under productive and sustainable agriculture,Land Use,970.0,"25","0204","01","00","9702502040100",C020401
+SDGs ,"11.3.1",Ratio of land consumption rate to population growth rate,Land Use,970.0,"25","1103","01","00","9702511030100",C110301
+SDGs ,"11.7.1 "," Average share of the built-up area of cities that is open space for public use for all, by sex, age and persons with disabilities",Land Use,970.0,"25","1107","02","00","9702511070200",C110701
+SDGs ,"15.1.1",Forest area as a proportion of total land area,Land Use,970.0,"25","1501","03","00","9702515010300",C150101
+SDGs ,"15.3.1",Proportion of land that is degraded over total land area,Land Use,970.0,"25","1503","04","00","9702515030400",C150301
+SDGs ,"15.4.2",Mountain Green Cover Index,Land Use,970.0,"25","1504","05","00","9702515040500",C150402
+monitoring indicators,"11.01",Gross Value Added at constant prices,National Accounts,970.0,"11","0801","01","00","9701108010100","9701108010100"
+monitoring indicators,"11.02",Gross Domestic Product (GDP) Per Capita at constant prices,National Accounts,970.0,"11","0801","02","00","9701108010200","9701108010200"
+monitoring indicators,"11.03",Growth Percentage of Gross Domestic Product,National Accounts,970.0,"11","0801","03","00","9701108010300","9701108010300"
+monitoring indicators,"11.04",Gross National Income (GNI) at constant prices,National Accounts,970.0,"11","1199","04","00","9701111990400","9701111990400"
+monitoring indicators,"11.05",Gross National Income (GNI) Per Capita at constant prices,National Accounts,970.0,"11","1199","05","00","9701111990500","9701111990500"
+monitoring indicators,"11.06",Net Current Transfers from abroad at constant prices,National Accounts,970.0,"11","1199","06","00","9701111990600","9701111990600"
+SDGs ,"1.5.2",Direct economic loss attributed to disasters in relation to global gross domestic product (GDP),National Accounts,970.0,"11","0105","07","00","9701101050700",C010502
+SDGs ,"8.1.1",Annual growth rate of real GDP per capita,National Accounts,970.0,"11","0801","08","00","9701108010800",C080101
+SDGs ,"8.2.1",Annual growth rate of real GDP per employed person,National Accounts,970.0,"11","0802","09","00","9701108020900",C080201
+SDGs ,"8.4.2","Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",National Accounts,970.0,"11","0804","10","00","9701108041000",C200203
+SDGs ,"12.2.2 ","Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",National Accounts,970.0,"11","1202","11","00","9701112021100",C200203
+SDGs ,"17.13.1",Macroeconomic Dashboard,National Accounts,970.0,"11","1713","12","00","9701117131200",C171301
+SDGs ,"17.17.1",Amount in United States dollars committed to public-private partnerships for infrastructure,Partnerships,970.0,"28","1717","01","00","9702817170100",C171701
+monitoring indicators,"01.01",Projected Population in the Palestine,Population and vital statistics,970.0,"01","0199","01","00","9700101990100","9700101990100"
+monitoring indicators,"01.02",Percentage of the population (0-14) years to the total population in the Palestine,Population and vital statistics,970.0,"01","0199","02","00","9700101990200","9700101990200"
+monitoring indicators,"01.03",Percentage of the population 15-29 years to the total population in the Palestinee,Population and vital statistics,970.0,"01","0199","03","00","9700101990300","9700101990300"
+monitoring indicators,"01.04",Percentage of the population 65 years above to the total population  in the Palestine,Population and vital statistics,970.0,"01","0199","04","00","9700101990400","9700101990400"
+monitoring indicators,"01.05",Sex Ratio  in the Palestine,Population and vital statistics,970.0,"01","0199","05","00","9700101990500","9700101990500"
+monitoring indicators,"01.06",Population Growth Rate in the Palestine,Population and vital statistics,970.0,"01","0199","06","00","9700101990600","9700101990600"
+monitoring indicators,"01.07",Average Household Size in the Palestine,Population and vital statistics,970.0,"01","0199","07","00","9700101990700","9700101990700"
+monitoring indicators,"01.08",Total Fertility Rate in the Palestine,Population and vital statistics,970.0,"01","0307","08","00","9700103070800","9700103070800"
+monitoring indicators,"01.09",Crude Divorce Rate (CDR) in the Palestine,Population and vital statistics,970.0,"01","0199","09","00","9700101990900","9700101990900"
+monitoring indicators,"01.10",Crude Marriage Rate (CMR) in the Palestine,Population and vital statistics,970.0,"01","0199","10","00","9700101991000","9700101991000"
+monitoring indicators,"01.11",Median Age at First Marriage in the Palestine,Population and vital statistics,970.0,"01","0199","11","00","9700101991100","9700101991100"
+monitoring indicators,"01.12",Crude Death Rate in the Palestine,Population and vital statistics,970.0,"01","0302","12","00","9700103021200","9700103021200"
+monitoring indicators,"01.13",Crude Birth Rate  in the Palestine,Population and vital statistics,970.0,"01","0199","13","00","9700101991300","9700101991300"
+monitoring indicators,"01.14",Life Expectancy at birth  in the Palestine,Population and vital statistics,970.0,"01","0199","14","00","9700101991400","9700101991400"
+monitoring indicators,"01.15",Population Density,Population and vital statistics,970.0,"01","0199","15","00","9700101991500","9700101991500"
+SDGs ,"10.7.2",Number of countries that have implemented well-managed migration policies,Population and vital statistics,970.0,"01","1007","16","00","9700110071600",C100702
+SDGs ,"10.7.3",Number of people who died or disappeared in the process of migration towards an international destination,Population and vital statistics,970.0,"01","1007","17","00","9700110071700","9700110071700"
+SDGs ,"10.7.4","Proportion of the population who are refugees, by country of origin",Population and vital statistics,970.0,"01","1007","18","00","9700110071800","9700110071800"
+SDGs ,"16.9.1","Proportion of children under 5 years of age whose births have been registered with a civil authority, by age",Population and vital statistics,970.0,"01","1609","19","00","9700116091900",C160901
+SDGs ,"17.19.2.1",Proportion of countries that have conducted at least one population and housing census in the last 10 years,Population and vital statistics,970.0,"01","1719","20","01","9700117192001","9700117192001"
+SDGs ,"17.19.2.2",Proportion of countries that have achieved 100 per cent birth registration,Population and vital statistics,970.0,"01","1719","20","02","9700117192002","9700117192002"
+SDGs ,"17.19.2.3",Proportion of countries that have achieved 80 per cent death registration,Population and vital statistics,970.0,"01","1719","20","03","9700117192003","9700117192003"
+monitoring indicators,"07.01",Poverty Percentages Among Individuals According to Monthly Consumption Patterns ,Poverty and Living Standards,970.0,"07","0102","01","00","9700701020100","9700701020100"
+monitoring indicators,"07.02",Average monthly household/ Individual Consumption in JD,Poverty and Living Standards,970.0,"07","0102","02","00","9700701020200","9700701020200"
+monitoring indicators,"07.03",Percentage of Poverty  Gap ,Poverty and Living Standards,970.0,"07","0102","03","00","9700701020300","9700701020300"
+monitoring indicators,"07.04", Share of lowest quentile (bottom 20%)out of total consumption,Poverty and Living Standards,970.0,"07","1001","04","00","9700710010400","9700710010400"
+monitoring indicators,"07.05",share food consumption out of total consumption,Poverty and Living Standards,970.0,"07","0102","05","00","9700701020500","9700701020500"
+SDGs ,"1.1.1 ","Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)",Poverty and Living Standards,970.0,"07","0101","06","00","9700701010600",C010101
+SDGs ,"1.a.1 ",Total official development assistance (ODA) grants from all donors that focus on poverty reduction as a share of the recipient country’s gross national income,Poverty and Living Standards,970.0,"07","010a","07","00","97007010a0700",C010a01
+SDGs ,"1.2.1  ","Proportion of population living below the national poverty line, by sex and age",Poverty and Living Standards,970.0,"07","0102","08","00","9700701020800",C010201
+SDGs ,"1.2.2 ","Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions",Poverty and Living Standards,970.0,"07","0102","09","00","9700701020900",C010202
+SDGs ,"1.3.1 ","Proportion of population covered by social protection floors/systems by sex, and distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work injury victims, and the poor and the vulnerable",Poverty and Living Standards,970.0,"07","0103","10","00","9700701031000",C010301
+SDGs ,"1.b.1",Pro-poor public social spending,Poverty and Living Standards,970.0,"07","010b","11","00","97007010b1100",C010b01
+SDGs ,"10.1.1",Growth rates of household expenditure or income per capita among the bottom 40 per cent of the population and the total population,Poverty and Living Standards,970.0,"07","1001","12","00","9700710011200",C100101
+SDGs ,"10.2.1","Proportion of people living below 50 per cent of median income, by sex, age and persons with disabilities",Poverty and Living Standards,970.0,"07","1002","13","00","9700710021300",C100201
+monitoring indicators,"12.01",Percentage Change in Price Index ,Price Indices,970.0,"12","020c","01","00","97012020c0100","97012020c0100"
+monitoring indicators,"12.02",Consumer Price Index,Price Indices,970.0,"12","020c","02","00","97012020c0200","97012020c0200"
+SDGs ,"2.c.1",Indicator of food price anomalies,Price Indices,970.0,"12","020c","03","00","97012020c0300",C020c01
+monitoring indicators,"08.01","Number of judges per 100,000 Population",Security and justic,970.0,"08","1603","01","00","9700816030100","9700816030100"
+monitoring indicators,"08.02",The number of courts,Security and justic,970.0,"08","1603","02","00","9700816030200","9700816030200"
+monitoring indicators,"08.03",The number of court cases in Palestine,Security and justic,970.0,"08","1603","03","00","9700816030300","9700816030300"
+monitoring indicators,"08.04",Execution of Decided cases  by prosecution,Security and justic,970.0,"08","1603","04","00","9700816030400","9700816030400"
+monitoring indicators,"08.05","Crime rate per 1,000 Population",Security and justic,970.0,"08","1601","05","00","9700816010500","9700816010500"
+monitoring indicators,"08.06",Number of police personnel,Security and justic,970.0,"08","1603","06","00","9700816030600","9700816030600"
+SDGs ,"1.5.1.1","Number of deaths  attributed to disasters per 100,000 population",Security and justic,970.0,"08","0105","07","01","9700801050701","9700801050701"
+SDGs ,"1.5.1.2","Number of missing persons  attributed to disasters per 100,000 population",Security and justic,970.0,"08","0105","07","02","9700801050702","9700801050702"
+SDGs ,"1.5.1.3","Number of directly affected persons attributed to disasters per 100,000 population",Security and justic,970.0,"08","0105","07","03","9700801050703","9700801050703"
+SDGs ,"3.4.2",Suicide mortality rate,Security and justic,970.0,"08","0304","08","00","9700803040800",C030402
+SDGs ,"11.5.1.1","Number of deaths  attributed to disasters per 100,000 population",Security and justic,970.0,"08","1105","09","01","9700811050901","9700811050901"
+SDGs ,"11.5.1.2","Number of missing persons  attributed to disasters per 100,000 population",Security and justic,970.0,"08","1105","09","02","9700811050902","9700811050902"
+SDGs ,"11.5.1.3","Number of directly affected persons attributed to disasters per 100,000 population",Security and justic,970.0,"08","1105","09","03","9700811050903","9700811050903"
+SDGs ,"13.1.1.1","Number of deaths attributed to disasters per 100,000 population",Security and justic,970.0,"08","1301","10","01","9700813011001","9700813011001"
+SDGs ,"13.1.1.2","Number of missing persons  attributed to disasters per 100,000 population",Security and justic,970.0,"08","1301","10","02","9700813011002","9700813011002"
+SDGs ,"13.1.1.3","Number of directly affected persons attributed to disasters per 100,000 population",Security and justic,970.0,"08","1301","10","03","9700813011003","9700813011003"
+SDGs ,"16.1.1","Number of victims of intentional homicide per 100,000 population, by sex and age",Security and justic,970.0,"08","1601","11","00","9700816011100",C160101
+SDGs ,"16.1.3.1",Proportion of population subjected to physical violence in the previous 12 months,Security and justic,970.0,"08","1601","12","01","9700816011201","9700816011201"
+SDGs ,"16.1.3.2",Proportion of population subjected to robbery in the previous 12 months,Security and justic,970.0,"08","1601","12","02","9700816011202","9700816011202"
+SDGs ,"16.1.4",Proportion of population that feel safe walking alone around the area they live,Security and justic,970.0,"08","1601","13","00","9700816011300",C160104
+SDGs ,"16.2.2","Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation",Security and justic,970.0,"08","1602","14","00","9700816021400",C160202
+SDGs ,"16.3.1",Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms,Security and justic,970.0,"08","1603","15","00","9700816031500",C160301
+SDGs ,"16.3.2",Unsentenced detainees as a proportion of overall prison population,Security and justic,970.0,"08","1603","16","00","9700816031600",C160302
+SDGs ,"16.3.3","Proportion of the population who have experienced a dispute in the past two years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism",Security and justic,970.0,"08","1603","17","00","9700816031700","9700816031700"
+SDGs ,"16.4.2","Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments",Security and justic,970.0,"08","1604","18","00","9700816041800",C160402
+SDGs ,"16.10.1","Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months",Security and justic,970.0,"08","1610","19","00","9700816101900",C161001
+monitoring indicators,"17.01", Proportion of jobs in sustainable tourism industries out of total tourism jobs,Tourism,970.0,"17","0809","01","00","9701708090100","9701708090100"
+monitoring indicators,"17.02",Number of tourist site's visits ,Tourism,970.0,"17","0809","02","00","9701708090200","9701708090200"
+monitoring indicators,"17.03",Number of  Inbound visitors ,Tourism,970.0,"17","0809","03","00","9701708090300","9701708090300"
+monitoring indicators,"17.04",Percentage of the Households that conducted a Domestic Trip,Tourism,970.0,"17","0809","04","00","9701708090400","9701708090400"
+monitoring indicators,"17.05",Percentage of Households that conducted Outbound Trip,Tourism,970.0,"17","0809","05","00","9701708090500","9701708090500"
+monitoring indicators,"17.06",No. of Employees in Tourism Sector,Tourism,970.0,"17","120b","06","00","97017120b0600","97017120b0600"
+SDGs ,"8.9.1",Tourism direct GDP as a proportion of total GDP and in growth rate,Tourism,970.0,"17","0809","07","00","9701708090700",C080901
+SDGs ,"12.b.1",Implementation of standard accounting tools to monitor the economic and environmental aspects of tourism sustainability,Tourism,970.0,"17","120b","08","00","97017120b0800",C120b01
+SDGs ,"8.a.1.1",Total official flows (commitments) for Aid for Trade., Trade,970.0,"22","080a","01","01","97022080a0101","97022080a0101"
+SDGs ,"8.a.1.2",Total official flows (disbursement) for Aid for Trade., Trade,970.0,"22","080a","01","02","97022080a0102","97022080a0102"
+SDGs ,"10.a.1",Proportion of tariff lines applied to imports from least developed countries and developing countries with zero-tariff, Trade,970.0,"22","100a","02","00","97022100a0200",C100a01
+SDGs ,"17.10.1",Worldwide weighted tariff-average, Trade,970.0,"22","1710","03","00","9702217100300",C171001
+SDGs ,"17.11.1",Developing countries’ and least developed countries’ share of global exports, Trade,970.0,"22","1711","04","00","9702217110400",C171101
+SDGs ,"17.12.1","Average tariffs faced by developing countries, least developed countries and small island developing States", Trade,971.0,"22","1712","05","00","9712217120500",C171201
+monitoring indicators,"23.01",The length of paved roads network,"Transportation, Roads and Infrastructure",970.0,"23","2399","01","00","9702323990100","9702323990100"
+SDGs ,"9.1.2.a","Freight volume, by mode of transport ","Transportation, Roads and Infrastructure",970.0,"23","0901","02","01","9702309010201","9702309010201"
+SDGs ,"9.1.2.b","Passenger volumes, by mode of transport","Transportation, Roads and Infrastructure",970.0,"23","0901","02","02","9702309010202","9702309010202"
+SDGs ,"11.2.1","Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities","Transportation, Roads and Infrastructure",970.0,"23","1102","03","00","9702311020300",C110201
+SDGs ,"11.5.2","Direct economic loss in relation to global GDP, damage to critical infrastructure and number of disruptions to basic services, attributed to disasters","Transportation, Roads and Infrastructure",970.0,"23","1105","04","00","9702311050400",C110502
+SDGs ,"6.1.1",Proportion of population using safely managed drinking water services,Water,970.0,"26","0601","01","00","9702606010100",C060101
+SDGs ,"6.3.2",Proportion of bodies of water with good ambient water quality,Water,970.0,"26","0603","02","00","9702606030200",C060302
+SDGs ,"6.4.1",Change in water-use efficiency over time,Water,970.0,"26","0604","03","00","9702606040300",C060401
+SDGs ,"6.4.2",Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,Water,970.0,"26","0604","04","00","9702606040400",C060402
+SDGs ,"6.5.1",Degree of integrated water resources management implementation (0-100),Water,970.0,"26","0605","05","00","9702606050500",C060501
+SDGs ,"6.5.2",Proportion of transboundary basin area with an operational arrangement for water cooperation,Water,970.0,"26","0605","06","00","9702606050600",C060502
+SDGs ,"6.6.1",Change in the extent of water-related ecosystems over time ,Water,970.0,"26","0606","07","00","9702606060700",C060601
+SDGs ,"6.a.1",Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan,Water,970.0,"26","060a","08","00","97026060a0800",C060a01

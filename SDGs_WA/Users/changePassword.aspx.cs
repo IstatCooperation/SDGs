@@ -9,6 +9,12 @@ public partial class Users_ChangePassword : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (!this.Page.User.IsInRole("Admin"))
+        {
+            Response.Redirect("/index.aspx");
+            return;
+        }
+        
         UsersManager um = new UsersManager();
         if (!this.Page.User.IsInRole("Admin"))
         {

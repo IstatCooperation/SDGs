@@ -11,10 +11,12 @@ public partial class Users_AddUser : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (!this.Page.User.IsInRole("Admin"))
+            Response.Redirect("~/index.aspx");
+
         if (!this.IsPostBack)
         {           
-            if (!this.Page.User.IsInRole("Admin"))
-                Response.Redirect("~/index.aspx");
+            
 
             QueryManager qm = new QueryManager();
             this.ddlRoles.DataSource = qm.GetData("SELECT Role_ID, Role_Name FROM Roles");

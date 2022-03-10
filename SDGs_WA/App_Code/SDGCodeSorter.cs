@@ -6,7 +6,7 @@ public class SDGCodeSorter : IComparer<string>
     {
         string[] a = x.Split('.');
         string[] b = y.Split('.');
-        for (int i = 0; i < a.Length; i++)
+        for (int i = 0; i < a.Length&&i<b.Length; i++)
         {
             int i1, i2;
             bool num1 = int.TryParse(a[i], out i1);

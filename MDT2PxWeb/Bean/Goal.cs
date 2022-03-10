@@ -4,6 +4,8 @@ namespace MDT2PxWeb.Bean
 {
     class Goal
     {
+        public string id;
+        public string typeId;
         public string code;
         public string desc;
         public string descEn;

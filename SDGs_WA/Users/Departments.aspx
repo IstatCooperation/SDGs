@@ -7,13 +7,17 @@
     </asp:ScriptManager>
 
     <main id="content" class="row">
-        <div><a id="backLink" runat="server" href="/index.aspx">Goals</a> &gt; <a href="UsersList.aspx">Users List</a> &gt; User  &amp; Indicators</div>
+        <div><a id="backLink"  href='<%= ResolveUrl("~/") %>'>Home</a> &gt; <a href="UsersList.aspx">Users List</a> &gt; User  &amp; Indicators</div>
 
         <div class="row">
             <div class="large-5 columns">
                 <div class="www" style="font-size: 16pt; margin-bottom: 20px;">
                     <b>Enable access to indicators  for  <i>
                         <asp:Literal runat="server" ID="Username" /></i></b>
+                    in     
+                                            <asp:DropDownList ID="ddlGoalTypes" runat="server" AutoPostBack="true"   OnSelectedIndexChanged="ddlGoalTypes_SelectedIndexChanged">
+                                            </asp:DropDownList>
+                                
                 </div>
             </div>
             <div class="large-3 columns">
@@ -77,5 +81,7 @@
 
 
         </script>
+        
+    </main>
 </asp:Content>
 

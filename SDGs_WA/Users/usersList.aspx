@@ -13,7 +13,7 @@
                 <ContentTemplate>
                     <div class="row">
                         <div class="large-4 columns">
-                            <div><a href="/index.aspx">Goals</a> &gt; Users List</div>
+                            <div><a href='<%= ResolveUrl("~/") %>'>Home</a> &gt; Users List</div>
                         </div>
                         <div class="large-4 columns">
                             <asp:Literal ID="saveMessage" runat="server" />

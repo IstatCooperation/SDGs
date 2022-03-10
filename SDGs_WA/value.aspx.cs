@@ -7,9 +7,21 @@ using System.Web.UI.WebControls;
 
 public partial class index : System.Web.UI.Page
 {
-
+    protected string goalType;
+    protected string goalTypeLabel;
     protected void Page_Load(object sender, EventArgs e)
     {
+        goalType = (string)HttpContext.Current.Session["GOAL_TYPE"];
+        goalTypeLabel = (string)HttpContext.Current.Session["GOAL_LABEL"];
+
+
+        if ( String.IsNullOrEmpty(goalType) || String.IsNullOrEmpty(goalTypeLabel))
+        {
+            Response.Redirect("index.aspx");
+            return;
+        }
+
+
         if (IsPostBack)
         {
             return;
@@ -17,7 +29,8 @@ public partial class index : System.Web.UI.Page
 
         string subId = Request.QueryString["subId"];
         string targId = Request.QueryString["targId"];
-        if (subId == null || targId == null)
+      
+        if (String.IsNullOrEmpty(subId) || String.IsNullOrEmpty(targId) )
         {
             Response.Redirect("index.aspx");
             return;
@@ -29,16 +42,18 @@ public partial class index : System.Web.UI.Page
             Dictionary<string, object> parameters = new Dictionary<string, object>
             {
                 { "@ID", subId },
-                { "@TARGID", targId }
+                { "@TARGID", targId },
+                { "@GOAL_TYPE", goalType }
             };
             SqlDataReader reader = qm.executeReader("SELECT I.Indicator_Code, " +
                 "I.Indicator_descEn, I.Indicator_descAr, T.Target_ID, T.Target_DescEn, " +
                 "T.Target_DescAr, G.Goal_ID, G.Goal_DescEn, G.Goal_DescAr, " +
-                "S.Subindicator_Code, S.Subindicator_DescAr, S.Subindicator_DescEn, S.Subindicator_Code, IC.Indicator_NL " +
+                "S.Subindicator_Code, S.Subindicator_DescAr, S.Subindicator_DescEn, S.Subindicator_Code, IC.Indicator_NL , CM.Value as SubIndicator_Code_Value " +
                 "FROM GOAL G INNER JOIN Target T ON G.Goal_ID = T.Goal_ID " +
                 "INNER JOIN Ind_Code IC ON T.Target_ID = IC.Target_ID " +
                 "INNER JOIN Indicator I ON IC.Indicator_Code = I.Indicator_Code " +
                 "INNER JOIN Subindicator S ON S.Indicator_Code = I.Indicator_Code " +
+                "INNER JOIN Code_Mapping CM ON   (CM.CODE=S.Subindicator_Code AND CM.GOAL_TYPE IN (@GOAL_TYPE)) " +
                 "WHERE S.Subindicator_Code = @ID AND T.Target_ID = @TARGID", parameters);
             title.Text = "";
             subTitle.Text = "";
@@ -51,6 +66,7 @@ public partial class index : System.Web.UI.Page
                     indicatorNL.Text = Convert.ToString(reader["Indicator_NL"]).Trim();
                     subTitle.Text = Convert.ToString(reader["Indicator_descEn"]).Trim();
                     subindicatorCode.Text = Convert.ToString(reader["Subindicator_Code"]).Trim();
+                    subindicatorCodeValue.Text = Convert.ToString(reader["SubIndicator_Code_Value"]).Trim();
                     indId.Text = Convert.ToString(reader["Indicator_Code"]).Trim();
                     goalId.Text = Convert.ToString(reader["Goal_ID"]).Trim();
                     targIdBack.Text = Convert.ToString(reader["Target_Id"]).Trim();
@@ -127,7 +143,7 @@ public partial class index : System.Web.UI.Page
             string query = "SELECT SD.Subindicator_Code";
             foreach (Dimension d in dims)
             {
-                query += ", SD. " + d.getName();
+                query += ", SD." + d.getName();
                 if (d.getTable() != null)
                 {
                     query += ", " + d.getTable() + "." + d.getDesc() + " " + d.getName() + "_DESC";
@@ -149,7 +165,7 @@ public partial class index : System.Web.UI.Page
                     query += " JOIN " + d.getTable() + " ON SD." + d.getName() + " = " + d.getTable() + "." + d.getKey();
                 }
             }
-            query += " WHERE SD.Subindicator_Code = @ID";
+            query += " WHERE SD.Subindicator_Code = @ID ORDER by 1 asc,2 asc";
 
             reader = qm.executeReader(query, parameters);
             string header = createTable(reader, table, dims);
@@ -296,19 +312,21 @@ public partial class index : System.Web.UI.Page
             header = "";
             foreach (Dimension d in dims)
             {
-                key += "<td>";
-                key += Convert.ToString(reader[d.getName()]).Trim();
-                key += "</td>";
+            //    key += "<td>";
+            //    key += Convert.ToString(reader[d.getName()]).Trim();
+            //    key += "</td>";
                 key += "<td>";
                 key += Convert.ToString(reader[d.getName() + "_DESC"]).Trim();
+                //key += Convert.ToString(reader[d.getName() ]).Trim();
                 key += "</td>";
                 hKey += Convert.ToString(reader[d.getName()]).Trim() + "#";
-                //hKey += Convert.ToString(reader[d.getName() + "_DESC"]).Trim() + "#";
+       
+            //    header += "<th>";
+            //    header += d.getName();
+            //    header += "</th>";
                 header += "<th>";
-                header += d.getName();
-                header += "</th>";
-                header += "<th>";
-                header += d.getName() + " DESC";
+                //    header += d.getName() + " DESC";
+                header += d.getName()  ;
                 header += "</th>";
             }
             string OBS_VALUE = Convert.ToString(reader["OBS_VALUE"]).Trim();
@@ -323,5 +341,35 @@ public partial class index : System.Web.UI.Page
         return header;
     }
 
+
+    protected  string getOtherCodeValues()
+    {
+        Dictionary<string, object> parameters = new Dictionary<string, object>
+            {
+                {"@CODE", subindicatorCode.Text  } ,
+                { "@GOAL_TYPE", goalType }
+            };
+        string result = "";
+        QueryManager qm = new QueryManager();
+        SqlDataReader reader = null;
+        try
+        {
+
+            reader = qm.executeReader("Select cm.Value as Code,gt.Descr_Short as GoalType from Code_Mapping cm ,Goal_Type gt " +
+                                 " WHERE gt.Type_ID = cm.Goal_Type and cm.code =@CODE and gt.Type_ID <> @GOAL_TYPE", parameters);
+
+            while (reader.Read())
+            {
+
+                result += "<span><i>" + Convert.ToString(reader["GoalType"]).Trim() + " code: " + Convert.ToString(reader["Code"]).Trim() + "</i></span>";
+
+            }
+        }
+        finally
+        {
+            reader.Close();
+        }
+        return result;
+    }
 }
 

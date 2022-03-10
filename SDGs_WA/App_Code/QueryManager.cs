@@ -238,6 +238,19 @@ public class QueryManager
         cmd.ExecuteNonQuery();
     }
 
+    public void executeNonQuery(string query, SqlTransaction trans, Dictionary<string, object> parameters = null)
+    {
+        SqlCommand cmd = new SqlCommand
+        {
+            CommandType = CommandType.Text,
+            CommandText = query,
+            Connection = con,
+            Transaction = trans
+        };
+        addParameters(cmd, parameters);
+        cmd.ExecuteNonQuery();
+    }
+
     public void executeNonQuery(string query, Dictionary<string, object> parameters, Dictionary<string, string> variableNames, Dictionary<string, object> varTypes)
     {
         SqlCommand cmd = new SqlCommand
@@ -261,7 +274,18 @@ public class QueryManager
         addParameters(cmd, parameters);
         return cmd.ExecuteReader();
     }
-
+    public SqlDataReader executeReader(string query, SqlTransaction trans, Dictionary<string, object> parameters = null)
+    {
+        SqlCommand cmd = new SqlCommand
+        {
+            CommandType = CommandType.Text,
+            CommandText = query,
+            Connection = con,
+            Transaction = trans
+        };
+        addParameters(cmd, parameters);
+        return cmd.ExecuteReader();
+    }
     public DataSet executeReaderDataSet(string query, Dictionary<string, object> parameters = null)
     {
         SqlCommand cmd = new SqlCommand
@@ -315,8 +339,8 @@ public class QueryManager
             {
                 string key = pair.Key;
                 if (pair.Value.GetType() == typeof(string))
-                {
-                    cmd.Parameters.Add(key, SqlDbType.VarChar);
+                { /***  SqlDbType.VarChar**/
+                    cmd.Parameters.Add(key, SqlDbType.NVarChar);
                     cmd.Parameters[key].Value = pair.Value.ToString().Trim();
                 }
                 else if (pair.Value.GetType() == typeof(int))

@@ -14,6 +14,8 @@ namespace MDT2PxWeb.Bean
 
         public string organizationCode;
         public string organizationName;
+        public string goalType;
+        public string goalTypeLabel;
         public string userId;
         public string obsValue;
         public Database mdtDb;
@@ -104,41 +106,47 @@ namespace MDT2PxWeb.Bean
                     }
                 }
 
-                DataSet goalReader = connection.ExecuteDataSet(mdtDb.goalTable.GetSqlSelect());
+                DataSet goalReader = connection.ExecuteDataSet(mdtDb.goalTable.GetSqlSelect(), new Dictionary<string, object> { { "@REFERENCE", goalType } });
                 foreach (DataRow dr in goalReader.Tables[0].Rows)
                 {
                     Goal goal = new Goal
                     {
+                        id = dr[3].ToString().Trim(),
                         code = dr[0].ToString().Trim(),
+                        typeId = dr[4].ToString().Trim(),
                         desc = dr[1].ToString().Trim(),
                         descEn = dr[2].ToString().Trim()
                     };
-                    DataSet targetReader = connection.ExecuteDataSet(mdtDb.targetTable.GetSqlSelect(), new Dictionary<string, object> { { "@REFERENCE", goal.code } });
+                    DataSet targetReader = connection.ExecuteDataSet(mdtDb.targetTable.GetSqlSelect(), new Dictionary<string, object> { { "@REFERENCE", goal.id } });
                     foreach (DataRow dr1 in targetReader.Tables[0].Rows)
                     {
                         Target target = new Target
                         {
                             code = dr1[0].ToString().Trim(),
                             desc = dr1[1].ToString().Trim(),
-                            descEn = dr1[2].ToString().Trim()
+                            descEn = dr1[2].ToString().Trim(),
+                            id = dr1[3].ToString().Trim()
                         };
-                        DataSet indicatorReader = connection.ExecuteDataSet(mdtDb.indicatorTable.GetSqlSelect(), new Dictionary<string, object> { { "@REFERENCE", target.code } });
+                        DataSet indicatorReader = connection.ExecuteDataSet(mdtDb.indicatorTable.GetSqlSelect(), new Dictionary<string, object> { { "@REFERENCE", target.id }, { "@REFERENCE1", goalType } });
                         foreach (DataRow dr2 in indicatorReader.Tables[0].Rows)
                         {
                             Indicator indicator = new Indicator
                             {
                                 code = dr2[0].ToString().Trim(),
                                 desc = dr2[1].ToString().Trim(),
-                                descEn = dr2[2].ToString().Trim()
+                                descEn = dr2[2].ToString().Trim(),
+                                codeValue = dr2[3].ToString().Trim()
+
                             };
-                            DataSet subIndicatorReader = connection.ExecuteDataSet(mdtDb.subIndicatorTable.GetSqlSelect(), new Dictionary<string, object> { { "@REFERENCE", indicator.code } });
+                            DataSet subIndicatorReader = connection.ExecuteDataSet(mdtDb.subIndicatorTable.GetSqlSelect(), new Dictionary<string, object> { { "@REFERENCE", indicator.code }, { "@REFERENCE1", goalType }, { "@REFERENCE2", target.id } });
                             foreach (DataRow dr3 in subIndicatorReader.Tables[0].Rows)
                             {
                                 SubIndicator subIndicator = new SubIndicator
                                 {
                                     code = dr3[0].ToString().Trim(),
                                     desc = dr3[1].ToString().Trim().Length == 0 ? dr3[0].ToString().Trim() : dr3[1].ToString().Trim(),
-                                    descEn = dr3[2].ToString().Trim().Length == 0 ? dr3[0].ToString().Trim() : dr3[2].ToString().Trim()
+                                    descEn = dr3[2].ToString().Trim().Length == 0 ? dr3[0].ToString().Trim() : dr3[2].ToString().Trim(),
+                                    codeValue = dr3[4].ToString().Trim()
                                 };
                                 string dims = dr3[3].ToString().Trim();
                                 for (int i = 0; i < dims.Length && i < dimensions.Count; i++)

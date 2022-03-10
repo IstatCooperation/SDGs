@@ -19,7 +19,7 @@ namespace MDT2PxWeb.Bean
 
         public string GetValueSet(SubIndicator subIndicator)
         {
-            return "VS" + name + "_" + subIndicator.code;
+            return "VS" + name + "_" + subIndicator.codeValue;
         }
 
         public string GetDescription()

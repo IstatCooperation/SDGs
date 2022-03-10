@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db:
+    image: microsoft/mssql-server-linux:latest
+    environment:
+      SA_PASSWORD: "Pcbs2020!"
+      ACCEPT_EULA: "Y"
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8083:8080

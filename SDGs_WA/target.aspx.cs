@@ -9,13 +9,16 @@ public partial class index : System.Web.UI.Page
     {
         string paramGoalId = Request.QueryString["goalId"];
         bool isAdmin = this.Page.User.IsInRole("Admin");
-        UsersManager usersManager = new  UsersManager();
+        UsersManager usersManager = new UsersManager();
         string userID = usersManager.GetIDByUserName(HttpContext.Current.User.Identity.Name);
-        if (String.IsNullOrEmpty(paramGoalId)|| !usersManager.checkAccessGoal(HttpContext.Current.User,paramGoalId) )
+        string goalType = (string)HttpContext.Current.Session["GOAL_TYPE"];
+        string goalTypeLabel = (string)HttpContext.Current.Session["GOAL_LABEL"];
+        if (String.IsNullOrEmpty(paramGoalId) || !usersManager.checkAccessGoal(HttpContext.Current.User, paramGoalId) || String.IsNullOrEmpty(goalType) || String.IsNullOrEmpty(goalTypeLabel))
         {
             Response.Redirect("index.aspx");
             return;
         }
+        string goalLabel = goalTypeLabel;
         int goalId = int.Parse(paramGoalId);
 
 
@@ -34,13 +37,14 @@ public partial class index : System.Web.UI.Page
             {
                 { "@goalID", goalId }
             };
-               targetQueryStr = "SELECT  I.Indicator_Code, I.Indicator_descEn, I.Indicator_descAr, IC.Indicator_NL, " +
-                    "T.Target_ID, T.Target_DescEn, T.Target_DescAr, " +
-                    "G.Goal_ID, G.Goal_DescEn, G.Goal_DescAr " +
-                    "from GOAL G INNER JOIN Target T ON G.Goal_ID = T.Goal_ID " +
-                    "INNER JOIN Ind_Code IC ON T.Target_ID = IC.Target_ID " +
-                    "INNER JOIN Indicator I ON IC.Indicator_Code = I.Indicator_Code " +
-                    "WHERE T.Target_ID IN(SELECT Target_ID FROM Target WHERE Goal_ID IN (@goalID)) ORDER BY T.Target_ID";
+                targetQueryStr = "SELECT  I.Indicator_Code, I.Indicator_descEn, I.Indicator_descAr, IC.Indicator_NL, " +
+                     "T.Target_ID,T.Target_Code, T.Target_DescEn, T.Target_DescAr, " +
+                     "G.Goal_ID, G.Goal_Code, G.Goal_DescEn, G.Goal_DescAr " +
+                     "from GOAL G INNER JOIN Target T ON G.Goal_ID = T.Goal_ID " +
+                     "INNER JOIN Ind_Code IC ON T.Target_ID = IC.Target_ID " +
+                     "INNER JOIN Indicator I ON IC.Indicator_Code = I.Indicator_Code " +
+                     "WHERE T.Target_ID IN(SELECT Target_ID FROM Target WHERE Goal_ID IN (@goalID) and IS_ACTIVE=1) " +
+                     "and G.IS_ACTIVE=1 and I.IS_ACTIVE=1 and T.IS_ACTIVE=1  ORDER BY T.Target_ID";
                 /*"SELECT  I.Indicator_Code, I.Indicator_descEn, I.Indicator_descAr," +
                 " T.Target_ID FROM Ind_Code T INNER JOIN Indicator I ON T.Indicator_Code = I.Indicator_Code" +
                 " WHERE T.Target_ID IN (";*/
@@ -53,14 +57,14 @@ public partial class index : System.Web.UI.Page
                 { "@userID", userID }
             };
                 targetQueryStr = "SELECT  I.Indicator_Code, I.Indicator_descEn, I.Indicator_descAr, IC.Indicator_NL, " +
-                     "T.Target_ID, T.Target_DescEn, T.Target_DescAr, " +
-                     "G.Goal_ID, G.Goal_DescEn, G.Goal_DescAr " +
+                     "T.Target_ID,T.Target_Code,  T.Target_DescEn, T.Target_DescAr, " +
+                     "G.Goal_ID, G.Goal_Code, G.Goal_DescEn, G.Goal_DescAr " +
                      "from GOAL G INNER JOIN Target T ON G.Goal_ID = T.Goal_ID " +
                      "INNER JOIN Ind_Code IC ON T.Target_ID = IC.Target_ID " +
                      "INNER JOIN Indicator I ON IC.Indicator_Code = I.Indicator_Code " +
                      "INNER JOIN User_Indicator UI ON IC.Indicator_Code = UI.Ind_Code " +
                      "INNER JOIN Users U ON U.user_ID = UI.USER_ID " +
-                     "WHERE U.User_ID=@userID AND T.Target_ID IN(SELECT Target_ID FROM Target WHERE Goal_ID IN (@goalID)) ORDER BY T.Target_ID";
+                     "WHERE U.User_ID=@userID AND T.Target_ID IN(SELECT Target_ID FROM Target WHERE Goal_ID IN (@goalID) and IS_ACTIVE=1) and G.IS_ACTIVE=1 and I.IS_ACTIVE=1 and T.IS_ACTIVE=1 ORDER BY T.Target_ID";
 
             }
             SqlDataReader reader = qm.executeReader(targetQueryStr, parameters);
@@ -70,22 +74,28 @@ public partial class index : System.Web.UI.Page
                 while (reader.Read())
                 {
                     goal.setDescEn(Convert.ToString(reader["Goal_DescEn"]).Trim());
+                    goal.setCode(Convert.ToString(reader["Goal_Code"]).Trim());
                     string targetId = Convert.ToString(reader["Target_ID"]).Trim();
-                    Target target = goal.getTarget(targetId);
+                    string targetCode = Convert.ToString(reader["Target_Code"]).Trim();
+                    Target target = goal.getTarget(targetCode);
                     if (target == null)
                     {
-                        target = goal.createTarget(targetId, Convert.ToString(reader["Target_DescEn"]).Trim());
+                        target = goal.createTarget(targetId, Convert.ToString(reader["Target_DescEn"]).Trim(), Convert.ToString(reader["Target_Code"]).Trim());
+                    }else
+                  
+                    {
+                        System.Diagnostics.Debug.WriteLine("target desc " + target.getDescEn());
                     }
                     target.createIndicator(Convert.ToString(reader["Indicator_Code"]).Trim(), Convert.ToString(reader["Indicator_NL"]).Trim(), Convert.ToString(reader["Indicator_descEn"]).Trim());
                 }
 
-                title.Text = goal.getId() + " - " + goal.getDescEn();
+                title.Text = goal.getCode() + " - " + goal.getDescEn();
 
                 foreach (Target target in goal.getTargets())
                 {
                     System.Diagnostics.Debug.WriteLine("target desc " + target.getDescEn());
 
-                    htmlStr.Text += "<details><summary><b>Target " + target.getId() + "</b> - " + target.getDescEn() + "</h3></summary><ul>";
+                    htmlStr.Text += "<details><summary><b>Target " + target.getCode() + "</b> - " + target.getDescEn() + "</h3></summary><ul>";
 
                     foreach (Indicator ind in target.getIndicators())
                     {

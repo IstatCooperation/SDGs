@@ -54,6 +54,7 @@ public class ExcelReader
             }
             catch (Exception e)
             {
+                System.Diagnostics.Debug.WriteLine("Exception caught. " + e.Message);
                 return null;
             }
         }
@@ -113,7 +114,7 @@ public class ExcelReader
         }
         if (Properties.isTimePeriod(columnName))
         {
-            return "" + Convert.ToInt32(Convert.ToDouble(value)); 
+            return "" + Convert.ToInt32(Convert.ToDouble(value));
         }
         if (Properties.variablesTypes.ContainsKey(columnName) && SqlDbType.Float.Equals(Properties.variablesTypes[columnName]))
         {

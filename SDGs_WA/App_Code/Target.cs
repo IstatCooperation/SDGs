@@ -4,13 +4,22 @@ public class Target
 {
 
     private string id;
+    private string code;
     private string descEn;
     private SortedDictionary<string, Indicator> indicators = new SortedDictionary<string, Indicator>(new SDGCodeSorter());
-
+     
     public Target(string id, string descEn)
     {
         this.id = id;
         this.descEn = descEn;
+    }
+
+
+    public Target(string id, string descEn, string code)
+    {
+        this.id = id;
+        this.descEn = descEn;
+        this.code = code;
     }
 
     public string getId()
@@ -21,6 +30,12 @@ public class Target
     public string getDescEn()
     {
         return descEn;
+    }
+
+
+    public string getCode()
+    {
+        return code;
     }
 
     public SortedDictionary<string, Indicator>.ValueCollection getIndicators()

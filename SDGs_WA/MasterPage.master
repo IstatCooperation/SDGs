@@ -46,16 +46,12 @@
                         <div class="header-middle-entry">
                             <div class="logo">
                                 <span class="tmm_logo">
-                                    <a title="SDGs" href="http://sustainabledevelopment.un.org/">
-                                        <img src='<%= ResolveUrl("images/logo_SDGs.png") %>'  style="width:63px"  alt="logo" title="SDGs">
-                                    </a>
-                             
-                                    <a title="logo" href="http://www.istat.it">
-                                        <img src='<%= ResolveUrl("images/logo.png") %>' alt="logo"  style="width:151px" title="ISTAT">
+                                    <a title="logo" id="logoA"   href="http://www.istat.it"  runat="server" >
+                                        <img id="logoImg"   src='<%= ResolveUrl("images/logo.png") %>'  runat="server" alt="logo" title="istat" style="max-height:70px">
                                     </a>
                                 </span>
-                                <span class="sop"></span><br>
-                                <span class="sop2">SDGs Management</span>
+                                <span id="logoD1" runat="server"  class="sop">ISTAT</span><br>
+                                <span  id="logoD2" runat="server"  class="sop2">Istituto Nazione di Statistica</span>
                             </div>
                             <div class="account align-right" id="userActions" runat="server">
                                 <ul>

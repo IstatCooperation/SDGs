@@ -11,13 +11,16 @@ namespace MDT2PxWeb
         static void Main(string[] args)
         {
             string inFile, outFile;
-            bool print = false, update = false;
+            bool print = true, update = false;
 
 #if DEBUG
-            inFile = @"\SDGs\MDT2PxWeb\config.json";
-            print = true;
-            update = false;
-            outFile = (print || update) ? @"\SDGs\MDT2PxWeb\output.sql" : null;
+         // inFile = @"D:\cooperazione\PCBS\git\SDGs\MDT2PxWeb\bin\Release\config_SDGs_viet.json";
+             // inFile = @"D:\cooperazione\PCBS\git\SDGs\MDT2PxWeb\config_Local_ind.json";
+              inFile = @"D:\cooperazione\PCBS\git\SDGs\MDT2PxWeb\bin\Release\config_SDGs.json";
+            print = false;
+            update = true;
+            outFile = (print || !update) ? @"D:\cooperazione\PCBS\git\SDGs\MDT2PxWeb\output_local.sql" : null;
+            //     outFile = (print || update) ? @"D:\cooperazione\PCBS\git\SDGs\MDT2PxWeb\output_SDGs.sql" : null;
 #else
             if (args.Length == 0)
             {
@@ -78,11 +81,12 @@ namespace MDT2PxWeb
                     Console.Out.Write(" #SubIndicators " + LeftPadding(subIndicators, 3));
                     Console.Out.WriteLine();
                 }
-
+                Console.Out.WriteLine("Start Create queries... ");
                 List<Query> queriesDeletes = PxWebMetadata.CreateDeletes(c);
                 List<Query> queriesMenu = PxWebMetadata.CreateMenu(c);
                 List<Query> queriesVariables = PxWebMetadata.CreateVariables(c);
                 List<Query> queriesCubes = PxWebMetadata.CreateCubes(c);
+                Console.Out.WriteLine("End Create queries. ");
                 if (print)
                 {
                     List<Query> queries = new List<Query>();
@@ -97,9 +101,10 @@ namespace MDT2PxWeb
                         {
                             sqls.Add(query.ToSql(c.pxwebDb));
                         }
+                        Console.Out.WriteLine("Writing file... ");
                         System.IO.File.WriteAllLines(outFile, sqls);
                     }
-                    else if (print)
+                    else 
                     {
                         foreach (Query query in queries)
                         {
@@ -112,10 +117,11 @@ namespace MDT2PxWeb
                     DBConnection connection = null;
                     try
                     {
+                        Console.Out.WriteLine("Connecting PxWeb DB ... ");
                         connection = new DBConnection(c.pxwebDb);
                         ExecuteQueries(connection, queriesDeletes, "Cleaning db");
                         ExecuteQueries(connection, queriesMenu, "Creating menu");
-                        ExecuteQueries(connection, queriesVariables, "Init variables");
+                         ExecuteQueries(connection, queriesVariables, "Init variables");
                         ExecuteQueries(connection, queriesCubes, "Creating cubes");
                     }
                     finally

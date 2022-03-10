@@ -17,23 +17,22 @@ public partial class userList : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (!this.Page.User.IsInRole("Admin"))
+            Response.Redirect("~/index.aspx");
+
         if (!this.IsPostBack)
         {
-            if (this.Page.User.IsInRole("Admin"))
-            {
-                saveMessage.Text = "";
-                QueryManager qm = new QueryManager();
-                gvUsers.DataSource = GetData("SELECT User_ID, username, Role_ID FROM Users ORDER BY User_ID");
-                gvUsers.DataBind();
-                pnlAssignRoles.Visible = true;
 
-                if (!String.IsNullOrEmpty(Request.QueryString["msg"]))
-                {
-                    saveMessage.Text = "<div class='db-alert db-success hideMe'>Data updated successfully</div>";
-                }
+            saveMessage.Text = "";
+            QueryManager qm = new QueryManager();
+            gvUsers.DataSource = GetData("SELECT User_ID, username, Role_ID FROM Users ORDER BY User_ID");
+            gvUsers.DataBind();
+            pnlAssignRoles.Visible = true;
+
+            if (!String.IsNullOrEmpty(Request.QueryString["msg"]))
+            {
+                saveMessage.Text = "<div class='db-alert db-success hideMe'>Data updated successfully</div>";
             }
-            else
-                Response.Redirect("~/index.aspx");
         }
     }
 
@@ -70,8 +69,8 @@ public partial class userList : System.Web.UI.Page
             string rolename = ddlRoles.Items.FindByValue(assignedRole).Text;
             LinkButton linkindicators = e.Row.FindControl("linkindicators") as LinkButton;
             string userId = linkindicators.CommandArgument;
-            linkindicators.Attributes.Add("href", "Departments.aspx?uID="+ userId);
-            
+            linkindicators.Attributes.Add("href", "Departments.aspx?uID=" + userId);
+
             if (rolename.Equals("Admin"))
             {
                 linkindicators.Attributes.Add("href", "#");

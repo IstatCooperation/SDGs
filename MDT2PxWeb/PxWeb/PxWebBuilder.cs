@@ -66,7 +66,7 @@ namespace MDT2PxWeb
             {
                 string goalIndexDesc = goal.GetIndexDescription();
                 parameters = new Dictionary<string, object> {
-                    { "@goalIndexDesc", goalIndexDesc },
+                    { "@goalIndexDesc", goalIndexDesc.Replace(" ", "_")},
                     { "@goalIndex3Desc", '0' + goalIndexDesc },
                     { "@descr", goal.desc },
                     { "@descEn", goal.descEn },
@@ -86,10 +86,10 @@ namespace MDT2PxWeb
                 int targetIndex = 1;
                 foreach (Target target in goal.targets)
                 {
-                    string targetIndexDesc = goalIndexDesc + "T" + target.GetIndexDescription();
+                    string targetIndexDesc = "T" + target.GetIndexDescription();
                     parameters = new Dictionary<string, object> {
-                        { "@goalIndexDesc", goalIndexDesc },
-                        { "@targetIndexDesc", targetIndexDesc },
+                        { "@goalIndexDesc", goalIndexDesc.Replace(" ", "_") },
+                        { "@targetIndexDesc", targetIndexDesc.Replace(" ", "_") },
                         { "@descr", target.desc },
                         { "@descEn", target.descEn },
                         { "@targetIndexPadded", LeftPadding(targetIndex, 3) },
@@ -109,10 +109,11 @@ namespace MDT2PxWeb
                     int indicatorIndex = 1;
                     foreach (Indicator indicator in target.indicators)
                     {
-                        string indicatorIndexDesc = targetIndexDesc + "I" + indicator.GetIndexDescription();
+                        //    string indicatorIndexDesc = targetIndexDesc + "I" + indicator.GetIndexDescription();
+                        string indicatorIndexDesc = indicator.GetIndexDescription();
                         parameters = new Dictionary<string, object> {
-                            { "@targetIndexDesc", targetIndexDesc },
-                            { "@indicatorIndexDesc", indicatorIndexDesc },
+                            { "@targetIndexDesc", targetIndexDesc.Replace(" ", "_") },
+                            { "@indicatorIndexDesc", indicatorIndexDesc.Replace(" ", "_") },
                             { "@indicatorDescr", indicator.desc },
                             { "@indicatorDescEn", indicator.descEn },
                             { "@indicatorIndexPadded", LeftPadding(indicatorIndex, 3) },
@@ -134,8 +135,8 @@ namespace MDT2PxWeb
                         {
                             string mainTable = subIndicator.GetMainTableName(target);
                             parameters = new Dictionary<string, object> {
-                                { "@indicatorIndexDesc", indicatorIndexDesc },
-                                { "@mainTable", mainTable },
+                                { "@indicatorIndexDesc", indicatorIndexDesc.Replace(" ", "_") },
+                                { "@mainTable", mainTable.Replace(" ", "_") },
                                 { "@descr", subIndicator.desc },
                                 { "@descEn", subIndicator.descEn },
                                 { "@subIndicatorIndexPadded", LeftPadding(subIndicatorIndex, 3) },
@@ -271,22 +272,22 @@ namespace MDT2PxWeb
                             {
                                 string mainTable = subIndicator.GetMainTableName(target);
                                 parameters = new Dictionary<string, object> {
-                                    { "@mainTable", mainTable },
-                                    { "@descr", target.code + "/" + subIndicator.code + "/" + subIndicator.desc },
-                                    { "@descEn", target.code + "/" + subIndicator.code + "/" + subIndicator.descEn },
-                                    { "@subIndicatorCode", subIndicator.code },
+                                    { "@mainTable", mainTable.Replace(" ", "_") },
+                                    { "@descr", target.code + "/" + subIndicator.codeValue + "/" + subIndicator.desc },
+                                    { "@descEn", target.code + "/" + subIndicator.codeValue + "/" + subIndicator.descEn },
+                                    { "@subIndicatorCode", subIndicator.codeValue },
                                     { "@obsValue", c.obsValue },
                                     { "@organizationCode", c.organizationCode },
-                                    { "@userId", c.userId } 
+                                    { "@userId", c.userId }
                                 };
                                 query = new Query("INSERT INTO \"MAINTABLE\" (MAINTABLE, PRESTEXT, PRESTEXTS, PRESCATEGORY, TIMESCALE, USERID, LOGDATE, FIRSTPUBLISHED, TABLESTATUS, TABLEID, PRODUCTCODE, SPECCHAREXISTS, METAID, SUBJECTCODE, CONTENTSVARIABLE) VALUES " +
-                                    " (@mainTable, @descr, 'SDGs Goals', 'O', 'year', @userId, #TIME#, #TIME#, 'A', @mainTable, '001', 'N', '01', '01', '" + c.mainLanguage.labelValue + "')",
+                                    " (@mainTable, @descr, '" + c.goalTypeLabel + "', 'O', 'year', @userId, #TIME#, #TIME#, 'A', @mainTable, '001', 'N', '01', '01', '" + c.mainLanguage.labelValue + "')",
                                     parameters);
                                 queries.Add(query);
                                 if (c.HasSecondaryLanguage())
                                 {
                                     query = new Query("INSERT INTO \"MAINTABLE_" + c.secondaryLanguage.suffixDB + "\" (MAINTABLE, STATUS, PUBLISHED, PRESTEXT, PRESTEXTS, CONTENTSVARIABLE, USERID, LOGDATE) VALUES " +
-                                        " (@mainTable, 'A', #TIME#, @descEn, 'SDGs Goals', '" + c.secondaryLanguage.labelValue + "', @userId, #TIME#)",
+                                        " (@mainTable, 'A', #TIME#, @descEn, '" + c.goalTypeLabel + "', '" + c.secondaryLanguage.labelValue + "', @userId, #TIME#)",
                                         parameters);
                                     queries.Add(query);
 
@@ -402,11 +403,11 @@ namespace MDT2PxWeb
             List<Query> queries = new List<Query>();
             Dictionary<string, object> parameters;
 
-            if (inserted.Contains(dimension.name + "#" + subIndicator.code))
+            if (inserted.Contains(dimension.name + "#" + subIndicator.codeValue))
             {
                 return queries;
             }
-            inserted.Add(dimension.name + "#" + subIndicator.code);
+            inserted.Add(dimension.name + "#" + subIndicator.codeValue);
 
             Table table = dimension.table;
             if (table != null && !dimension.isTime)

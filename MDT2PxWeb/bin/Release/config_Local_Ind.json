@@ -1,0 +1,82 @@
+﻿{
+  "organizationCode": "PCBS",
+  "organizationName": "Palestinian Central Bureau of Statistics",
+  "goalType": "2",
+  "goalTypeLabel": "PCBS Local Indicators",
+  "userId": "PCBS",
+  "obsValue": "OBS_VALUE",  
+  "mainLanguage": {
+	"code": "ar",
+	"suffixDB":"",
+	"labelValue": "ar: Sub Indicator",
+    "labelContent": "ar: Local indicators- PCBS"	
+  },
+  "secondaryLanguage": {
+	"code": "en",
+	"suffixDB":"ENG",
+	"labelValue": "Sub Indicator",
+    "labelContent": "Local indicators- PCBS"	
+  },
+  "mdtDb": {
+    "connectionString": "Server=localhost\\SQLEXPRESS;Database=SDGS;Trusted_Connection=True;",
+    "username": null,
+    "password": null,
+    "dimensionsTable": {
+      "name": "DIMENSION"
+    },
+    "dataTable": {
+      "name": "SUBINDICATOR_DATA",
+      "code": "SUBINDICATOR_CODE",
+	  "code1": "INDICATOR_CODE"
+    },
+    "goalTable": {
+      "name": "V_GOAL",
+      "id": "Goal_ID",
+	  "code": "Goal_CODE",
+	  "typeId": "Type_ID",
+      "desc": "Goal_DescAr",
+	  "descEn": "Goal_DescEn",
+      "order": "Goal_ID",
+	  "reference": "Type_ID"
+    },
+    "targetTable": {
+      "name": "V_TARGET",
+	  "id": "Target_ID",
+      "code": "Target_Code",
+      "desc": "Target_DescAr",
+	  "descEn": "Target_DescEn",
+      "reference": "Goal_ID"
+    },
+    "indicatorTable": {
+      "name": "V_INDICATOR",
+      "code": "Indicator_Code",
+      "codeValue": "Indicator_CodeValue",
+      "desc": "Indicator_descAr",
+	  "descEn": "Indicator_descEn",
+      "reference": "Target_ID",
+	  "reference1": "Goal_Type"
+    },
+    "subIndicatorTable": {
+      "name": "V_SUBINDICATOR",
+      "code": "Subindicator_Code",
+	  "codeValue": "Subindicator_CodeValue",
+      "desc": "Subindicator_DescAr",
+	  "descEn": "Subindicator_DescEn",
+      "dimensions": "Dimensions",
+      "reference": "Indicator_Code",
+	  "reference1": "Goal_Type",
+	  "reference2": "Target_ID",
+      "condition": "Is_Valid = 1"
+    }
+  },
+  "pxwebDb": {
+    "connectionString": "Server=localhost\\SQLEXPRESS;Database=pxweb_local1;Trusted_Connection=True;",
+    "username": null,
+    "password": null,
+    "dataTable": {
+      "name": "INDICATORDATA",
+      "code": "SUBINDICATOR_CODE",
+	  "code1": "INDICATOR_CODE"
+    }
+  }
+}

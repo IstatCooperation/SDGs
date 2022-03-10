@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Mobile Specific Metas
+        ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Web Fonts
+        ================================================== -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:700,500,400%7cCourgette%7cRoboto:400,500,700%7cCourgette%7cPT+Serif:400,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS
+        ================================================== -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layout.css">
+
+    <!-- Vendor CSS
+        ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/fontello.css">
+
+
+    <!-- additional by adham
+        ================================================== -->
+    <link rel="stylesheet" href="css/additional.css">
+
+    <!-- custom
+        ================================================== -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <header id="header" class="header type-3">
+            <div class="header-middle">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="header-middle-entry">
+                 <div class="logo">
+                                <span class="tmm_logo">
+                                    <a title="SDGs" href="http://sustainabledevelopment.un.org/">
+                                        <img src='<%= ResolveUrl("images/logo_SDGs.png") %>'  style="width:63px"  alt="logo" title="SDGs">
+                                    </a>
+                             
+                                    <a title="logo" href="http://www.istat.it">
+                                        <img src='<%= ResolveUrl("images/logo.png") %>' alt="logo"  style="width:151px" title="ISTAT">
+                                    </a>
+                                </span>
+                                <span class="sop"></span><br>
+                                <span class="sop2">SDGs Management</span>
+                            </div>
+                            <div class="account align-right" id="userActions" runat="server">
+                                <ul>
+                                    <li>
+
+                                        <a href='<%= ResolveUrl("~/") %>' title='Home'>
+                                            <asp:Label runat="server" ID="WelcomeBackMessage"></asp:Label>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="LinkButtonUserRole"  CausesValidation="false"  runat="server"></asp:LinkButton>
+                                    </li>
+                                    <li>
+                                        <asp:LinkButton ID="LinkButton1" runat="server"  CausesValidation="false"  OnClick="cmdSignOut_ServerClick" Text="<i class='icon-logout' title='Logout'></i>Logout"></asp:LinkButton>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

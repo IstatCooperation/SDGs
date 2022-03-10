@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Security.Principal;
 using System.Web;
 using System.Web.Security;
@@ -221,7 +220,7 @@ public class UsersManager
         SqlDataReader reader = qm.executeReader(selectUser, parameters);
         if (reader.Read())
         {
-            ret =Convert.ToString( reader.GetInt32(0));
+            ret = Convert.ToString(reader.GetInt32(0));
         }
         qm.closeConnection();
         return ret;
@@ -241,17 +240,18 @@ public class UsersManager
         try
         {
             int newID = qm.executeScalar(insertUser, parameters);
-            if (roleName.Equals("Admin")) {
+            if (roleName.Equals("Admin"))
+            {
                 SqlDataReader reader = qm.executeReader("SELECT distinct indicator_code from indicator");
                 String insertUsersIndCmd = "INSERT INTO User_Indicator(USER_ID,IND_CODE) VALUES ";
                 while (reader.Read())
                 {
                     insertUsersIndCmd += "(" + newID + ",'" + Convert.ToString(reader["indicator_code"]).Trim() + "'),";
-                  
+
                 }
                 if (reader != null) reader.Close();
                 qm.executeNonQuery(insertUsersIndCmd.Substring(0, insertUsersIndCmd.Length - 1));
-              
+
             }
             ret = true;
         }
@@ -271,7 +271,7 @@ public class UsersManager
 
     }
 
-   
+
 
     public Boolean deleteUser(string userId)
     {
@@ -311,7 +311,7 @@ public class UsersManager
         SqlConnection conn =
          new SqlConnection(constr);
         SqlCommand cmd = conn.CreateCommand();
-       // cmd.CommandText = "SELECT *  FROM User_Goal ug,Users u WHERE  ug.User_ID=u.User_ID  AND ug.Goal_ID=@goalID AND u.username=@username";
+        // cmd.CommandText = "SELECT *  FROM User_Goal ug,Users u WHERE  ug.User_ID=u.User_ID  AND ug.Goal_ID=@goalID AND u.username=@username";
         cmd.CommandText = "SELECT g.* from GOAL g, Target t, Ind_code ic,User_indicator ui,Users u " +
                 " where  g.Goal_ID=t.Goal_ID AND g.Goal_ID=@goalID and t.target_id=ic.target_ID and ui.ind_code=ic.indicator_code and ui.User_ID=u.User_Id and u.username=@username";
         // Fill our parameters

@@ -1,5 +1,6 @@
 ﻿using MDT2PxWeb.Bean;
 using MDT2PxWeb.Connector;
+using System;
 using System.Collections.Generic;
 using System.Data.Common;
 
@@ -19,7 +20,9 @@ namespace MDT2PxWeb.PxWeb
                 // to init dimensions if needed
                 c.GetGoals();
 
-                string selectColumns = c.mdtDb.dataTable.code + "";
+                string selectColumns =   c.mdtDb.dataTable.code + "";
+                if (!String.IsNullOrEmpty(c.mdtDb.dataTable.code1)) selectColumns+= ", " + c.mdtDb.dataTable.code1 ;
+
                 foreach (Dimension d in c.dimensions)
                 {
                     selectColumns += "," + d.name;
@@ -43,15 +46,35 @@ namespace MDT2PxWeb.PxWeb
                     Dictionary<string, object> parameters = new Dictionary<string, object>();
                     string columns = c.pxwebDb.dataTable.code;
                     string values = "@" + c.pxwebDb.dataTable.code;
+                    if (!String.IsNullOrEmpty(c.mdtDb.dataTable.code1))
+                    {
+                          columns+= ", " + c.pxwebDb.dataTable.code1;
+                          values += ",@" + c.pxwebDb.dataTable.code1;
+                    }
+                    int dIndex = 0;
                     if (c.pxwebDb.dataTable.integerCode)
                     {
-                        parameters.Add("@" + c.pxwebDb.dataTable.code, reader.GetInt32(0));
+                        parameters.Add("@" + c.pxwebDb.dataTable.code, reader.GetInt32(dIndex));
+                        dIndex++;
+                        if (!String.IsNullOrEmpty(c.mdtDb.dataTable.code1))
+                        {
+                            parameters.Add("@" + c.pxwebDb.dataTable.code1, reader.GetInt32(dIndex));
+                            dIndex++;
+                        }
+                      
                     }
                     else
                     {
-                        parameters.Add("@" + c.pxwebDb.dataTable.code, reader.GetString(0).Trim());
+                        parameters.Add("@" + c.pxwebDb.dataTable.code, reader.GetString(dIndex).Trim());
+                        dIndex++;
+                        if (!String.IsNullOrEmpty(c.mdtDb.dataTable.code1)) { 
+                            parameters.Add("@" + c.pxwebDb.dataTable.code1, reader.GetString(dIndex).Trim());
+                            dIndex++;
+                        }
+
                     }
-                    int dIndex = 1;
+                    
+                    
                     foreach (Dimension d in c.dimensions)
                     {
                         columns += "," + d.name;

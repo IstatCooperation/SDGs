@@ -30,7 +30,7 @@ public class Properties
 
     public static bool isTimePeriod(string dim)
     {
-      return "TIME_PERIOD".Equals(dim);
+        return "TIME_PERIOD".Equals(dim);
     }
 
 

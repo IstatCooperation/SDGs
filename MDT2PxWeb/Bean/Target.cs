@@ -4,6 +4,7 @@ namespace MDT2PxWeb.Bean
 {
     public class Target
     {
+        public string id;
         public string code;
         public string desc;
         public string descEn;
@@ -11,7 +12,7 @@ namespace MDT2PxWeb.Bean
 
         public string GetIndexDescription()
         {
-            return code.Replace(".", "_");
+            return id.Replace(".", "_");
         }
     }
 }

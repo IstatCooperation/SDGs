@@ -5,12 +5,18 @@ namespace MDT2PxWeb.Bean
     public class Table
     {
         public string name;
+        public string id;
         public string code;
+        public string code1;
+        public string typeId;
+        public string codeValue;
         public string desc;
         public string descEn;
         public string dimensions;
         public string order;
         public string reference;
+        public string reference1;
+        public string reference2;
         public string condition;
         public bool integerCode = false;
 
@@ -25,12 +31,34 @@ namespace MDT2PxWeb.Bean
             {
                 query += ", " + dimensions;
             }
+            if (!string.IsNullOrEmpty(id))
+            {
+                query += ", " + id;
+            }
+            if (!string.IsNullOrEmpty(typeId))
+            {
+                query += ", " + typeId;
+            }
+            if (!string.IsNullOrEmpty(codeValue))
+            {
+                query += ", " + codeValue;
+            }
             query += " FROM " + name;
             bool where = false;
             if (!string.IsNullOrEmpty(reference))
             {
                 query += " WHERE " + reference + " = @REFERENCE";
                 where = true;
+            }
+            if (!string.IsNullOrEmpty(reference1))
+            {
+                query += " AND " + reference1 + " = @REFERENCE1";
+
+            }
+            if (!string.IsNullOrEmpty(reference2))
+            {
+                query += " AND " + reference2 + " = @REFERENCE2";
+
             }
             if (!string.IsNullOrEmpty(condition))
             {

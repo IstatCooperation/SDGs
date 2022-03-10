@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+ 
 using System.Web;
 using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+ 
 
 public partial class MasterPage : System.Web.UI.MasterPage
 {
@@ -14,12 +12,18 @@ public partial class MasterPage : System.Web.UI.MasterPage
         {
             this.userActions.Visible = false;
         }
-
+         SWAGlobalProperties swgp = (SWAGlobalProperties)Application["SDGsWAGlobalProperties"];
+        this.logoA.HRef = swgp.urlWebsite;
+        this.logoImg.Src = ResolveUrl(swgp.urlLogo);
+        this.logoImg.Attributes.Add("title", swgp.label);
+        this.logoD1.InnerText= swgp.description;
+        this.logoD2.InnerText = swgp.description2;
         this.WelcomeBackMessage.Text = "Welcome, " + HttpContext.Current.User.Identity.Name + "!";
+
         if (this.Page.User.IsInRole("Admin"))
         {
-            this.LinkButtonUserRole.PostBackUrl = "Users/usersList.aspx";
-            this.LinkButtonUserRole.Text = "<i class='icon-users' title='Users Management'></i>Users Management";
+            this.LinkButtonUserRole.PostBackUrl = "management.aspx";
+            this.LinkButtonUserRole.Text = "<i class='icon-cog' title='Management'></i>Management";
         }
         else
         {

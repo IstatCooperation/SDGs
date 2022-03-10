@@ -6,7 +6,7 @@
     <main id="content">
         <div class="row">
             <div class="large-12 columns">
-                <div><a href="/index.aspx">Goals</a> &gt; <a href="UsersList.aspx">Users List</a> &gt; Add User</div>
+                <div><a href='<%= ResolveUrl("~/") %>'>Home</a> &gt; <a href="UsersList.aspx">Users List</a> &gt; Add User</div>
             </div>
         </div>
             <asp:ScriptManager ID="ScriptManager1" runat="server">
@@ -85,7 +85,7 @@
                     </div>
                 </ContentTemplate>
             </asp:UpdatePanel>
-        </div>
+       
     </main>
 </asp:Content>
 

@@ -1,16 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
+using System.Web;
+using System.Data;
+
 
 
 public partial class Users_Departments : System.Web.UI.Page
 {
+    private static string constr = ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
+
     private SortedDictionary<string, Department> departments = new SortedDictionary<string, Department>(new SDGCodeSorter());
     string userId;
     Boolean isAdmin = false;
 
     protected void Page_Load(object sender, EventArgs e)
     {
+
 
         if (!this.Page.User.IsInRole("Admin"))
         {
@@ -23,6 +30,7 @@ public partial class Users_Departments : System.Web.UI.Page
             Response.Redirect("/index.aspx");
             return;
         }
+ 
         UsersManager um = new UsersManager();
         this.Username.Text = um.GetUserNameByID(userId);
         isAdmin = um.IsAdmin(userId);
@@ -32,14 +40,30 @@ public partial class Users_Departments : System.Web.UI.Page
             return;
         }
         cmdSave.Visible = !isAdmin;
+
+
+      
+
         if (!IsPostBack)
         {
-            loadIndicators();
+            ddlGoalTypes.DataSource = GetData("SELECT Type_ID, Descr_En FROM Goal_type");
+            ddlGoalTypes.DataTextField = "Descr_En";
+            ddlGoalTypes.DataValueField = "Type_ID";
+            ddlGoalTypes.DataBind();
+
+            ddlGoalTypes.SelectedIndex = 0;
+            loadIndicators(ddlGoalTypes.SelectedValue);
         }
+       
 
     }
 
-    public void loadIndicators()
+    protected void ddlGoalTypes_SelectedIndexChanged(object sender, System.EventArgs e)
+    {
+        loadIndicators(ddlGoalTypes.SelectedItem.Value);
+    }
+
+    public void loadIndicators(string goalTypeSelected)
     {
         List<string> userIndicators = new List<string>();
         QueryManager qm = new QueryManager();
@@ -49,12 +73,23 @@ public partial class Users_Departments : System.Web.UI.Page
 
         try
         {
-            string depsQueryStr = "select dp.DEP_ID ,dp.description DEPARTMENT, ic.Indicator_NL, ind.Indicator_Code,ind.Indicator_descEn,ic.target_ID,g.goal_ID,g.Goal_descEn" +
-                " from department dp,dep_indicator di,Ind_Code ic,Indicator ind,Target t, Goal g " +
-                "where dp.dep_id = di.DEP_ID and ic.Indicator_code = di.Ind_code and ind.Indicator_Code = ic.Indicator_Code and ic.target_ID=t.Target_ID and t.Goal_ID=g.goal_ID " +
-                " order by 1 asc";
+            string depsQueryStr = " select dp.DEP_ID ,dp.description DEPARTMENT, ic.Indicator_NL, ind.Indicator_Code,ind.Indicator_descEn,ic.target_ID,g.goal_ID,g.goal_Code,g.Goal_descEn,g.type_ID as GOAL_TYPE,gt.Label_En as GOAL_TYPE_LABEL,cm.value as CODE_VALUE " +
+                " from department dp " +
+                " inner join dep_indicator di on dp.dep_id = di.DEP_ID" +
+                " inner join Ind_Code ic on ic.Indicator_code = di.Ind_code  " +
+                " inner join Indicator ind on ind.Indicator_Code = ic.Indicator_Code " +
+                " inner join Target t on ic.target_ID = t.Target_ID " +
+                " inner join Goal g on t.Goal_ID = g.goal_ID " +
+                " inner join Goal_Type gt on g.type_ID = gt.Type_ID " +
+                " inner join Code_Mapping cm on gt.type_ID = cm.Goal_Type " +
+                " where g.type_ID = @type_ID   and cm.code = ind.Indicator_Code" +
+                " order by dp.DEP_ID asc";
+            Dictionary<string, object> param = new Dictionary<string, object>
+            {
+                { "@type_ID", goalTypeSelected }
+            };
 
-            reader = qm.executeReader(depsQueryStr);
+            reader = qm.executeReader(depsQueryStr, param);
             while (reader.Read())
             {
                 String depId = Convert.ToString(reader["DEP_ID"]).Trim();
@@ -64,7 +99,7 @@ public partial class Users_Departments : System.Web.UI.Page
                     department = new Department(Convert.ToString(reader["DEP_ID"]).Trim(), Convert.ToString(reader["DEPARTMENT"]).Trim());
                     departments.Add(depId, department);
                 }
-                department.createIndicator(Convert.ToString(reader["Indicator_Code"]).Trim(), Convert.ToString(reader["Indicator_NL"]).Trim(), Convert.ToString(reader["Indicator_descEn"]).Trim(), Convert.ToString(reader["target_ID"]).Trim(), Convert.ToString(reader["goal_ID"]).Trim(), Convert.ToString(reader["goal_DescEn"]).Trim());
+                department.createIndicator(Convert.ToString(reader["Indicator_Code"]).Trim(), Convert.ToString(reader["Indicator_NL"]).Trim(), Convert.ToString(reader["Indicator_descEn"]).Trim(), Convert.ToString(reader["target_ID"]).Trim(), Convert.ToString(reader["goal_ID"]).Trim(), Convert.ToString(reader["goal_Code"]).Trim(), Convert.ToString(reader["goal_DescEn"]).Trim(), Convert.ToString(reader["GOAL_TYPE"]).Trim(), Convert.ToString(reader["GOAL_TYPE_LABEL"]).Trim(), Convert.ToString(reader["CODE_VALUE"]).Trim());
             }
 
             if (reader != null) reader.Close();
@@ -86,7 +121,7 @@ public partial class Users_Departments : System.Web.UI.Page
         catch (Exception ex)
         {
             System.Diagnostics.Debug.WriteLine("Exception caught. " + ex.Message);
-            htmlStr.Text = "";
+            htmlStr.Text = "Exception caught. " + ex.Message;
         }
         finally
         {
@@ -95,7 +130,7 @@ public partial class Users_Departments : System.Web.UI.Page
             qm.closeConnection();
         }
 
-
+       
 
         foreach (Department department in departments.Values)
         {
@@ -104,13 +139,13 @@ public partial class Users_Departments : System.Web.UI.Page
             foreach (Indicator ind in department.getIndicators())
             {
                 htmlStr.Text += "<li ><a  href='javascript: void(0);' ><label><input type='checkbox' class='indicator-checkbox indicator-dep-" + department.getId() + "'   value=" + ind.getCode() + " runat='server'  name ='indicators'  " + (userIndicators.Contains(ind.getCode()) ? "Checked='Checked' " : "") + "  " + (isAdmin ? "disabled='disabled' " : "") + "  >" +
-                    " Goal " + ind.getGoalID() + ": Indicator " + (String.IsNullOrEmpty(ind.getIndicatorNL()) ? "No code" : ind.getIndicatorNL()) + " - " + (String.IsNullOrEmpty(ind.getDescEn()) ? "No description" : ind.getDescEn()) + "</label></a></li>";
+                    ind.getGoalTypeLabel()+" " + ind.getGoalCode() + ": Indicator " + (String.IsNullOrEmpty(ind.getIndicatorNL()) ? "No code" : ind.getIndicatorNL()) + " - " + (String.IsNullOrEmpty(ind.getDescEn()) ? "No description" : ind.getDescEn()) + "</label></a></li>";
             }
 
             htmlStr.Text += "</ul>";
             htmlStr.Text += "</details>";
         }
-
+         
     }
 
     protected void saveIndicators(object sender, EventArgs e)
@@ -163,7 +198,7 @@ public partial class Users_Departments : System.Web.UI.Page
                 saveMessage.Text = "<div class='db-alert db-error hideMe'>Warning! Data not updated.</div>";
                 break;
         }
-        loadIndicators();
+        loadIndicators(ddlGoalTypes.SelectedItem.Value);
     }
 
     public static string[] RemoveDuplicates(string[] s)
@@ -183,5 +218,21 @@ public partial class Users_Departments : System.Web.UI.Page
         }
         return null;
     }
-
+    private DataTable GetData(string query)
+    {
+        using (SqlConnection con = new SqlConnection(constr))
+        {
+            using (SqlCommand cmd = new SqlCommand(query))
+            {
+                cmd.CommandType = CommandType.Text;
+                cmd.Connection = con;
+                using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                {
+                    DataTable dt = new DataTable();
+                    sda.Fill(dt);
+                    return dt;
+                }
+            }
+        }
+    }
 }

@@ -6,7 +6,7 @@
     <main id="content">
         <div class="row">
             <div class="large-12 columns">
-                <div><a href="/index.aspx">Goals</a> <span id="linkUsers" runat="server">&gt; <a href="UsersList.aspx">Users List</a></span> &gt; Change Password</div>
+                <div><a href='<%= ResolveUrl("~/") %>'>Home</a> <span id="linkUsers" runat="server">&gt; <a href="UsersList.aspx">Users List</a></span> &gt; Change Password</div>
             </div>
           
                 <div class="row">
